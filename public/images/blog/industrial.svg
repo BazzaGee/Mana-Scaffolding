@@ -1,0 +1,21 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#0f0f0f"/>
+  <rect width="40" height="40" fill="#D4441C" opacity="0.1"/>
+  <rect x="1120" y="550" width="80" height="80" fill="#D4441C" opacity="0.1"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  <rect x="100" y="100" width="200" height="200" rx="8" fill="#1a1a1a"/>
+  <rect x="108" y="108" width="184" height="184" rx="4" fill="#0f0f0f"/>
+  <rect x="150" y="140" width="100" height="80" fill="#D4441C" opacity="0.8"/>
+  <rect x="160" y="150" width="20" height="60" fill="#0f0f0f"/>
+  <rect x="190" y="150" width="20" height="60" fill="#0f0f0f"/>
+  <rect x="220" y="150" width="20" height="60" fill="#0f0f0f"/>
+  <rect x="100" y="350" width="400" height="60" rx="4" fill="#D4441C"/>
+  <text x="300" y="390" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="white" text-anchor="middle">INDUSTRIAL</text>
+  <text x="600" y="520" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#D4441C" text-anchor="middle">MANA SCAFFOLDING</text>
+  <text x="600" y="560" font-family="Arial, sans-serif" font-size="18" fill="#666" text-anchor="middle">CHRISTCHURCH, NZ</text>
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#D4441C" stroke-width="0.5" opacity="0.1"/>
+    </pattern>
+  </defs>
+</svg>

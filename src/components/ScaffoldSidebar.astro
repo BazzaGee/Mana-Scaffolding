@@ -1,0 +1,51 @@
+---
+---
+
+<div id="scaffold-sidebar" class="hidden md:flex" aria-hidden="true">
+  <div id="scaffold-mast" class="scaffold-vertical"></div>
+  <div class="scaffold-progress-label">
+    <span>Structural</span>
+    <span>Integrity</span>
+  </div>
+</div>
+
+<script>
+  const mast = document.getElementById('scaffold-mast');
+  const segmentsCount = 20;
+  
+  if (mast) {
+    for (let i = 0; i < segmentsCount; i++) {
+      const seg = document.createElement('div');
+      seg.className = 'scaffold-segment';
+      seg.style.top = `${(i / segmentsCount) * 100}%`;
+      
+      const coupler = document.createElement('div');
+      coupler.className = 'coupler';
+      coupler.style.top = `${(i / segmentsCount) * 100}%`;
+      
+      mast.appendChild(seg);
+      mast.appendChild(coupler);
+    }
+    
+    const segments = document.querySelectorAll('.scaffold-segment');
+    const couplers = document.querySelectorAll('.coupler');
+    
+    function handleScroll() {
+      const scrollPercent = window.scrollY / (document.documentElement.scrollHeight - window.innerHeight);
+      const activeIdx = Math.floor(scrollPercent * segmentsCount);
+      
+      segments.forEach((seg, idx) => {
+        if (idx <= activeIdx) seg.classList.add('active');
+        else seg.classList.remove('active');
+      });
+      
+      couplers.forEach((cup, idx) => {
+        if (idx <= activeIdx) cup.classList.add('active');
+        else cup.classList.remove('active');
+      });
+    }
+    
+    window.addEventListener('scroll', handleScroll);
+    handleScroll();
+  }
+</script>

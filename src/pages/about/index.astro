@@ -1,0 +1,384 @@
+---
+import Base from '../../layouts/Base.astro';
+
+const businessInfo = {
+  name: 'Mana Scaffolding Limited',
+  description: 'Complete scaffolding services for Canterbury. Residential, commercial, and industrial solutions with international expertise.',
+  url: 'https://manasastro.pages.dev',
+  phone: '0508 626 272',
+  email: 'terry@manascaffolding.co.nz',
+  address: {
+    street: '65c Highsted Road, Bishopdale',
+    city: 'Christchurch',
+    region: 'Canterbury',
+    postcode: '8053',
+    country: 'New Zealand'
+  }
+};
+
+const stats = [
+  { number: '500+', label: 'Projects Completed' },
+  { number: '0', label: 'Safety Incidents' },
+  { number: '7', label: 'Years Operating' },
+  { number: '100%', label: 'Canterbury Owned' },
+];
+
+const teamMembers = [
+  {
+    name: 'Terry Pohatu',
+    role: 'Founder & Director',
+    expertise: 'Canada Expertise',
+    quote: 'We bring North American industrial rigging protocols to New Zealand\'s unique topographical challenges.',
+    image: '/images/N5.jpg'
+  },
+  {
+    name: 'Keith Timmins',
+    role: 'Director',
+    expertise: 'UK Precision',
+    quote: 'British standard scaffolding means millimeter precision in dense urban environments.',
+    image: '/images/N7.jpg'
+  }
+];
+---
+
+<Base title="About" description="Learn about Mana Scaffolding - Christchurch-based scaffolding specialists with international expertise from Canada and UK">
+  <main id="main-content" class="pt-24 pb-16">
+    <!-- Hero Section -->
+    <section class="py-20 bg-background relative overflow-hidden">
+      <div class="container mx-auto px-6 max-w-6xl">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <div class="reveal-on-scroll">
+            <div class="inline-flex items-center gap-3 border border-primary/30 bg-primary/10 px-4 py-2 mb-6">
+              <span class="text-label-xs font-bold text-primary uppercase tracking-widest">Kia Ora | Since 2019</span>
+            </div>
+            <h1 class="text-4xl md:text-6xl font-headline font-black uppercase tracking-tighter mb-6">
+              About <span class="text-primary">Mana</span>
+            </h1>
+            <p class="text-xl text-zinc-400 leading-relaxed mb-6">
+              Founded in 2019, Mana Scaffolding brings together international expertise from Canada and the UK to deliver complex scaffolding solutions across Canterbury.
+            </p>
+            <p class="text-lg text-zinc-500 leading-relaxed">
+              The name 'Mana' represents prestige, authority, and spiritual power in Māori culture. For us, it means building structures with integrity and providing guardianship for every worker on our sites.
+            </p>
+          </div>
+          <div class="relative reveal-on-scroll">
+            <div class="aspect-[4/3] bg-surface border-2 border-primary/20 overflow-hidden">
+              <img 
+                src="/images/Mana facebook pic.jpg" 
+                alt="Mana Scaffolding team at work" 
+                class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                loading="lazy"
+              />
+            </div>
+            <div class="absolute -bottom-6 -right-6 bg-primary px-6 py-4 text-white font-headline font-black text-lg shadow-2xl">
+              Kaitiakitanga
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-16 bg-surface border-y border-white/5">
+      <div class="container mx-auto px-6">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div class="text-center reveal-on-scroll">
+            <div class="text-4xl md:text-5xl font-headline font-black text-primary mb-2" data-count="500">500+</div>
+            <div class="text-label-xs font-bold text-zinc-500 uppercase tracking-widest">Projects Completed</div>
+          </div>
+          <div class="text-center reveal-on-scroll">
+            <div class="text-4xl md:text-5xl font-headline font-black text-primary mb-2" data-count="0">0</div>
+            <div class="text-label-xs font-bold text-zinc-500 uppercase tracking-widest">Safety Incidents</div>
+          </div>
+          <div class="text-center reveal-on-scroll">
+            <div class="text-4xl md:text-5xl font-headline font-black text-primary mb-2" data-count="7">7+</div>
+            <div class="text-label-xs font-bold text-zinc-500 uppercase tracking-widest">Years Operating</div>
+          </div>
+          <div class="text-center reveal-on-scroll">
+            <div class="text-4xl md:text-5xl font-headline font-black text-primary mb-2" data-count="100">100%</div>
+            <div class="text-label-xs font-bold text-zinc-500 uppercase tracking-widest">Canterbury Owned</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Directors Section -->
+    <section class="py-20 bg-background">
+      <div class="container mx-auto px-6 max-w-6xl">
+        <div class="text-center mb-16 reveal-on-scroll">
+          <h2 class="text-4xl md:text-5xl font-headline font-black uppercase tracking-tighter mb-4">
+            Our <span class="text-primary">Directors</span>
+          </h2>
+          <p class="text-zinc-500 uppercase tracking-widest text-xs font-bold">International Experience | Local Implementation</p>
+        </div>
+        
+        <div class="grid md:grid-cols-2 gap-12">
+          {teamMembers.map((member) => (
+            <div class="bg-surface border border-white/5 p-8 reveal-on-scroll group hover:border-primary/30 transition-all duration-300">
+              <div class="flex items-start gap-6 mb-6">
+                <div class="w-24 h-24 bg-surface-variant border border-white/10 overflow-hidden flex-shrink-0">
+                  <img 
+                    src={member.image} 
+                    alt={member.name} 
+                    class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
+                    loading="lazy"
+                  />
+                </div>
+                <div>
+                  <h3 class="text-2xl font-headline font-black uppercase text-white mb-1">{member.name}</h3>
+                  <p class="text-primary font-bold text-label-xs uppercase tracking-widest mb-2">{member.role}</p>
+                  <div class="flex items-center gap-2">
+                    <span class="w-2 h-2 rounded-full bg-primary"></span>
+                    <span class="text-zinc-500 text-sm font-medium">{member.expertise}</span>
+                  </div>
+                </div>
+              </div>
+              <blockquote class="border-l-2 border-primary pl-6 py-4">
+                <p class="text-zinc-400 italic leading-relaxed">"{member.quote}"</p>
+              </blockquote>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="py-20 bg-zinc-950">
+      <div class="container mx-auto px-6 max-w-6xl">
+        <div class="text-center mb-16 reveal-on-scroll">
+          <h2 class="text-4xl md:text-5xl font-headline font-black uppercase tracking-tighter mb-4">
+            Our <span class="text-primary">Values</span>
+          </h2>
+        </div>
+        
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="bg-surface border border-white/5 p-10 reveal-on-scroll group hover:border-primary/30 transition-all duration-300">
+            <div class="w-16 h-16 bg-primary/10 rounded-sm flex items-center justify-center mb-6 text-primary group-hover:bg-primary/20 transition-colors">
+              <span class="material-symbols-outlined text-3xl">shield</span>
+            </div>
+            <h3 class="text-2xl font-headline font-black uppercase text-white mb-4">Kaitiakitanga</h3>
+            <p class="text-zinc-500 leading-relaxed mb-4">Guardianship</p>
+            <p class="text-zinc-400 text-sm leading-relaxed">
+              We protect our workers and the environment. Every scaffold we build is designed with safety as the primary concern.
+            </p>
+          </div>
+          
+          <div class="bg-surface border border-white/5 p-10 reveal-on-scroll group hover:border-primary/30 transition-all duration-300">
+            <div class="w-16 h-16 bg-primary/10 rounded-sm flex items-center justify-center mb-6 text-primary group-hover:bg-primary/20 transition-colors">
+              <span class="material-symbols-outlined text-2xl">verified</span>
+            </div>
+            <h3 class="text-xl font-headline font-black uppercase text-white mb-3">Mana</h3>
+            <p class="text-primary font-bold text-label-xs uppercase tracking-widest mb-4">Prestige & Integrity</p>
+            <p class="text-zinc-400 text-sm leading-relaxed">
+              We build with excellence and integrity. Our reputation is earned through consistent delivery of quality work.
+            </p>
+          </div>
+          
+          <div class="bg-surface border border-white/5 p-10 reveal-on-scroll group hover:border-primary/30 transition-all duration-300">
+            <div class="w-16 h-16 bg-primary/10 rounded-sm flex items-center justify-center mb-6 text-primary group-hover:bg-primary/20 transition-colors">
+              <span class="material-symbols-outlined text-3xl">people</span>
+            </div>
+            <h3 class="text-2xl font-headline font-black uppercase text-white mb-4">Whanaungatanga</h3>
+            <p class="text-zinc-500 leading-relaxed mb-4">Relationships</p>
+            <p class="text-zinc-400 text-sm leading-relaxed">
+              We build strong connections with clients and community. As a locally-owned business, we're invested in Canterbury's success.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="py-20 bg-background border-t border-white/5">
+      <div class="container mx-auto px-6 max-w-6xl">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <div class="reveal-on-scroll">
+            <h2 class="text-4xl font-headline font-black uppercase mb-8">
+              Why Choose <span class="text-primary">Mana</span>?
+            </h2>
+            <div class="space-y-6">
+              <div class="flex gap-4 items-start">
+                <div class="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0">
+                  <span class="material-symbols-outlined text-primary text-lg">check</span>
+                </div>
+                <div>
+                  <h4 class="text-lg font-headline font-black uppercase text-white mb-1">International Expertise</h4>
+                  <p class="text-zinc-500 text-sm">Best practices from Canada and UK applied to NZ conditions</p>
+                </div>
+              </div>
+              <div class="flex gap-4 items-start">
+                <div class="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0">
+                  <span class="material-symbols-outlined text-primary text-lg">check</span>
+                </div>
+                <div>
+                  <h4 class="text-lg font-headline font-black uppercase text-white mb-1">Complex Project Capability</h4>
+                  <p class="text-zinc-500 text-sm">We tackle projects others won't</p>
+                </div>
+              </div>
+              <div class="flex gap-4 items-start">
+                <div class="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0">
+                  <span class="material-symbols-outlined text-primary text-lg">check</span>
+                </div>
+                <div>
+                  <h4 class="text-lg font-headline font-black uppercase text-white mb-1">Local Knowledge</h4>
+                  <p class="text-zinc-500 text-sm">Deep understanding of Canterbury's unique requirements</p>
+                </div>
+              </div>
+              <div class="flex gap-4 items-start">
+                <div class="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0">
+                  <span class="material-symbols-outlined text-primary text-lg">check</span>
+                </div>
+                <div>
+                  <h4 class="text-lg font-headline font-black uppercase text-white mb-1">Safety First</h4>
+                  <p class="text-zinc-500 text-sm">Zero incident commitment since 2019</p>
+                </div>
+              </div>
+              <div class="flex gap-4 items-start">
+                <div class="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0">
+                  <span class="material-symbols-outlined text-primary text-lg">check</span>
+                </div>
+                <div>
+                  <h4 class="text-lg font-headline font-black uppercase text-white mb-1">Personal Service</h4>
+                  <p class="text-zinc-500 text-sm">Direct access to directors for project decisions</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="relative reveal-on-scroll">
+            <div class="aspect-square bg-surface border-2 border-primary/20 overflow-hidden">
+              <img 
+                src="/images/Mana-Scaffolding-trucks-at-work.jpg" 
+                alt="Mana Scaffolding fleet" 
+                class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                loading="lazy"
+              />
+            </div>
+            <div class="absolute -top-4 -left-4 w-24 h-24 border-t-2 border-l-2 border-primary"></div>
+            <div class="absolute -bottom-4 -right-4 w-24 h-24 border-b-2 border-r-2 border-primary"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Service Areas Section -->
+    <section class="py-20 bg-zinc-950">
+      <div class="container mx-auto px-6 max-w-6xl">
+        <div class="text-center mb-12 reveal-on-scroll">
+          <h2 class="text-4xl font-headline font-black uppercase mb-4">
+            Service <span class="text-primary">Area</span>
+          </h2>
+          <p class="text-zinc-500">Based in Bishopdale, Christchurch, serving all of Canterbury</p>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="flex items-center gap-3 bg-surface border border-white/5 p-4 reveal-on-scroll">
+            <div class="w-10 h-10 bg-primary/10 rounded-sm flex items-center justify-center flex-shrink-0">
+              <span class="material-symbols-outlined text-primary text-lg">apartment</span>
+            </div>
+            <span class="text-white font-medium text-sm">Christchurch City</span>
+          </div>
+          <div class="flex items-center gap-3 bg-surface border border-white/5 p-4 reveal-on-scroll">
+            <div class="w-10 h-10 bg-primary/10 rounded-sm flex items-center justify-center flex-shrink-0">
+              <span class="material-symbols-outlined text-primary text-lg">landscape</span>
+            </div>
+            <span class="text-white font-medium text-sm">Waimakariri District</span>
+          </div>
+          <div class="flex items-center gap-3 bg-surface border border-white/5 p-4 reveal-on-scroll">
+            <div class="w-10 h-10 bg-primary/10 rounded-sm flex items-center justify-center flex-shrink-0">
+              <span class="material-symbols-outlined text-primary text-lg">farm</span>
+            </div>
+            <span class="text-white font-medium text-sm">Selwyn District</span>
+          </div>
+          <div class="flex items-center gap-3 bg-surface border border-white/5 p-4 reveal-on-scroll">
+            <div class="w-10 h-10 bg-primary/10 rounded-sm flex items-center justify-center flex-shrink-0">
+              <span class="material-symbols-outlined text-primary text-lg">warehouse</span>
+            </div>
+            <span class="text-white font-medium text-sm">Ashburton / Mid-Canterbury</span>
+          </div>
+          <div class="flex items-center gap-3 bg-surface border border-white/5 p-4 reveal-on-scroll">
+            <div class="w-10 h-10 bg-primary/10 rounded-sm flex items-center justify-center flex-shrink-0">
+              <span class="material-symbols-outlined text-primary text-lg">mountain</span>
+            </div>
+            <span class="text-white font-medium text-sm">Port Hills / Banks Peninsula</span>
+          </div>
+          <div class="flex items-center gap-3 bg-surface border border-white/5 p-4 reveal-on-scroll">
+            <div class="w-10 h-10 bg-primary/10 rounded-sm flex items-center justify-center flex-shrink-0">
+              <span class="material-symbols-outlined text-primary text-lg">forest</span>
+            </div>
+            <span class="text-white font-medium text-sm">North Canterbury</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-background">
+      <div class="container mx-auto px-6 max-w-4xl text-center">
+        <div class="reveal-on-scroll">
+          <h2 class="text-4xl md:text-5xl font-headline font-black uppercase mb-8">
+            Ready to Start Your <span class="text-primary">Project</span>?
+          </h2>
+          <p class="text-xl text-zinc-400 mb-10">
+            Contact our Christchurch team for a free technical consultation and estimate.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a 
+              href="/contact" 
+              class="bg-primary text-white font-headline font-black uppercase px-8 py-4 tracking-widest hover:bg-orange-600 transition-colors border-b-4 border-orange-800"
+            >
+              Get in Touch
+            </a>
+            <a 
+              href="tel:0508626272" 
+              class="border-2 border-white text-white font-headline font-black uppercase px-8 py-4 tracking-widest hover:bg-white hover:text-black transition-colors"
+            >
+              Call: 0508 626 272
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <script>
+    // Stats count-up animation
+    const stats = document.querySelectorAll('[data-count]');
+    
+    function animateCount(el) {
+      const target = parseInt(el.getAttribute('data-count'));
+      const duration = 4000; // Slower animation
+      const step = target / (duration / 16);
+      let current = 0;
+      
+      const timer = setInterval(() => {
+        current += step;
+        if (current >= target) {
+          if (target === 0) {
+            el.textContent = '0';
+          } else if (target === 100) {
+            el.textContent = '100%';
+          } else {
+            el.textContent = Math.floor(current) + '+';
+          }
+          clearInterval(timer);
+        } else {
+          if (target === 100) {
+            el.textContent = Math.floor(current) + '%';
+          } else {
+            el.textContent = Math.floor(current) + '+';
+          }
+        }
+      }, 16);
+    }
+    
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting && entry.target.getAttribute('data-count') !== null) {
+          animateCount(entry.target);
+          entry.target.removeAttribute('data-count');
+        }
+      });
+    }, { threshold: 0.5 });
+    
+    stats.forEach(stat => observer.observe(stat));
+  </script>
+</Base>

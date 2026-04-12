@@ -1,0 +1,134 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getCollection, render } from 'astro:content';
+
+export async function getStaticPaths() {
+  const locations = await getCollection('locations');
+  return locations.map((location) => ({
+    params: { slug: location.id.replace(/\.md$/, '') },
+    props: { location },
+  }));
+}
+
+const { location } = Astro.props;
+const { Content } = await render(location);
+
+const locationImages = {
+  'christchurch': '/images/Mana facebook pic.jpg',
+  'rangiora-north-canterbury': '/images/N2.jpg',
+  'selwyn-district': '/images/N4.jpg',
+  'ashburton-mid-canterbury': '/images/N6.jpg',
+};
+
+const defaultImage = '/images/N1.jpg';
+const heroImage = locationImages[location.id.replace(/\.md$/, '')] || defaultImage;
+---
+
+<Base title={location.data.title} description={location.data.description}>
+  <main id="main-content" class="pt-24 pb-16">
+    <!-- Hero Section with Image Background -->
+    <section class="relative py-20 md:py-28 bg-zinc-950">
+      <div class="absolute inset-0 z-0">
+        <div class="absolute inset-0 bg-gradient-to-r from-zinc-950 via-zinc-950/90 to-zinc-950/50 z-10"></div>
+        <img 
+          src={heroImage} 
+          alt={location.data.title} 
+          class="w-full h-full object-cover opacity-30"
+          loading="lazy"
+        />
+      </div>
+      <div class="container mx-auto px-6 relative z-20">
+        <div class="max-w-4xl reveal-on-scroll">
+          <div class="inline-flex items-center gap-2 bg-primary/10 border border-primary/30 px-4 py-2 mb-6">
+            <svg class="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M20.5 3l-.16.03L15 5.1 9 3 3.36 4.9c-.21.07-.36.25-.36.48V20.5c0 .28.22.5.5.5l.16-.03L9 18.9l6 2.1 5.64-1.9c.21-.07.36-.25.36-.48V3.5c0-.28-.22-.5-.5-.5zM15 19l-6-2.11V5l6 2.11V19z"/>
+            </svg>
+            <span class="text-label-xs font-bold text-primary uppercase tracking-widest">{location.data.region}</span>
+          </div>
+          <h1 class="text-3xl md:text-5xl lg:text-6xl font-headline font-black uppercase tracking-tighter text-white mb-6">
+            {location.data.title}
+          </h1>
+          <p class="text-lg md:text-xl text-zinc-400 leading-relaxed mb-8 max-w-2xl">
+            {location.data.description}
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a 
+              href="/contact" 
+              class="inline-flex items-center justify-center bg-primary text-white font-headline font-bold uppercase px-8 py-4 tracking-wider hover:bg-orange-600 transition-colors border-b-4 border-orange-800"
+            >
+              Get Local Quote
+            </a>
+            <a 
+              href="tel:0508626272" 
+              class="inline-flex items-center justify-center border-2 border-white/30 text-white font-headline font-bold uppercase px-8 py-4 tracking-wider hover:bg-white hover:text-black transition-colors"
+            >
+              Call 0508 626 272
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="py-16 bg-background">
+      <div class="container mx-auto px-6 max-w-4xl">
+        <div class="prose prose-invert prose-lg max-w-none reveal-on-scroll">
+          <Content />
+        </div>
+      </div>
+    </section>
+
+    <!-- Local Benefits Section -->
+    <section class="py-16 bg-surface border-t border-white/5">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-headline font-black uppercase text-white mb-8 text-center reveal-on-scroll">Why Choose Local?</h2>
+        <div class="grid md:grid-cols-2 gap-8 reveal-on-scroll">
+          <div class="bg-zinc-950 border border-white/5 p-8">
+            <h3 class="text-xl font-headline font-black uppercase text-white mb-3">Fast Response</h3>
+            <p class="text-zinc-500 text-sm">Our local team can assess your site and provide quotes within 24 hours.</p>
+          </div>
+          <div class="bg-zinc-950 border border-white/5 p-8">
+            <h3 class="text-xl font-headline font-black uppercase text-white mb-3">Area Knowledge</h3>
+            <p class="text-zinc-500 text-sm">We understand local conditions, council requirements, and site challenges.</p>
+          </div>
+          <div class="bg-zinc-950 border border-white/5 p-8">
+            <h3 class="text-xl font-headline font-black uppercase text-white mb-3">Local Support</h3>
+            <p class="text-zinc-500 text-sm">We're invested in the community and committed to local project success.</p>
+          </div>
+          <div class="bg-zinc-950 border border-white/5 p-8">
+            <h3 class="text-xl font-headline font-black uppercase text-white mb-3">No Travel Fees</h3>
+            <p class="text-zinc-500 text-sm">Being local means no extra travel charges for your project.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Local CTA -->
+    <section class="py-16 md:py-24 bg-background border-t border-white/5">
+      <div class="container mx-auto px-6 text-center">
+        <div class="reveal-on-scroll">
+          <h2 class="text-3xl md:text-5xl font-headline font-black uppercase text-white mb-6">
+            Scaffolding in <span class="text-primary">{location.data.location}</span>?
+          </h2>
+          <p class="text-lg text-zinc-400 mb-10 max-w-2xl mx-auto">
+            Our local team knows the area and is ready to deliver your project on time and on budget.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a 
+              href="/contact" 
+              class="bg-primary text-white font-headline font-bold uppercase px-8 py-4 tracking-wider hover:bg-orange-600 transition-colors border-b-4 border-orange-800"
+            >
+              Request Quote
+            </a>
+            <a 
+              href="/locations" 
+              class="border-2 border-white/30 text-white font-headline font-bold uppercase px-8 py-4 tracking-wider hover:bg-white hover:text-black transition-colors"
+            >
+              All Service Areas
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</Base>

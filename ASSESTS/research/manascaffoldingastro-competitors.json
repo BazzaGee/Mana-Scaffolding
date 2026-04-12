@@ -1,0 +1,327 @@
+{
+  "competitor_analysis": {
+    "analysis_date": "2026-04-03",
+    "subject_company": "MANA SCAFFOLDING LIMITED",
+    "market": "Christchurch/Canterbury Scaffolding Services",
+    "total_competitors_identified": 6
+  },
+  "direct_competitors": [
+    {
+      "rank": 1,
+      "name": "United Scaffolding Group New Zealand",
+      "threat_level": "HIGH",
+      "company_details": {
+        "headquarters": "Dunedin (with 7 branches nationwide)",
+        "christchurch_presence": true,
+        "founded": 1972,
+        "employees": "51-200",
+        "parent_company": "Waco International / Waco Australasia Group",
+        "ownership": "Subsidiary of multinational corporation"
+      },
+      "contact_information": {
+        "website": "https://unitedscaffolding.co.nz/",
+        "linkedin": "https://nz.linkedin.com/company/united-scaffolding",
+        "phone": "Not specified in search results"
+      },
+      "services": [
+        "Modular scaffolding systems (Kwikstage/Wedgelok)",
+        "Tube & fittings",
+        "Aluminium mobile towers",
+        "Vertical and horizontal formwork",
+        "Formwork consumables",
+        "Engineering drawings",
+        "On-site labour",
+        "Rope access",
+        "Encapsulation services"
+      ],
+      "target_markets": [
+        "Residential construction",
+        "Commercial construction",
+        "Industrial construction",
+        "Resource sector",
+        "Large-scale infrastructure"
+      ],
+      "competitive_advantages": [
+        "Part of Waco International (global company)",
+        "1.1+ million stock items inventory",
+        "7 branches across New Zealand",
+        "50+ years of experience",
+        "Quality Management System certified",
+        "Can deploy large resources at short notice",
+        "Manufacturing capabilities",
+        "National coverage with local expertise"
+      ],
+      "notable_projects": [
+        "Kilmore Street Hotel and Apartments (Christchurch)",
+        "Ramada Suites Hotel (Wellington)",
+        "Fiore 2 Apartments (Auckland)",
+        "Ryman Retirement Village Devonport"
+      ],
+      "weaknesses": [
+        "May be less personalized than smaller operators",
+        "Corporate structure may mean slower decision-making",
+        "Higher overhead costs"
+      ],
+      "market_positioning": "Market leader - full-service national provider"
+    },
+    {
+      "rank": 2,
+      "name": "Upright Scaffolding Ltd",
+      "threat_level": "MEDIUM-HIGH",
+      "company_details": {
+        "headquarters": "Christchurch",
+        "founded": "Over 70 years ago (circa 1950s)",
+        "ownership": "Family-owned business",
+        "employees": "Not specified"
+      },
+      "contact_information": {
+        "website": "https://www.uprightscaffolding.co.nz/",
+        "phone": "Not specified in search results"
+      },
+      "services": [
+        "Scaffolding construction",
+        "Scaffold solutions",
+        "Project management",
+        "Equipment hire",
+        "Installation services"
+      ],
+      "target_markets": [
+        "Residential",
+        "Commercial",
+        "Industrial",
+        "All weather access solutions"
+      ],
+      "competitive_advantages": [
+        "70+ years serving Christchurch",
+        "Family-owned with personal service",
+        "Strong local reputation",
+        "Safety and professionalism focus",
+        "Excellent customer service reputation",
+        "Technology adoption (worker comfort tech)",
+        "Established client relationships"
+      ],
+      "notable_clients": [
+        "Aurecon",
+        "Sinclair",
+        "Fulton Hogan",
+        "Simon Construction",
+        "Reynolds",
+        "Lyttelton",
+        "Carus",
+        "Stark",
+        "Ravensdown"
+      ],
+      "recent_initiatives": [
+        "Partnership with Upstream for charitable causes",
+        "Trialing new worker comfort technology (NZ first)"
+      ],
+      "weaknesses": [
+        "May lack resources of larger competitors",
+        "Christchurch-focused (limited geographic reach)"
+      ],
+      "market_positioning": "Established local specialist with strong relationships"
+    },
+    {
+      "rank": 3,
+      "name": "Secure Scaffold",
+      "threat_level": "MEDIUM",
+      "company_details": {
+        "headquarters": "Christchurch, Canterbury",
+        "service_area": "Christchurch and Canterbury region including rural/remote",
+        "employees": "Not specified"
+      },
+      "contact_information": {
+        "website": "https://scaffolders.co.nz/directory/scaffolding/christchurch/",
+        "phone": "0800 66 00 22"
+      },
+      "services": [
+        "Scaffolding services",
+        "Temporary fencing",
+        "Comprehensive scaffolding solutions"
+      ],
+      "target_markets": [
+        "Commercial projects",
+        "Residential projects",
+        "High-profile government projects",
+        "Rural and remote locations",
+        "High-country stations and lodges"
+      ],
+      "competitive_advantages": [
+        "Police-vetted staff",
+        "Security clearance for sensitive projects",
+        "NZ Defense Force contractor",
+        "Ministry of Education contractor",
+        "Safety-oriented approach",
+        "Willingness to work in remote areas",
+        "Leading Christchurch-based company"
+      ],
+      "notable_clients": [
+        "New Zealand Defense Force",
+        "Ministry of Education"
+      ],
+      "weaknesses": [
+        "Security focus may limit broader market appeal",
+        "Smaller scale than national competitors"
+      ],
+      "market_positioning": "Security-focused specialist for sensitive projects"
+    },
+    {
+      "rank": 4,
+      "name": "Canterbury Scaffolding",
+      "threat_level": "MEDIUM",
+      "company_details": {
+        "location": "489 Sawyers Arms Road, Harewood, Christchurch 8051",
+        "phone": "03 349 4269",
+        "email": "info@canterburyscaffolding.co.nz",
+        "website": "https://canterburyscaffolding.co.nz/"
+      },
+      "services": [
+        "Residential scaffolding",
+        "Commercial scaffolding",
+        "Demolition scaffolding",
+        "Falsework",
+        "Wide range of scaffolding services"
+      ],
+      "target_markets": [
+        "Residential construction",
+        "Commercial construction",
+        "Demolition projects"
+      ],
+      "competitive_advantages": [
+        "Local Christchurch presence",
+        "Diverse service offerings",
+        "Established Harewood location"
+      ],
+      "weaknesses": [
+        "Limited online presence",
+        "Single location"
+      ],
+      "market_positioning": "Local full-service provider"
+    },
+    {
+      "rank": 5,
+      "name": "Bramwell Scaffolding Ltd",
+      "threat_level": "LOW-MEDIUM",
+      "company_details": {
+        "headquarters": "Dunedin, Otago",
+        "branches": ["Dunedin", "Wanaka"],
+        "founded": "65+ years ago",
+        "parent_company": "Part of NZS Group Ltd"
+      },
+      "contact_information": {
+        "website": "https://bramwellscaffolding.co.nz/",
+        "phone": "0800 272 693",
+        "email": "enquiries@bramwellscaffolding.co.nz"
+      },
+      "services": [
+        "Scaffolding",
+        "Formwork",
+        "Propping",
+        "Events & Staging",
+        "Shrinkwrapping",
+        "Additional services and equipment hire"
+      ],
+      "target_markets": [
+        "Residential",
+        "Commercial",
+        "Industrial",
+        "Infrastructure",
+        "Events"
+      ],
+      "competitive_advantages": [
+        "65+ years of experience",
+        "Access to Layher scaffolding systems",
+        "Chartered engineering expertise",
+        "Part of NZS Group network",
+        "Strong customer testimonials",
+        "Long-term client relationships (40+ years with some clients)"
+      ],
+      "weaknesses": [
+        "Otago-focused (not direct Christchurch competitor)",
+        "May not actively target Canterbury market"
+      ],
+      "market_positioning": "Premium South Island specialist with engineering expertise"
+    },
+    {
+      "rank": 6,
+      "name": "Geeves Scaffolding",
+      "threat_level": "LOW-MEDIUM",
+      "company_details": {
+        "headquarters": "Multiple NZ locations",
+        "branches": ["Auckland", "Hamilton", "Hawke's Bay", "Wellington", "Timaru", "Dunedin"],
+        "ownership": "Part of NZS Group Ltd"
+      },
+      "contact_information": {
+        "website": "https://geeves.co.nz/"
+      },
+      "services": [
+        "Scaffolding services",
+        "Nationwide coverage"
+      ],
+      "target_markets": [
+        "Nationwide construction projects"
+      ],
+      "competitive_advantages": [
+        "Nationwide coverage",
+        "Multiple branch locations",
+        "Part of larger group"
+      ],
+      "weaknesses": [
+        "No direct Christchurch branch listed",
+        "May lack local market knowledge"
+      ],
+      "market_positioning": "National provider with broad coverage"
+    }
+  ],
+  "competitive_analysis_summary": {
+    "market_structure": "Fragmented with mix of national players and local specialists",
+    "mana_scaffolding_position": "Small-to-medium local specialist",
+    "key_competitive_factors": [
+      "Safety record and compliance",
+      "Equipment quality and availability",
+      "Skilled workforce",
+      "Project management capability",
+      "Client relationships",
+      "Geographic coverage",
+      "Pricing competitiveness",
+      "Specialization/niche expertise"
+    ],
+    "mana_scaffolding_differentiation": [
+      "International experience (Canada, UK)",
+      "Focus on complex projects",
+      "Local Christchurch/Canterbury knowledge",
+      "Ngāi Tahu whānau business connection",
+      "Personalized service as smaller operator"
+    ],
+    "market_gaps_opportunities": [
+      "Specialized industrial scaffolding",
+      "Heritage building restoration scaffolding",
+      "Emergency response scaffolding",
+      "Sustainable/green scaffolding solutions",
+      "Technology-enabled project management"
+    ]
+  },
+  "competitive_threats": {
+    "high_threat": [
+      "United Scaffolding Group - dominant player with resources",
+      "Upright Scaffolding - entrenched local competitor"
+    ],
+    "medium_threat": [
+      "Secure Scaffold - government contracts create barriers",
+      "Canterbury Scaffolding - direct local competition"
+    ],
+    "low_threat": [
+      "Bramwell Scaffolding - Otago focused",
+      "Geeves Scaffolding - no Christchurch presence"
+    ]
+  },
+  "recommended_strategies": [
+    "Focus on complex projects that larger competitors may overlook",
+    "Leverage international expertise as differentiation",
+    "Build partnerships with main contractors",
+    "Develop niche specialization (e.g., heritage, industrial)",
+    "Invest in digital presence to compete with established players",
+    "Pursue Ngāi Tahu business network opportunities",
+    "Emphasize personalized service and local knowledge"
+  ]
+}

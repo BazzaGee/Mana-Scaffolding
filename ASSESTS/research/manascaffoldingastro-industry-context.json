@@ -1,0 +1,380 @@
+{
+  "industry_research": {
+    "research_date": "2026-04-03",
+    "industry": "Scaffolding Services",
+    "geographic_focus": "New Zealand (Christchurch/Canterbury)",
+    "research_scope": "Market analysis, trends, regulations, and competitive dynamics"
+  },
+  "industry_overview": {
+    "definition": "The scaffolding industry provides temporary structures used to support workers and materials during construction, maintenance, and repair of buildings and other structures",
+    "industry_classification": {
+      "anzsic_code": "E30 - Construction Services",
+      "sub_sector": "Specialized Construction Services"
+    },
+    "market_size": {
+      "new_zealand": "Part of NZ's $38 billion construction industry",
+      "global": "Multi-billion dollar global market with steady growth"
+    },
+    "market_characteristics": [
+      "Fragmented with national and regional players",
+      "Project-based revenue model",
+      "High capital requirements for equipment",
+      "Labor-intensive with skilled workforce requirements",
+      "Safety-critical industry",
+      "Cyclical demand tied to construction activity",
+      "Relationship-driven business model"
+    ]
+  },
+  "new_zealand_market_dynamics": {
+    "market_drivers": [
+      "Christchurch rebuild ongoing post-earthquake",
+      "Auckland housing development",
+      "Infrastructure investment (roads, rail, utilities)",
+      "Commercial construction activity",
+      "Industrial facility maintenance",
+      "Government building projects"
+    ],
+    "market_constraints": [
+      "Skilled labor shortage",
+      "Rising material and equipment costs",
+      "Increasing regulatory compliance burden",
+      "Economic uncertainty affecting construction starts",
+      "Competition from informal operators"
+    ],
+    "regional_dynamics": {
+      "christchurch_canterbury": {
+        "market_condition": "Active rebuild market",
+        "key_segments": ["Residential rebuild", "Commercial reconstruction", "Infrastructure"],
+        "competition_level": "Moderate to High",
+        "growth_outlook": "Stable"
+      },
+      "auckland": {
+        "market_condition": "High activity housing market",
+        "key_segments": ["High-rise residential", "Commercial", "Infrastructure"],
+        "competition_level": "High",
+        "growth_outlook": "Growing"
+      },
+      "wellington": {
+        "market_condition": "Government and commercial focus",
+        "key_segments": ["Commercial", "Government buildings", "Seismic strengthening"],
+        "competition_level": "Moderate",
+        "growth_outlook": "Stable"
+      },
+      "otago_southland": {
+        "market_condition": "Tourism and infrastructure driven",
+        "key_segments": ["Tourism infrastructure", "Commercial", "Industrial"],
+        "competition_level": "Moderate",
+        "growth_outlook": "Stable"
+      }
+    }
+  },
+  "industry_trends": {
+    "technology_trends": [
+      {
+        "trend": "Modular System Scaffolding",
+        "description": "Shift from traditional tube-and-coupler to modular systems (Kwikstage, Wedgelok, Layher)",
+        "impact": "Faster erection/dismantling, improved safety, reduced labor costs",
+        "adoption_rate": "High"
+      },
+      {
+        "trend": "Digital Project Management",
+        "description": "Software for scheduling, resource allocation, and safety compliance tracking",
+        "impact": "Improved efficiency, better documentation, reduced errors",
+        "adoption_rate": "Growing"
+      },
+      {
+        "trend": "Worker Comfort Technology",
+        "description": "Innovations to reduce physical strain on scaffolders (e.g., ergonomic equipment)",
+        "impact": "Improved worker wellbeing, reduced injury rates, better retention",
+        "adoption_rate": "Emerging"
+      },
+      {
+        "trend": "BIM Integration",
+        "description": "Building Information Modeling integration for scaffolding design",
+        "impact": "Better planning, clash detection, accurate material estimation",
+        "adoption_rate": "Emerging in large projects"
+      }
+    ],
+    "sustainability_trends": [
+      {
+        "trend": "Equipment Longevity",
+        "description": "Focus on durable, long-lasting scaffolding systems",
+        "impact": "Reduced waste, lower lifecycle costs"
+      },
+      {
+        "trend": "Material Recycling",
+        "description": "Recycling of steel and aluminum components at end of life",
+        "impact": "Reduced environmental footprint"
+      },
+      {
+        "trend": "Efficient Logistics",
+        "description": "Optimized transportation and delivery routes",
+        "impact": "Reduced carbon emissions"
+      }
+    ],
+    "safety_trends": [
+      {
+        "trend": "Enhanced Safety Standards",
+        "description": "Continuous improvement in safety protocols and equipment",
+        "impact": "Reduced accidents, lower insurance costs"
+      },
+      {
+        "trend": "Worker Wellbeing Focus",
+        "description": "Attention to physical and mental health of workers",
+        "impact": "Better retention, reduced absenteeism"
+      },
+      {
+        "trend": "Safety Technology",
+        "description": "Use of sensors, monitoring systems for structural integrity",
+        "impact": "Proactive hazard identification"
+      }
+    ]
+  },
+  "regulatory_environment": {
+    "key_regulations": [
+      {
+        "name": "Health and Safety at Work Act 2015",
+        "description": "Primary health and safety legislation in NZ",
+        "requirements": [
+          "Primary duty of care for persons conducting business",
+          "Worker participation requirements",
+          "Notifiable event reporting",
+          "Significant penalty provisions for breaches"
+        ],
+        "impact": "High - fundamental to operations"
+      },
+      {
+        "name": "AS/NZS 1576 Scaffolding Standard",
+        "description": "Australian/New Zealand joint standard for scaffolding",
+        "parts": [
+          "Part 1: General requirements",
+          "Part 2: Couplers and accessories",
+          "Part 3: Prefabricated and tube-and-coupler scaffolding",
+          "Part 4: Cantilevered scaffolding",
+          "Part 5: Prefabricated splitheads and trestles",
+          "Part 6: Suspended scaffolding"
+        ],
+        "impact": "High - technical compliance required"
+      },
+      {
+        "name": "Building Act 2004",
+        "description": "Regulates building work in New Zealand",
+        "requirements": [
+          "Building consent requirements",
+          "Compliance with Building Code",
+          "Licensed Building Practitioner scheme"
+        ],
+        "impact": "Medium - affects scaffolding design approval"
+      },
+      {
+        "name": "Employment Relations Act 2000",
+        "description": "Governs employment relationships",
+        "requirements": [
+          "Employment agreements",
+          "Minimum wage compliance",
+          "Holiday and leave entitlements"
+        ],
+        "impact": "Medium - labor compliance"
+      }
+    ],
+    "certification_requirements": [
+      {
+        "name": "Scaffolders Certificate of Competence",
+        "issuer": "NZQA (New Zealand Qualifications Authority)",
+        "levels": [
+          "Basic Scaffolder",
+          "Advanced Scaffolder"
+        ],
+        "requirement": "Mandatory for scaffolding work"
+      },
+      {
+        "name": "Site Safe Passport",
+        "issuer": "Site Safe New Zealand",
+        "requirement": "Commonly required for construction sites"
+      }
+    ],
+    "industry_bodies": [
+      {
+        "name": "Scaffolding, Access & Rigging New Zealand (SARNZ)",
+        "role": "Industry association representing scaffolding companies",
+        "functions": ["Advocacy", "Training", "Industry standards", "Networking"]
+      },
+      {
+        "name": "Site Safe New Zealand",
+        "role": "Health and safety training and certification",
+        "functions": ["Training", "Certification", "Resources"]
+      },
+      {
+        "name": "Construction Industry Council (CIC)",
+        "role": "Peak body for construction sector",
+        "functions": ["Advocacy", "Policy", "Industry development"]
+      }
+    ]
+  },
+  "competitive_landscape": {
+    "market_structure": "Fragmented with mix of national and regional players",
+    "key_players_national": [
+      "United Scaffolding Group (Waco International)",
+      "NZS Group Ltd (Bramwell, Geeves, Canterbury Scaffolding)",
+      "Secure Scaffold"
+    ],
+    "key_players_regional": [
+      "Upright Scaffolding (Christchurch)",
+      "Mana Scaffolding (Christchurch)",
+      "Various local operators"
+    ],
+    "competitive_factors": [
+      "Safety record and compliance",
+      "Equipment quality and availability",
+      "Skilled workforce",
+      "Project management capability",
+      "Client relationships",
+      "Geographic coverage",
+      "Pricing",
+      "Specialization"
+    ],
+    "barriers_to_entry": [
+      "Capital requirements for equipment",
+      "Skilled labor availability",
+      "Safety compliance costs",
+      "Established relationships",
+      "Insurance requirements",
+      "Certification requirements"
+    ]
+  },
+  "customer_segments": {
+    "residential": {
+      "description": "Single-family homes, multi-unit residential",
+      "typical_projects": ["New builds", "Renovations", "Repairs", "Painting"],
+      "decision_factors": ["Price", "Availability", "Safety", "Speed"],
+      "project_duration": "Days to weeks",
+      "margin_profile": "Medium"
+    },
+    "commercial": {
+      "description": "Office buildings, retail, hospitality, mixed-use",
+      "typical_projects": ["New construction", "Fit-outs", "Maintenance", "Facade work"],
+      "decision_factors": ["Capability", "Safety", "Reliability", "Price"],
+      "project_duration": "Weeks to months",
+      "margin_profile": "Medium to High"
+    },
+    "industrial": {
+      "description": "Manufacturing facilities, warehouses, processing plants",
+      "typical_projects": ["Maintenance shutdowns", "Modifications", "Inspections"],
+      "decision_factors": ["Specialization", "Safety", "Availability", "Technical capability"],
+      "project_duration": "Days to months",
+      "margin_profile": "High"
+    },
+    "infrastructure": {
+      "description": "Bridges, tunnels, utilities, public works",
+      "typical_projects": ["Bridge maintenance", "Utility installation", "Public buildings"],
+      "decision_factors": ["Capability", "Safety", "Compliance", "Experience"],
+      "project_duration": "Months to years",
+      "margin_profile": "High"
+    },
+    "government": {
+      "description": "Defense, education, public sector buildings",
+      "typical_projects": ["Schools", "Defense facilities", "Public buildings"],
+      "decision_factors": ["Security clearance", "Compliance", "Safety", "Price"],
+      "project_duration": "Variable",
+      "margin_profile": "Medium"
+    }
+  },
+  "success_factors": {
+    "critical_success_factors": [
+      {
+        "factor": "Safety Performance",
+        "importance": "Critical",
+        "description": "Strong safety record is essential for winning work and maintaining insurance"
+      },
+      {
+        "factor": "Equipment Quality",
+        "importance": "High",
+        "description": "Well-maintained, modern equipment attracts quality clients"
+      },
+      {
+        "factor": "Skilled Workforce",
+        "importance": "Critical",
+        "description": "Certified, experienced scaffolders are scarce and valuable"
+      },
+      {
+        "factor": "Client Relationships",
+        "importance": "High",
+        "description": "Repeat business and referrals drive sustainable growth"
+      },
+      {
+        "factor": "Financial Management",
+        "importance": "High",
+        "description": "Cash flow management critical in project-based business"
+      },
+      {
+        "factor": "Operational Efficiency",
+        "importance": "Medium-High",
+        "description": "Efficient logistics and scheduling drive margins"
+      }
+    ]
+  },
+  "opportunities_for_mana_scaffolding": [
+    {
+      "opportunity": "Christchurch Rebuild",
+      "description": "Ongoing reconstruction and development in Christchurch",
+      "potential": "High",
+      "requirements": ["Capacity", "Relationships with main contractors"]
+    },
+    {
+      "opportunity": "Ngāi Tahu Business Network",
+      "description": "Access to iwi business opportunities and partnerships",
+      "potential": "Medium-High",
+      "requirements": ["Active participation", "Relationship building"]
+    },
+    {
+      "opportunity": "Specialized Industrial Work",
+      "description": "Focus on complex industrial projects requiring expertise",
+      "potential": "Medium",
+      "requirements": ["Specialized training", "Equipment investment"]
+    },
+    {
+      "opportunity": "Digital Marketing",
+      "description": "Improve online presence to attract new customers",
+      "potential": "Medium",
+      "requirements": ["Website completion", "SEO", "Content marketing"]
+    },
+    {
+      "opportunity": "Partnership with Main Contractors",
+      "description": "Preferred supplier relationships with construction companies",
+      "potential": "High",
+      "requirements": ["Proven track record", "Competitive pricing", "Reliability"]
+    }
+  ],
+  "threats_for_mana_scaffolding": [
+    {
+      "threat": "Economic Downturn",
+      "description": "Construction activity reduction in economic downturn",
+      "severity": "High",
+      "mitigation": ["Diversify customer base", "Build cash reserves"]
+    },
+    {
+      "threat": "Skilled Labor Shortage",
+      "description": "Difficulty finding and retaining qualified scaffolders",
+      "severity": "High",
+      "mitigation": ["Training programs", "Competitive compensation", "Good culture"]
+    },
+    {
+      "threat": "Large Competitor Dominance",
+      "description": "United Scaffolding and others have significant resources",
+      "severity": "Medium",
+      "mitigation": ["Niche focus", "Personalized service", "Local expertise"]
+    },
+    {
+      "threat": "Regulatory Changes",
+      "description": "Increasing compliance requirements and costs",
+      "severity": "Medium",
+      "mitigation": ["Stay informed", "Proactive compliance", "Industry association membership"]
+    },
+    {
+      "threat": "Material Cost Inflation",
+      "description": "Rising costs of steel, aluminum, and other materials",
+      "severity": "Medium",
+      "mitigation": ["Price adjustments", "Efficient operations", "Long-term supplier relationships"]
+    }
+  ]
+}

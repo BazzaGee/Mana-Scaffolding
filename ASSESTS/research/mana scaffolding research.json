@@ -1,0 +1,43 @@
+{
+  "company_profile": {
+    "company_name": "MANA SCAFFOLDING LIMITED",
+    "last_updated": "March 20, 2026",
+    "about": "MANA SCAFFOLDING LIMITED is a Private Limited Company and was incorporated on Oct 24, 2019 in New Zealand.",
+    "key_metrics": {
+      "cin": "7795497",
+      "current_status": "Active",
+      "entity_type": "Private Limited Company",
+      "date_of_incorporation": "October 24, 2019",
+      "country_of_origin": "New Zealand"
+    },
+    "contact_details": {
+      "registered_address": "65c Highsted Road, Bishopdale, Christchurch, 8053, New Zealand"
+    },
+    "shareholding_and_cap_table": {
+      "as_of_date": "September 03, 2024",
+      "shareholders": [
+        {
+          "name": "Terry Alan POHATU",
+          "holdings_percentage": "67.00%",
+          "total_shares": null
+        }
+      ]
+    },
+    "board_of_directors": [
+      {
+        "name": "Terry Alan POHATU",
+        "designation": null,
+        "status": "Current",
+        "appointment_date": "October 24, 2019",
+        "duration": "6 Years 4 Months"
+      },
+      {
+        "name": "Keith William TIMMINS",
+        "designation": null,
+        "status": "Current",
+        "appointment_date": "May 14, 2023",
+        "duration": "2 Years 10 Months"
+      }
+    ]
+  }
+}

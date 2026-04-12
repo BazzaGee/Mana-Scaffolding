@@ -1,0 +1,134 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+
+const blogPosts = await getCollection('blog');
+const sortedPosts = blogPosts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+const categoryImages: Record<string, string> = {
+  'Safety': '/images/blog/safety.svg',
+  'Guide': '/images/blog/guide.svg',
+  'Costs': '/images/blog/costs.svg',
+  'Industrial': '/images/blog/industrial.svg',
+  'Residential': '/images/blog/residential.svg',
+  'Commercial': '/images/blog/commercial.svg',
+  'Planning': '/images/blog/planning.svg',
+  'Weather': '/images/blog/weather.svg',
+  'Inspection': '/images/blog/inspection.svg',
+  'Seismic': '/images/blog/seismic.svg',
+  'Access': '/images/blog/access.svg',
+  'Roof': '/images/blog/roof.svg',
+};
+
+function getImageForPost(post: any): string {
+  const category = post.data.category;
+  const title = post.data.title.toLowerCase();
+  
+  // Direct category match
+  if (categoryImages[category]) {
+    return categoryImages[category];
+  }
+  
+  // Keyword matching
+  if (title.includes('safety') || title.includes('accident') || title.includes('incident')) {
+    return categoryImages['Safety'];
+  }
+  if (title.includes('guide') || title.includes('how to') || title.includes('tips')) {
+    return categoryImages['Guide'];
+  }
+  if (title.includes('cost') || title.includes('price') || title.includes('hire')) {
+    return categoryImages['Costs'];
+  }
+  if (title.includes('industrial')) {
+    return categoryImages['Industrial'];
+  }
+  if (title.includes('residential') || title.includes('home') || title.includes('house')) {
+    return categoryImages['Residential'];
+  }
+  if (title.includes('commercial') || title.includes('office') || title.includes('retail')) {
+    return categoryImages['Commercial'];
+  }
+  if (title.includes('plan') || title.includes('timeline') || title.includes('schedule')) {
+    return categoryImages['Planning'];
+  }
+  if (title.includes('weather') || title.includes('winter') || title.includes('rain')) {
+    return categoryImages['Weather'];
+  }
+  if (title.includes('inspect') || title.includes('check') || title.includes('requirement')) {
+    return categoryImages['Inspection'];
+  }
+  if (title.includes('seismic') || title.includes('earthquake') || title.includes('christchurch')) {
+    return categoryImages['Seismic'];
+  }
+  if (title.includes('access') || title.includes('complex')) {
+    return categoryImages['Access'];
+  }
+  if (title.includes('roof')) {
+    return categoryImages['Roof'];
+  }
+  
+  // Default to safety image
+  return categoryImages['Safety'];
+}
+---
+
+<Base title="Blog" description="Scaffolding insights, safety guides, and industry knowledge from Mana Scaffolding">
+  <main id="main-content" class="pt-24 pb-16">
+    <section class="py-20 bg-background">
+      <div class="container mx-auto px-6">
+        <h1 class="text-4xl md:text-6xl font-headline font-black uppercase tracking-tighter mb-6 reveal-on-scroll">
+          Scaffolding <span class="text-primary">Insights</span>
+        </h1>
+        <p class="text-zinc-400 text-lg max-w-2xl mb-16 reveal-on-scroll">
+          Industry knowledge, safety guides, and expert advice from Canterbury's scaffolding specialists.
+        </p>
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {sortedPosts.map((post) => {
+            const blogImage = getImageForPost(post);
+            return (
+              <a href={`/blog/${post.id.replace(/\.md$/, '')}`} class="block group reveal-on-scroll">
+                <article class="bg-surface border border-white/5 overflow-hidden hover:border-primary/30 transition-all duration-300 h-full">
+                  <div class="aspect-video bg-zinc-900 overflow-hidden">
+                    <img 
+                      src={blogImage} 
+                      alt={post.data.title}
+                      class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="p-6">
+                    <div class="flex items-center gap-3 mb-3">
+                      <span class="text-label-xs font-bold text-primary uppercase tracking-widest">{post.data.category}</span>
+                      <span class="text-zinc-600">•</span>
+                      <span class="text-label-xs text-zinc-500">{post.data.pubDate.toLocaleDateString('en-NZ', { year: 'numeric', month: 'short', day: 'numeric' })}</span>
+                    </div>
+                    <h2 class="text-xl font-headline font-black uppercase text-white mb-3 group-hover:text-primary transition-colors line-clamp-2">
+                      {post.data.title}
+                    </h2>
+                    <p class="text-zinc-500 text-sm leading-relaxed mb-4 line-clamp-2">
+                      {post.data.description}
+                    </p>
+                    <div class="flex flex-wrap gap-2 pt-4 border-t border-white/5">
+                      {post.data.tags.slice(0, 3).map((tag) => (
+                        <span class="text-[10px] uppercase tracking-wider bg-primary/10 border border-primary/20 px-3 py-1 text-primary font-medium">
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
+                    <div class="flex items-center gap-2 text-primary font-headline font-bold uppercase tracking-widest text-xs mt-4">
+                      Read Article
+                      <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
+                      </svg>
+                    </div>
+                  </div>
+                </article>
+              </a>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+  </main>
+</Base>

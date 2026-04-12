@@ -1,0 +1,154 @@
+{
+  "system_name": "Industrial Monolith",
+  "creative_north_star": "The Structural Vanguard",
+  "version": "1.0",
+  "description": "Forged from the aesthetics of heavy infrastructure, precision engineering, and high-stakes craftsmanship",
+  "colors": {
+    "primary": "#D4441C",
+    "on_primary": "#FFFFFF",
+    "background": "#050505",
+    "surface": "#0f0f0f",
+    "surface_variant": "#1a1a1a",
+    "outline": "#2a2a2a",
+    "elevation_levels": {
+      "level_0_background": "#000000",
+      "level_1_surface": "#0a0a0a",
+      "level_2_container": "#1e1e1e"
+    }
+  },
+  "typography": {
+    "display": {
+      "font": "Space Grotesk",
+      "weights": ["300", "400", "500", "600", "700"],
+      "usage": "Headlines, display text, all-caps industrial cadence"
+    },
+    "body": {
+      "font": "Manrope",
+      "weights": ["300", "400", "500", "600", "700"],
+      "usage": "Long-form content, body text, functional readability"
+    },
+    "scale": {
+      "display_xl": "120px",
+      "headline_large": "60px-80px",
+      "title_subhead": "36px-48px",
+      "body_large": "20px",
+      "body_standard": "14px-16px",
+      "label_utility": "10px-12px"
+    },
+    "tracking": {
+      "display": "-0.02em",
+      "label": "0.2em-0.4em"
+    }
+  },
+  "elevation": {
+    "structural_shadow": "10px 10px 20px rgba(0, 0, 0, 0.4)",
+    "inset_pipe_shadow": "inset -2px 0 5px rgba(0, 0, 0, 0.5)",
+    "glassmorphism": "backdrop-blur-md with 90% opacity background"
+  },
+  "components": {
+    "buttons": {
+      "primary": {
+        "corners": 0,
+        "background": "#D4441C",
+        "text_color": "#FFFFFF",
+        "text_case": "uppercase",
+        "tracking": "wide"
+      },
+      "ghost": {
+        "border": "1px rgba(255,255,255,0.2)",
+        "background": "transparent",
+        "hover_overlay": "10% white"
+      }
+    },
+    "industrial_slabs": {
+      "background": "linear-gradient(145deg, #1e1e1e, #141414)",
+      "accent": "4px solid primary left border",
+      "interaction": "hover progress line expands 0% to 100%"
+    },
+    "progress_scaffolding": {
+      "type": "vertical bar",
+      "shadow": "0 0 15px rgba(230,57,70,0.8)",
+      "purpose": "page scroll tracking"
+    },
+    "input_fields": {
+      "background": "#1a1a1a",
+      "border": "bottom-only or minimal 1px outline #3f3f3f",
+      "focus": "primary red border"
+    }
+  },
+  "spacing": {
+    "base_unit": "4px",
+    "scale": [4, 8, 12, 16, 20, 24, 32, 40, 48, 64, 80, 96, 128]
+  },
+  "grid": {
+    "scaffolding_grid": {
+      "background_image": "linear-gradient to right rgba(212, 68, 28, 0.05) 1px, linear-gradient to bottom rgba(212, 68, 28, 0.05) 1px",
+      "size": "40px 40px"
+    }
+  },
+  "animation": {
+    "reveal_on_scroll": {
+      "initial": "opacity 0, translateY 30px",
+      "visible": "opacity 1, translateY 0",
+      "duration": "0.8s",
+      "easing": "ease-out"
+    },
+    "hero_shatter": {
+      "effect": "hover transform scale 1.1, color shift to primary",
+      "duration": "0.3s"
+    }
+  },
+  "constraints": {
+    "radius_max": "4px",
+    "borders_for_layout": false,
+    "sectioning": "background color shifts only",
+    "no_soft_gradients": true,
+    "icons_must_be": "technical blueprint feel",
+    "high_contrast_photos": "grayscale only"
+  },
+  "sections": [
+    {
+      "id": "hero",
+      "name": "Dynamic Shatter Hero",
+      "elements": ["title", "subtitle", "cta_buttons", "scaffolding_grid_bg"]
+    },
+    {
+      "id": "identity",
+      "name": "The Mana Identity",
+      "elements": ["story", "values", "image", "accent_box"]
+    },
+    {
+      "id": "expertise",
+      "name": "International DNA",
+      "elements": ["directors_cards", "quotes", "progress_bars"]
+    },
+    {
+      "id": "services",
+      "name": "Specialized Capabilities",
+      "elements": ["service_cards_grid", "industrial_slabs", "icons"]
+    },
+    {
+      "id": "gallery",
+      "name": "Project Portfolio",
+      "elements": ["horizontal_scroll", "gallery_items", "navigation_buttons"]
+    },
+    {
+      "id": "advantage",
+      "name": "The Mana Edge",
+      "elements": ["comparison_cards", "strengths_grid", "features"]
+    },
+    {
+      "id": "contact",
+      "name": "Contact & Estimate",
+      "elements": ["form", "contact_info", "cta"]
+    }
+  ],
+  "responsive": {
+    "breakpoints": {
+      "mobile": "320px",
+      "tablet": "768px",
+      "desktop": "1024px",
+      "large": "1440px"
+    }
+  }
+}

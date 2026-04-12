@@ -1,0 +1,46 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build outputs
+dist/
+.astro/
+.astro-build-state.json
+
+# Logs
+logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# Playwright
+.playwright-mcp/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Testing
+coverage/
+
+# Temporary files
+*.tmp
+*.temp
+temp/
+
+# ASSESTS folder (keep research but exclude node_modules)
+ASSESTS/timelapse-video/node_modules/
+ASSESTS/timelapse-video/dist/

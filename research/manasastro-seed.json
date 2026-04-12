@@ -1,0 +1,85 @@
+{
+  "business_name": "Mana Scaffolding Limited",
+  "trading_name": "Mana Scaffolding",
+  "address": "65c Highsted Road, Bishopdale, Christchurch 8053, Canterbury, New Zealand",
+  "phone": "0508 626 272",
+  "email": "terry@manascaffolding.co.nz",
+  "industry": "Scaffolding Construction Services",
+  "business_description": "Scaffolding construction services provider specializing in residential, commercial, and industrial scaffolding solutions across Canterbury region",
+  "tagline": "Kia Ora, we're Mana Scaffolding. We provide a complete scaffolding service across Canterbury.",
+  "exact_identifiers": {
+    "website": "https://www.manascaffolding.co.nz/",
+    "facebook": "https://www.facebook.com/p/Mana-Scaffolding-Ltd-61559601844506/",
+    "google_business_profile": null,
+    "linkedin": null,
+    "instagram": null
+  },
+  "company_details": {
+    "company_number": "7795497",
+    "nzbn": "9429032545562",
+    "entity_type": "Private Limited Company",
+    "incorporation_date": "2019-10-24",
+    "company_status": "Active"
+  },
+  "service_area": [
+    "Christchurch",
+    "Canterbury Region",
+    "South Island, New Zealand"
+  ],
+  "services": [
+    "Residential scaffolding",
+    "Commercial scaffolding",
+    "Industrial scaffolding",
+    "Custom scaffolding solutions",
+    "Scaffold hire and installation",
+    "Temporary access solutions",
+    "Safety-oriented scaffolding services"
+  ],
+  "target_markets": [
+    "Residential construction",
+    "Commercial construction",
+    "Industrial projects",
+    "Complex construction projects",
+    "Canterbury region businesses"
+  ],
+  "directors": [
+    {
+      "name": "Terry Alan POHATU",
+      "role": "Founder & Director",
+      "appointment_date": "2019-10-24",
+      "share_percentage": 67.00
+    },
+    {
+      "name": "Keith William TIMMINS",
+      "role": "Director",
+      "appointment_date": "2023-05-14",
+      "share_percentage": 33.00
+    }
+  ],
+  "brand_values": {
+    "mana_meaning": "In Māori culture, 'mana' refers to prestige, authority, control, power, influence, status, spiritual power, and charisma",
+    "cultural_connection": "High - authentic Māori business identity",
+    "international_expertise": "Directors bring experience from Canada and UK",
+    "complex_projects": "Reputation for tackling challenging scaffolding projects"
+  },
+  "competitive_advantages": [
+    "International experience from directors (Canada, UK)",
+    "Specialization in complex projects",
+    "Local Christchurch/Canterbury focus",
+    "Māori business identity (potential Ngāi Tahu connection)",
+    "Personalized service as smaller operator"
+  ],
+  "coordinates": {
+    "latitude": -43.4975,
+    "longitude": 172.6036
+  },
+  "custom_domain": null,
+  "existing_assets": {
+    "logo": "Available at https://images.squarespace-cdn.com/content/v1/5f4a0ea98a35d1237830ccce/1598773717067-QOB4W0WG9JYWXXRV7JF7/Mana+Scaffolding+Logo.png",
+    "website_status": "Coming Soon page on Squarespace",
+    "facebook_page": "Active",
+    "facebook_images": "Available in ASSESTS/Facebook Images/",
+    "timelapse_video": "Available in ASSESTS/timelapse-video/out/timelapse.mp4",
+    "research_files": "Comprehensive research in ASSESTS/research/"
+  }
+}

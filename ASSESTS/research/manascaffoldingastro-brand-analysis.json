@@ -1,0 +1,430 @@
+{
+  "brand_analysis": {
+    "analysis_date": "2026-04-03",
+    "business_name": "MANA SCAFFOLDING LIMITED",
+    "trading_name": "Mana Scaffolding",
+    "analysis_scope": "Brand identity, positioning, messaging, and visual presence"
+  },
+  "brand_identity": {
+    "brand_name": {
+      "legal_name": "MANA SCAFFOLDING LIMITED",
+      "trading_name": "Mana Scaffolding",
+      "name_analysis": {
+        "mana_meaning": "In Māori culture, 'mana' refers to prestige, authority, control, power, influence, status, spiritual power, and charisma. It represents a person or organization's standing and reputation in the community.",
+        "cultural_significance": "High - the name connects the business to New Zealand's indigenous Māori culture and values",
+        "memorability": "High - short, distinctive, meaningful",
+        "pronunciation": "Simple - 'Mah-nah'",
+        "brand_strength": "Strong cultural connection, authentic New Zealand identity"
+      }
+    },
+    "tagline": {
+      "primary": "Kia Ora, we're Mana Scaffolding. We provide a complete scaffolding service across Canterbury.",
+      "language": "Bilingual (Māori greeting + English)",
+      "tone": "Friendly, welcoming, professional",
+      "kia_ora_meaning": "Traditional Māori greeting meaning 'hello', 'thank you', or literally 'be well/healthy'",
+      "cultural_authenticity": "High - appropriate use of te reo Māori"
+    },
+    "brand_values": {
+      "inferred_values": [
+        {
+          "value": "Excellence",
+          "evidence": "Reputation for tackling complex projects",
+          "strength": "Medium"
+        },
+        {
+          "value": "Cultural Connection",
+          "evidence": "Use of Māori name and greeting, potential Ngāi Tahu connection",
+          "strength": "High"
+        },
+        {
+          "value": "Expertise",
+          "evidence": "Directors with international experience",
+          "strength": "High"
+        },
+        {
+          "value": "Reliability",
+          "evidence": "Operating since 2019, established presence",
+          "strength": "Medium"
+        },
+        {
+          "value": "Safety",
+          "evidence": "Industry standard, implied in service offering",
+          "strength": "Medium"
+        }
+      ]
+    },
+    "brand_personality": {
+      "traits": [
+        "Professional",
+        "Culturally-grounded",
+        "Experienced",
+        "Capable",
+        "Local",
+        "Approachable"
+      ],
+      "tone_of_voice": "Professional yet friendly, culturally aware, confident without being boastful"
+    }
+  },
+  "visual_identity": {
+    "logo": {
+      "status": "Present",
+      "url": "https://images.squarespace-cdn.com/content/v1/5f4a0ea98a35d1237830ccce/1598773717067-QOB4W0WG9JYWXXRV7JF7/Mana+Scaffolding+Logo.png",
+      "format": "PNG",
+      "location": "Website header, Facebook page",
+      "design_elements": "Not fully visible in available sources",
+      "quality": "Professional",
+      "consistency": "Consistent across channels",
+      "recommendations": "Obtain high-resolution version and brand guidelines"
+    },
+    "color_scheme": {
+      "status": "Not fully determined from available sources",
+      "website_colors": "Squarespace template defaults (white, black)",
+      "recommendations": "Define brand color palette for consistency"
+    },
+    "typography": {
+      "status": "Not defined in visible materials",
+      "website": "Squarespace default fonts",
+      "recommendations": "Define brand typography guidelines"
+    },
+    "imagery": {
+      "status": "Limited - website under construction",
+      "available_images": [
+        "Company logo",
+        "Website placeholder image"
+      ],
+      "missing_imagery": [
+        "Project photos",
+        "Team photos",
+        "Equipment photos",
+        "Before/after project images",
+        "Action shots of scaffolding work"
+      ],
+      "recommendations": "Develop comprehensive photo library of projects and team"
+    }
+  },
+  "brand_positioning": {
+    "market_position": "Local specialist with international expertise",
+    "target_audience": [
+      "Commercial construction companies",
+      "Residential builders",
+      "Industrial facility managers",
+      "Project managers",
+      "Main contractors",
+      "Property developers"
+    ],
+    "unique_value_proposition": {
+      "current": "Complete scaffolding service across Canterbury with directors bringing international experience",
+      "strengths": [
+        "International expertise (Canada, UK)",
+        "Complex project specialization",
+        "Local Canterbury knowledge",
+        "Cultural connection (Māori business identity)",
+        "Personalized service"
+      ],
+      "differentiation": "Combination of international best practices with local knowledge and cultural values"
+    },
+    "competitive_positioning": {
+      "vs_large_competitors": "More personalized, agile, culturally-connected alternative to corporate providers",
+      "vs_small_competitors": "More experienced (international expertise), capable of complex projects",
+      "positioning_statement": "Mana Scaffolding combines international expertise with local knowledge to deliver complex scaffolding solutions across Canterbury, grounded in Māori values of excellence and community connection."
+    }
+  },
+  "brand_messaging": {
+    "key_messages": [
+      {
+        "message": "Complete scaffolding service across Canterbury",
+        "audience": "All customers",
+        "channel": "Website, Facebook",
+        "effectiveness": "Clear but basic"
+      },
+      {
+        "message": "Directors with international experience",
+        "audience": "Commercial/industrial clients",
+        "channel": "Business South Magazine feature",
+        "effectiveness": "Strong differentiator"
+      },
+      {
+        "message": "Reputation for tackling complex projects",
+        "audience": "Commercial/industrial clients",
+        "channel": "Media coverage",
+        "effectiveness": "Strong capability signal"
+      }
+    ],
+    "messaging_gaps": [
+      "Safety record and certifications",
+      "Specific service offerings",
+      "Project success stories",
+      "Customer testimonials",
+      "Company history and story",
+      "Team expertise and qualifications"
+    ],
+    "recommended_messaging": [
+      "Emphasize Māori business values (mana, whanaungatanga/relationships)",
+      "Highlight international best practices",
+      "Showcase complex project capabilities",
+      "Share customer success stories",
+      "Communicate safety commitment"
+    ]
+  },
+  "brand_presence": {
+    "digital_presence": {
+      "website": {
+        "url": "https://www.manascaffolding.co.nz/",
+        "status": "Under construction",
+        "brand_consistency": "Logo present, minimal content",
+        "user_experience": "Basic - contact information only",
+        "brand_expression": "Limited due to placeholder status",
+        "recommendations": "Complete website with full brand expression"
+      },
+      "social_media": {
+        "facebook": {
+          "url": "https://www.facebook.com/p/Mana-Scaffolding-Ltd-61559601844506/",
+          "status": "Active",
+          "brand_consistency": "Consistent with website",
+          "activity_level": "Low",
+          "engagement": "Featured in Business South Magazine posts",
+          "recommendations": "Increase posting frequency, share project updates"
+        },
+        "linkedin": {
+          "status": "Not found",
+          "recommendations": "Consider LinkedIn for B2B presence"
+        },
+        "instagram": {
+          "status": "Not found",
+          "recommendations": "Consider Instagram for visual project showcase"
+        }
+      },
+      "google_business": {
+        "status": "Not verified in search results",
+        "recommendations": "Claim and optimize Google Business Profile"
+      }
+    },
+    "offline_presence": {
+      "physical_location": {
+        "status": "Registered address only",
+        "visibility": "Unknown",
+        "signage": "Not documented",
+        "recommendations": "Document physical location and signage"
+      },
+      "vehicle_branding": {
+        "status": "Not documented",
+        "recommendations": "Photo document company vehicles if branded"
+      },
+      "uniforms_ppe": {
+        "status": "Not documented",
+        "recommendations": "Photo document branded uniforms and PPE"
+      },
+      "print_materials": {
+        "status": "Not available online",
+        "recommendations": "Request copies of business cards, brochures, etc."
+      }
+    },
+    "media_presence": {
+      "media_mentions": [
+        {
+          "source": "Business South Magazine",
+          "type": "Feature article",
+          "sentiment": "Positive",
+          "key_message": "International expertise, complex project capability",
+          "brand_impact": "Positive - enhances credibility"
+        }
+      ],
+      "industry_recognition": {
+        "status": "Not documented",
+        "recommendations": "Pursue industry awards and recognition"
+      }
+    }
+  },
+  "brand_strengths": [
+    {
+      "strength": "Cultural Authenticity",
+      "description": "Genuine Māori business identity with meaningful name",
+      "impact": "High - differentiates in NZ market, connects with values-driven clients"
+    },
+    {
+      "strength": "International Expertise",
+      "description": "Directors with experience from Canada and UK",
+      "impact": "High - brings global best practices to local market"
+    },
+    {
+      "strength": "Complex Project Capability",
+      "description": "Reputation for tackling challenging projects",
+      "impact": "High - positions above basic residential work"
+    },
+    {
+      "strength": "Established Business",
+      "description": "Operating since 2019 with stable ownership",
+      "impact": "Medium - demonstrates reliability and longevity"
+    },
+    {
+      "strength": "Local Focus",
+      "description": "Canterbury-wide service area",
+      "impact": "Medium - strong local market knowledge"
+    }
+  ],
+  "brand_weaknesses": [
+    {
+      "weakness": "Limited Digital Presence",
+      "description": "Website under construction, minimal social media",
+      "impact": "High - reduces visibility and credibility",
+      "recommendation": "Complete website urgently, increase social activity"
+    },
+    {
+      "weakness": "No Project Portfolio",
+      "description": "No visible project photos or case studies",
+      "impact": "High - cannot demonstrate capabilities visually",
+      "recommendation": "Gather and publish project photos with descriptions"
+    },
+    {
+      "weakness": "Undefined Visual Identity",
+      "description": "Logo exists but no visible brand guidelines",
+      "impact": "Medium - inconsistency risk as brand grows",
+      "recommendation": "Develop brand guidelines document"
+    },
+    {
+      "weakness": "Limited Content Marketing",
+      "description": "No blog, news, or educational content",
+      "impact": "Medium - missing SEO and thought leadership opportunities",
+      "recommendation": "Develop content strategy"
+    },
+    {
+      "weakness": "No Customer Testimonials",
+      "description": "No visible customer reviews or testimonials",
+      "impact": "Medium - reduces social proof",
+      "recommendation": "Collect and publish customer testimonials"
+    }
+  ],
+  "brand_opportunities": [
+    {
+      "opportunity": "Māori Business Network",
+      "description": "Leverage cultural identity through Ngāi Tahu and Māori business networks",
+      "potential_impact": "High - access to iwi procurement opportunities",
+      "action_required": "Join Te Rūnanga o Ngāi Tahu business directory, attend networking events"
+    },
+    {
+      "opportunity": "Content Marketing",
+      "description": "Share project updates, safety tips, industry insights",
+      "potential_impact": "Medium - improve SEO and thought leadership",
+      "action_required": "Develop content calendar, assign responsibility"
+    },
+    {
+      "opportunity": "Project Showcase",
+      "description": "Document and showcase complex projects",
+      "potential_impact": "High - demonstrate capabilities to prospects",
+      "action_required": "Photograph all projects, write case studies"
+    },
+    {
+      "opportunity": "Industry Partnerships",
+      "description": "Partner with main contractors, industry bodies",
+      "potential_impact": "High - referral business and credibility",
+      "action_required": "Join SARNZ, attend industry events"
+    },
+    {
+      "opportunity": "Digital Marketing",
+      "description": "SEO, Google Ads, social media advertising",
+      "potential_impact": "Medium - increase visibility to prospects",
+      "action_required": "Complete website, develop digital marketing strategy"
+    }
+  ],
+  "brand_threats": [
+    {
+      "threat": "Competitor Digital Dominance",
+      "description": "Competitors like United Scaffolding have strong online presence",
+      "severity": "High",
+      "mitigation": "Accelerate website development and digital marketing"
+    },
+    {
+      "threat": "Brand Confusion",
+      "description": "Limited brand expression may cause confusion with competitors",
+      "severity": "Medium",
+      "mitigation": "Develop distinctive visual identity and messaging"
+    },
+    {
+      "threat": "Reputation Risk",
+      "description": "Limited online reviews means no buffer against negative feedback",
+      "severity": "Medium",
+      "mitigation": "Proactively collect positive customer testimonials"
+    }
+  ],
+  "brand_recommendations": {
+    "immediate_actions": [
+      {
+        "action": "Complete Website",
+        "priority": "Critical",
+        "timeline": "1-2 months",
+        "description": "Launch full website with services, portfolio, about us, contact"
+      },
+      {
+        "action": "Google Business Profile",
+        "priority": "High",
+        "timeline": "1-2 weeks",
+        "description": "Claim and optimize Google Business Profile listing"
+      },
+      {
+        "action": "Project Photography",
+        "priority": "High",
+        "timeline": "Ongoing",
+        "description": "Photograph all current and future projects"
+      },
+      {
+        "action": "Customer Testimonials",
+        "priority": "High",
+        "timeline": "1 month",
+        "description": "Request and collect testimonials from satisfied customers"
+      }
+    ],
+    "strategic_initiatives": [
+      {
+        "initiative": "Brand Guidelines",
+        "timeline": "2-3 months",
+        "description": "Develop comprehensive brand guidelines (logo usage, colors, typography, voice)"
+      },
+      {
+        "initiative": "Content Strategy",
+        "timeline": "2-3 months",
+        "description": "Develop content marketing strategy with regular publishing schedule"
+      },
+      {
+        "initiative": "Social Media Strategy",
+        "timeline": "1-2 months",
+        "description": "Define social media presence, posting schedule, content themes"
+      },
+      {
+        "initiative": "Print Collateral",
+        "timeline": "2-3 months",
+        "description": "Create company brochure, capability statement, business cards"
+      }
+    ],
+    "cultural_positioning": [
+      {
+        "initiative": "Māori Business Identity",
+        "description": "Emphasize mana and Māori values in brand messaging",
+        "benefit": "Authentic differentiation in NZ market"
+      },
+      {
+        "initiative": "Ngāi Tahu Partnership",
+        "description": "Engage with Ngāi Tahu business network if applicable",
+        "benefit": "Access to iwi procurement and partnerships"
+      },
+      {
+        "initiative": "Cultural Authenticity",
+        "description": "Ensure appropriate use of te reo Māori and cultural elements",
+        "benefit": "Respectful, authentic brand expression"
+      }
+    ]
+  },
+  "brand_audit_summary": {
+    "overall_brand_health": "Fair - strong foundation but limited expression",
+    "brand_awareness": "Low-Medium - known in local market but limited reach",
+    "brand_perception": "Positive - associated with quality and expertise",
+    "brand_consistency": "Medium - consistent where present, but limited touchpoints",
+    "brand_differentiation": "High - international expertise and cultural identity are strong differentiators",
+    "priority_focus_areas": [
+      "Complete website development",
+      "Build project portfolio",
+      "Establish digital presence",
+      "Develop brand guidelines",
+      "Collect customer testimonials"
+    ]
+  }
+}

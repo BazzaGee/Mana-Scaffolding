@@ -1,0 +1,664 @@
+{
+  "keyword_research": {
+    "research_date": "2026-04-03",
+    "business_name": "MANA SCAFFOLDING LIMITED",
+    "industry": "Scaffolding Services",
+    "location": "Christchurch, Canterbury, New Zealand",
+    "total_keywords_identified": 87
+  },
+  "primary_keywords": {
+    "core_service_keywords": [
+      {
+        "keyword": "scaffolding Christchurch",
+        "search_volume": "High",
+        "competition": "High",
+        "relevance": "Critical",
+        "intent": "Commercial - looking for scaffolding services",
+        "priority": 1
+      },
+      {
+        "keyword": "scaffolding Canterbury",
+        "search_volume": "Medium-High",
+        "competition": "Medium",
+        "relevance": "Critical",
+        "intent": "Commercial - looking for scaffolding services",
+        "priority": 1
+      },
+      {
+        "keyword": "scaffolders Christchurch",
+        "search_volume": "Medium-High",
+        "competition": "High",
+        "relevance": "Critical",
+        "intent": "Commercial - looking for scaffolding contractors",
+        "priority": 1
+      },
+      {
+        "keyword": "scaffolding services Christchurch",
+        "search_volume": "Medium",
+        "competition": "Medium",
+        "relevance": "High",
+        "intent": "Commercial - specific service search",
+        "priority": 2
+      },
+      {
+        "keyword": "scaffolding hire Christchurch",
+        "search_volume": "Medium",
+        "competition": "Medium",
+        "relevance": "High",
+        "intent": "Commercial - hire/rental intent",
+        "priority": 2
+      },
+      {
+        "keyword": "scaffolding company Christchurch",
+        "search_volume": "Medium",
+        "competition": "Medium",
+        "relevance": "High",
+        "intent": "Commercial - looking for companies",
+        "priority": 2
+      }
+    ],
+    "location_based_keywords": [
+      {
+        "keyword": "scaffolding Bishopdale",
+        "search_volume": "Low-Medium",
+        "competition": "Low",
+        "relevance": "Medium",
+        "intent": "Local - very specific location",
+        "priority": 3
+      },
+      {
+        "keyword": "scaffolding North Canterbury",
+        "search_volume": "Low-Medium",
+        "competition": "Low-Medium",
+        "relevance": "Medium",
+        "intent": "Regional search",
+        "priority": 3
+      },
+      {
+        "keyword": "scaffolding South Canterbury",
+        "search_volume": "Low-Medium",
+        "competition": "Low-Medium",
+        "relevance": "Medium",
+        "intent": "Regional search",
+        "priority": 3
+      },
+      {
+        "keyword": "scaffolding Rolleston",
+        "search_volume": "Low-Medium",
+        "competition": "Low",
+        "relevance": "Medium",
+        "intent": "Suburb-specific",
+        "priority": 4
+      },
+      {
+        "keyword": "scaffolding Rangiora",
+        "search_volume": "Low-Medium",
+        "competition": "Low",
+        "relevance": "Medium",
+        "intent": "Suburb-specific",
+        "priority": 4
+      },
+      {
+        "keyword": "scaffolding Kaiapoi",
+        "search_volume": "Low",
+        "competition": "Low",
+        "relevance": "Medium",
+        "intent": "Suburb-specific",
+        "priority": 4
+      }
+    ]
+  },
+  "service_specific_keywords": {
+    "residential_scaffolding": [
+      {
+        "keyword": "residential scaffolding Christchurch",
+        "search_volume": "Medium",
+        "competition": "Medium",
+        "relevance": "High",
+        "intent": "Commercial - residential projects",
+        "priority": 2
+      },
+      {
+        "keyword": "house scaffolding Christchurch",
+        "search_volume": "Medium",
+        "competition": "Medium",
+        "relevance": "High",
+        "intent": "Commercial - specific to houses",
+        "priority": 2
+      },
+      {
+        "keyword": "scaffolding for builders Christchurch",
+        "search_volume": "Low-Medium",
+        "competition": "Medium",
+        "relevance": "High",
+        "intent": "Commercial - B2B",
+        "priority": 3
+      },
+      {
+        "keyword": "scaffolding for renovations Christchurch",
+        "search_volume": "Low-Medium",
+        "competition": "Low-Medium",
+        "relevance": "Medium",
+        "intent": "Commercial - renovation projects",
+        "priority": 3
+      },
+      {
+        "keyword": "scaffolding for painting Christchurch",
+        "search_volume": "Low-Medium",
+        "competition": "Low-Medium",
+        "relevance": "Medium",
+        "intent": "Commercial - specific use case",
+        "priority": 4
+      }
+    ],
+    "commercial_scaffolding": [
+      {
+        "keyword": "commercial scaffolding Christchurch",
+        "search_volume": "Medium",
+        "competition": "Medium-High",
+        "relevance": "High",
+        "intent": "Commercial - commercial projects",
+        "priority": 2
+      },
+      {
+        "keyword": "commercial scaffolding Canterbury",
+        "search_volume": "Low-Medium",
+        "competition": "Medium",
+        "relevance": "High",
+        "intent": "Commercial - regional",
+        "priority": 3
+      },
+      {
+        "keyword": "office building scaffolding Christchurch",
+        "search_volume": "Low",
+        "competition": "Low",
+        "relevance": "Medium",
+        "intent": "Commercial - specific building type",
+        "priority": 4
+      },
+      {
+        "keyword": "retail scaffolding Christchurch",
+        "search_volume": "Low",
+        "competition": "Low",
+        "relevance": "Medium",
+        "intent": "Commercial - specific building type",
+        "priority": 4
+      }
+    ],
+    "industrial_scaffolding": [
+      {
+        "keyword": "industrial scaffolding Christchurch",
+        "search_volume": "Low-Medium",
+        "competition": "Medium",
+        "relevance": "High",
+        "intent": "Commercial - industrial projects",
+        "priority": 3
+      },
+      {
+        "keyword": "industrial scaffolding Canterbury",
+        "search_volume": "Low",
+        "competition": "Low-Medium",
+        "relevance": "High",
+        "intent": "Commercial - industrial regional",
+        "priority": 3
+      },
+      {
+        "keyword": "factory scaffolding Christchurch",
+        "search_volume": "Low",
+        "competition": "Low",
+        "relevance": "Medium",
+        "intent": "Commercial - specific facility",
+        "priority": 4
+      },
+      {
+        "keyword": "warehouse scaffolding Christchurch",
+        "search_volume": "Low",
+        "competition": "Low",
+        "relevance": "Medium",
+        "intent": "Commercial - specific facility",
+        "priority": 4
+      }
+    ],
+    "specialized_services": [
+      {
+        "keyword": "temporary fencing Christchurch",
+        "search_volume": "Medium",
+        "competition": "Medium",
+        "relevance": "Medium",
+        "intent": "Commercial - related service",
+        "priority": 3
+      },
+      {
+        "keyword": "scaffold design Christchurch",
+        "search_volume": "Low",
+        "competition": "Low",
+        "relevance": "Medium",
+        "intent": "Commercial - specialized service",
+        "priority": 4
+      },
+      {
+        "keyword": "complex scaffolding Christchurch",
+        "search_volume": "Low",
+        "competition": "Low",
+        "relevance": "High",
+        "intent": "Commercial - specialty capability",
+        "priority": 3
+      },
+      {
+        "keyword": "heritage building scaffolding Christchurch",
+        "search_volume": "Very Low",
+        "competition": "Very Low",
+        "relevance": "Medium",
+        "intent": "Commercial - niche service",
+        "priority": 4
+      }
+    ]
+  },
+  "informational_keywords": {
+    "safety_and_compliance": [
+      {
+        "keyword": "scaffolding safety NZ",
+        "search_volume": "Medium",
+        "competition": "Low",
+        "relevance": "Medium",
+        "intent": "Informational - safety information",
+        "priority": 4
+      },
+      {
+        "keyword": "scaffolding regulations NZ",
+        "search_volume": "Low-Medium",
+        "competition": "Low",
+        "relevance": "Medium",
+        "intent": "Informational - regulatory information",
+        "priority": 4
+      },
+      {
+        "keyword": "AS/NZS 1576 scaffolding standard",
+        "search_volume": "Low",
+        "competition": "Low",
+        "relevance": "Medium",
+        "intent": "Informational - technical standard",
+        "priority": 5
+      },
+      {
+        "keyword": "certified scaffolders Christchurch",
+        "search_volume": "Low",
+        "competition": "Low",
+        "relevance": "High",
+        "intent": "Commercial - looking for qualified providers",
+        "priority": 3
+      }
+    ],
+    "cost_and_pricing": [
+      {
+        "keyword": "scaffolding cost Christchurch",
+        "search_volume": "Medium",
+        "competition": "Medium",
+        "relevance": "High",
+        "intent": "Commercial - price shopping",
+        "priority": 2
+      },
+      {
+        "keyword": "scaffolding prices NZ",
+        "search_volume": "Medium",
+        "competition": "Medium",
+        "relevance": "Medium",
+        "intent": "Commercial - price research",
+        "priority": 3
+      },
+      {
+        "keyword": "scaffolding hire rates Christchurch",
+        "search_volume": "Low-Medium",
+        "competition": "Medium",
+        "relevance": "High",
+        "intent": "Commercial - rental pricing",
+        "priority": 3
+      },
+      {
+        "keyword": "free scaffolding quote Christchurch",
+        "search_volume": "Low",
+        "competition": "Low",
+        "relevance": "High",
+        "intent": "Commercial - ready to buy",
+        "priority": 2
+      }
+    ],
+    "how_to_keywords": [
+      {
+        "keyword": "how much does scaffolding cost NZ",
+        "search_volume": "Medium",
+        "competition": "Low",
+        "relevance": "Medium",
+        "intent": "Informational/Commercial - research phase",
+        "priority": 4
+      },
+      {
+        "keyword": "what scaffolding do I need",
+        "search_volume": "Low",
+        "competition": "Low",
+        "relevance": "Medium",
+        "intent": "Informational - guidance needed",
+        "priority": 4
+      },
+      {
+        "keyword": "scaffolding requirements for builders NZ",
+        "search_volume": "Low",
+        "competition": "Low",
+        "relevance": "Medium",
+        "intent": "Informational - regulatory/compliance",
+        "priority": 5
+      }
+    ]
+  },
+  "competitor_keywords": {
+    "competitor_brand_keywords": [
+      {
+        "keyword": "United Scaffolding Christchurch",
+        "search_volume": "Low-Medium",
+        "competition": "Low",
+        "relevance": "Low",
+        "intent": "Commercial - looking for competitor",
+        "priority": 5,
+        "notes": "Consider bidding on competitor brand terms"
+      },
+      {
+        "keyword": "Upright Scaffolding Christchurch",
+        "search_volume": "Low",
+        "competition": "Low",
+        "relevance": "Low",
+        "intent": "Commercial - looking for competitor",
+        "priority": 5
+      },
+      {
+        "keyword": "Secure Scaffold Christchurch",
+        "search_volume": "Low",
+        "competition": "Low",
+        "relevance": "Low",
+        "intent": "Commercial - looking for competitor",
+        "priority": 5
+      },
+      {
+        "keyword": "Canterbury Scaffolding",
+        "search_volume": "Low",
+        "competition": "Low",
+        "relevance": "Low",
+        "intent": "Commercial - looking for competitor",
+        "priority": 5
+      }
+    ],
+    "alternative_keywords": [
+      {
+        "keyword": "scaffolding companies Christchurch",
+        "search_volume": "Medium",
+        "competition": "Medium",
+        "relevance": "High",
+        "intent": "Commercial - comparing companies",
+        "priority": 2
+      },
+      {
+        "keyword": "best scaffolding company Christchurch",
+        "search_volume": "Low",
+        "competition": "Medium",
+        "relevance": "High",
+        "intent": "Commercial - looking for quality",
+        "priority": 3
+      },
+      {
+        "keyword": "scaffolding contractors Christchurch",
+        "search_volume": "Medium",
+        "competition": "Medium",
+        "relevance": "High",
+        "intent": "Commercial - looking for contractors",
+        "priority": 2
+      }
+    ]
+  },
+  "long_tail_keywords": {
+    "project_specific": [
+      {
+        "keyword": "scaffolding for new home build Christchurch",
+        "search_volume": "Low",
+        "competition": "Low",
+        "relevance": "High",
+        "intent": "Commercial - specific project type",
+        "priority": 3
+      },
+      {
+        "keyword": "scaffolding for commercial building Christchurch",
+        "search_volume": "Low",
+        "competition": "Low",
+        "relevance": "High",
+        "intent": "Commercial - specific project type",
+        "priority": 3
+      },
+      {
+        "keyword": "scaffolding for earthquake repairs Christchurch",
+        "search_volume": "Low",
+        "competition": "Low",
+        "relevance": "Medium",
+        "intent": "Commercial - post-earthquake specific",
+        "priority": 4
+      },
+      {
+        "keyword": "scaffolding for facade work Christchurch",
+        "search_volume": "Very Low",
+        "competition": "Very Low",
+        "relevance": "Medium",
+        "intent": "Commercial - specialized work",
+        "priority": 4
+      }
+    ],
+    "capability_specific": [
+      {
+        "keyword": "scaffolding company with international experience NZ",
+        "search_volume": "Very Low",
+        "competition": "Very Low",
+        "relevance": "High",
+        "intent": "Commercial - looking for expertise",
+        "priority": 4,
+        "notes": "Unique differentiator for Mana Scaffolding"
+      },
+      {
+        "keyword": "complex scaffolding solutions Christchurch",
+        "search_volume": "Very Low",
+        "competition": "Very Low",
+        "relevance": "High",
+        "intent": "Commercial - specialized capability",
+        "priority": 3
+      },
+      {
+        "keyword": "Māori scaffolding company NZ",
+        "search_volume": "Very Low",
+        "competition": "Very Low",
+        "relevance": "High",
+        "intent": "Commercial - cultural preference",
+        "priority": 4,
+        "notes": "Cultural differentiation"
+      },
+      {
+        "keyword": "Ngāi Tahu business scaffolding",
+        "search_volume": "Very Low",
+        "competition": "Very Low",
+        "relevance": "High",
+        "intent": "Commercial - iwi procurement",
+        "priority": 4,
+        "notes": "Iwi-specific procurement searches"
+      }
+    ]
+  },
+  "keyword_recommendations": {
+    "priority_1_keywords": [
+      "scaffolding Christchurch",
+      "scaffolding Canterbury",
+      "scaffolders Christchurch"
+    ],
+    "priority_2_keywords": [
+      "scaffolding services Christchurch",
+      "scaffolding hire Christchurch",
+      "scaffolding company Christchurch",
+      "residential scaffolding Christchurch",
+      "commercial scaffolding Christchurch",
+      "scaffolding cost Christchurch",
+      "free scaffolding quote Christchurch",
+      "scaffolding companies Christchurch",
+      "scaffolding contractors Christchurch"
+    ],
+    "priority_3_keywords": [
+      "scaffolding services Canterbury",
+      "industrial scaffolding Christchurch",
+      "certified scaffolders Christchurch",
+      "scaffolding for builders Christchurch",
+      "temporary fencing Christchurch",
+      "complex scaffolding Christchurch",
+      "best scaffolding company Christchurch"
+    ],
+    "quick_win_keywords": [
+      {
+        "keyword": "scaffolding Bishopdale",
+        "reason": "Low competition, local to registered address"
+      },
+      {
+        "keyword": "Māori scaffolding company NZ",
+        "reason": "Unique differentiator, no competition"
+      },
+      {
+        "keyword": "scaffolding company with international experience NZ",
+        "reason": "Matches company's unique strength"
+      },
+      {
+        "keyword": "complex scaffolding Christchurch",
+        "reason": "Aligns with company reputation"
+      }
+    ]
+  },
+  "seo_strategy_recommendations": {
+    "on_page_optimization": [
+      {
+        "page": "Homepage",
+        "target_keywords": ["scaffolding Christchurch", "scaffolding Canterbury", "Mana Scaffolding"],
+        "title_tag": "Scaffolding Christchurch | Complete Scaffolding Services Canterbury | Mana Scaffolding",
+        "meta_description": "Mana Scaffolding provides complete scaffolding services across Christchurch and Canterbury. Directors with international experience. Free quotes. Call 0508 626 272"
+      },
+      {
+        "page": "Services Page",
+        "target_keywords": ["scaffolding services Christchurch", "residential scaffolding", "commercial scaffolding"],
+        "title_tag": "Scaffolding Services Christchurch | Residential & Commercial | Mana Scaffolding",
+        "meta_description": "Complete scaffolding services for residential, commercial and industrial projects in Christchurch. Certified scaffolders. Get your free quote today."
+      },
+      {
+        "page": "About Page",
+        "target_keywords": ["scaffolding company Christchurch", "Mana Scaffolding", "scaffolding Canterbury"],
+        "title_tag": "About Mana Scaffolding | Christchurch Scaffolding Company | International Expertise",
+        "meta_description": "Learn about Mana Scaffolding - Christchurch's scaffolding experts with international experience from Canada and UK. Serving Canterbury since 2019."
+      },
+      {
+        "page": "Projects/Portfolio Page",
+        "target_keywords": ["scaffolding projects Christchurch", "commercial scaffolding Canterbury"],
+        "title_tag": "Scaffolding Projects Christchurch | Our Work | Mana Scaffolding",
+        "meta_description": "View our scaffolding projects across Christchurch and Canterbury. Complex residential, commercial and industrial scaffolding solutions."
+      },
+      {
+        "page": "Contact Page",
+        "target_keywords": ["scaffolding quote Christchurch", "contact scaffolders Christchurch"],
+        "title_tag": "Free Scaffolding Quote Christchurch | Contact Mana Scaffolding",
+        "meta_description": "Get a free scaffolding quote in Christchurch and Canterbury. Call 0508 626 272 or email terry@manascaffolding.co.nz"
+      }
+    ],
+    "content_strategy": [
+      {
+        "content_type": "Blog Post",
+        "topic": "Scaffolding Requirements for Residential Builds in Christchurch",
+        "target_keywords": ["residential scaffolding Christchurch", "scaffolding requirements NZ"],
+        "priority": "High"
+      },
+      {
+        "content_type": "Blog Post",
+        "topic": "Understanding Scaffolding Costs in New Zealand",
+        "target_keywords": ["scaffolding cost Christchurch", "scaffolding prices NZ"],
+        "priority": "High"
+      },
+      {
+        "content_type": "Blog Post",
+        "topic": "Safety Standards for Scaffolding in New Zealand",
+        "target_keywords": ["scaffolding safety NZ", "AS/NZS 1576"],
+        "priority": "Medium"
+      },
+      {
+        "content_type": "Case Study",
+        "topic": "Complex Scaffolding Solution for [Project Name]",
+        "target_keywords": ["complex scaffolding Christchurch", "commercial scaffolding Canterbury"],
+        "priority": "High"
+      },
+      {
+        "content_type": "Service Page",
+        "topic": "Temporary Fencing Services Christchurch",
+        "target_keywords": ["temporary fencing Christchurch"],
+        "priority": "Medium"
+      }
+    ],
+    "local_seo": [
+      {
+        "action": "Google Business Profile",
+        "details": "Claim and optimize with keywords: scaffolding Christchurch, scaffolding Canterbury",
+        "priority": "Critical"
+      },
+      {
+        "action": "Local Citations",
+        "details": "List on local directories: Yellow Pages NZ, Finda, NZ Business Directory",
+        "priority": "High"
+      },
+      {
+        "action": "Industry Directories",
+        "details": "List on SARNZ, Site Safe, scaffolders.co.nz",
+        "priority": "High"
+      },
+      {
+        "action": "Ngāi Tahu Business Directory",
+        "details": "List on Te Rūnanga o Ngāi Tahu business directory if applicable",
+        "priority": "High"
+      }
+    ]
+  },
+  "ppc_recommendations": {
+    "google_ads_campaigns": [
+      {
+        "campaign_name": "Scaffolding Christchurch - Core Services",
+        "budget": "Medium",
+        "keywords": [
+          "scaffolding Christchurch",
+          "scaffolders Christchurch",
+          "scaffolding services Christchurch",
+          "scaffolding hire Christchurch"
+        ],
+        "priority": "High"
+      },
+      {
+        "campaign_name": "Residential Scaffolding",
+        "budget": "Low-Medium",
+        "keywords": [
+          "residential scaffolding Christchurch",
+          "house scaffolding Christchurch",
+          "scaffolding for builders Christchurch"
+        ],
+        "priority": "Medium"
+      },
+      {
+        "campaign_name": "Commercial Scaffolding",
+        "budget": "Medium",
+        "keywords": [
+          "commercial scaffolding Christchurch",
+          "industrial scaffolding Christchurch",
+          "scaffolding contractors Christchurch"
+        ],
+        "priority": "Medium"
+      }
+    ],
+    "ad_copy_recommendations": [
+      {
+        "headline": "Scaffolding Christchurch | Free Quotes",
+        "description": "Complete Scaffolding Services Across Canterbury. International Expertise. Call 0508 626 272",
+        "extensions": ["Call Extension", "Location Extension", "Sitelink Extensions"]
+      }
+    ]
+  }
+}

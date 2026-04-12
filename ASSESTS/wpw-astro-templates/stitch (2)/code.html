@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>MANA SCAFFOLDING | PRESTIGE &amp; PRECISION</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Manrope:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#D4441C", // Brand reddish-orange from Image 8
+                        "on-primary": "#FFFFFF",
+                        background: "#050505",
+                        surface: "#0f0f0f",
+                        "surface-variant": "#1a1a1a",
+                        outline: "#2a2a2a",
+                    },
+                    fontFamily: {
+                        headline: ["Space Grotesk", "sans-serif"],
+                        body: ["Manrope", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            background-color: #050505;
+            color: #e5e2e1;
+            font-family: 'Manrope', sans-serif;
+            overflow-x: hidden;
+        }
+        .scaffolding-grid {
+            background-image: linear-gradient(to right, rgba(212, 68, 28, 0.05) 1px, transparent 1px), 
+                              linear-gradient(to bottom, rgba(212, 68, 28, 0.05) 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+        .industrial-slab {
+            background: linear-gradient(145deg, #0f0f0f, #080808);
+            border-left: 2px solid #D4441C;
+        }
+        
+        /* Hero Shatter Effect */
+        .hero-title span {
+            display: inline-block;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+        .hero-title:hover span {
+            transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) scale(1.1);
+            color: #D4441C;
+        }
+
+        /* Side Scaffolding Erection Progress */
+        #scaffold-sidebar {
+            width: 60px;
+            position: fixed;
+            right: 0;
+            top: 0;
+            height: 100vh;
+            z-index: 100;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px 0;
+            pointer-events: none;
+        }
+        .scaffold-vertical {
+            width: 4px;
+            background: linear-gradient(90deg, #333, #666, #333);
+            height: 100%;
+            position: relative;
+            box-shadow: 2px 0 5px rgba(0,0,0,0.5);
+        }
+        .scaffold-segment {
+            position: absolute;
+            left: -8px;
+            width: 20px;
+            height: 4px;
+            background: #D4441C;
+            opacity: 0;
+            transform: translateX(100px);
+            transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .scaffold-segment.active {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        .coupler {
+            position: absolute;
+            left: -4px;
+            width: 12px;
+            height: 12px;
+            background: #888;
+            border-radius: 2px;
+            border: 1px solid #444;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        .coupler.active { opacity: 1; }
+
+        .reveal-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease-out;
+        }
+        .reveal-on-scroll.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .horizontal-scroll {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            scrollbar-width: none;
+        }
+        .horizontal-scroll::-webkit-scrollbar { display: none; }
+        .gallery-item {
+            flex: 0 0 85vw;
+            scroll-snap-align: center;
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body class="bg-background text-zinc-300">
+<!-- SCROLLING SCAFFOLDING SYSTEM -->
+<div class="hidden md:flex" id="scaffold-sidebar">
+<div class="scaffold-vertical" id="scaffold-mast">
+<!-- Segments injected via JS -->
+</div>
+<div class="absolute bottom-10 right-12 text-[10px] font-headline font-black uppercase tracking-widest text-primary rotate-90 origin-right opacity-50">
+        Structural Integrity Progress
+    </div>
+</div>
+<!-- Navigation -->
+<nav class="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-xl border-b border-white/5 px-6 py-4 flex justify-between items-center">
+<div class="flex items-center gap-3">
+<img alt="Mana Scaffolding Logo" class="h-10 md:h-12 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0ugbyY1o2WhH_I_YYOYNFVfaX3tRZ-sTMppV9BMQAZcSUbLLSlL_nu-2RQXDGb6LP2oH_10k5vXzwnKfieLRLUxZCljGti856004bPebrK_pJ6IlDvuXjoG3_J-2GAQxJ9CHFEtij7lOeg1rCqiBQCQ_1r3_oLgUsXsQtozt6TeVwtBaagGv6_c6wp5UluOI3SQkFRY3hmcfdp8VORSPXAG0rxbSHyQ35vW7R-qVk-8G-EkLjvH3JcnaxZPq17cHzYefPdK8iBfIFA"/>
+</div>
+<div class="hidden lg:flex gap-10">
+<a class="text-[10px] font-headline font-black uppercase tracking-widest hover:text-primary transition-colors" href="#identity">Mana</a>
+<a class="text-[10px] font-headline font-black uppercase tracking-widest hover:text-primary transition-colors" href="#expertise">DNA</a>
+<a class="text-[10px] font-headline font-black uppercase tracking-widest hover:text-primary transition-colors" href="#services">Services</a>
+<a class="text-[10px] font-headline font-black uppercase tracking-widest hover:text-primary transition-colors" href="#gallery">Portfolio</a>
+<a class="text-[10px] font-headline font-black uppercase tracking-widest hover:text-primary transition-colors" href="#contact">Contact</a>
+</div>
+<div class="flex items-center gap-6">
+<a class="text-xs font-headline font-black bg-primary px-5 py-2.5 rounded-sm text-white tracking-widest hover:bg-orange-700 transition-all" href="tel:0508626272">0508 626 272</a>
+<span class="material-symbols-outlined lg:hidden text-white cursor-pointer" id="mobile-menu-btn">menu</span>
+</div>
+</nav>
+<main>
+<!-- 1. HERO SECTION (Dynamic Shatter) -->
+<section class="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 px-6">
+<div class="scaffolding-grid absolute inset-0 z-0"></div>
+<div class="relative z-10 text-center">
+<div class="inline-flex items-center gap-3 border border-primary/30 bg-primary/5 px-4 py-2 mb-8 rounded-full">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+</span>
+<span class="text-[10px] font-headline font-black tracking-[0.4em] uppercase text-primary">Kia Ora | Christchurch Based</span>
+</div>
+<h1 class="hero-title font-headline text-5xl md:text-[140px] font-black leading-[0.85] tracking-tighter uppercase mb-10 select-none">
+<span style="--tw-translate-x: -20px; --tw-translate-y: -10px; --tw-rotate: -5deg">Precision</span><br/>
+<span class="text-primary" style="--tw-translate-x: 10px; --tw-translate-y: 5px; --tw-rotate: 3deg">Under</span><br/>
+<span style="--tw-translate-x: -15px; --tw-translate-y: 15px; --tw-rotate: -2deg">Pressure</span>
+</h1>
+<p class="max-w-xl mx-auto text-zinc-500 font-body text-sm md:text-base mb-12 uppercase tracking-widest font-bold">
+                International Expertise. Canterbury Roots. <br class="hidden md:block"/> Complex Access Solutions Designed for Integrity.
+            </p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<a class="bg-primary hover:bg-orange-700 text-white font-headline font-black uppercase px-12 py-5 tracking-widest transition-all shadow-[0_10px_30px_rgba(212,68,28,0.3)]" href="#contact">Request Estimate</a>
+<a class="border border-white/10 bg-white/5 hover:bg-white/10 text-white font-headline font-black uppercase px-12 py-5 tracking-widest transition-all" href="#gallery">View Projects</a>
+</div>
+</div>
+<!-- Background Industrial Accents -->
+<div class="absolute bottom-0 left-0 w-full h-64 bg-gradient-to-t from-background to-transparent z-10"></div>
+</section>
+<!-- 2. THE MANA IDENTITY -->
+<section class="py-32 bg-zinc-950 relative overflow-hidden" id="identity">
+<div class="container mx-auto px-6 relative z-10">
+<div class="grid lg:grid-cols-2 gap-24 items-center">
+<div class="reveal-on-scroll">
+<div class="flex items-center gap-4 mb-6">
+<div class="h-[2px] w-12 bg-primary"></div>
+<span class="text-primary font-headline font-black tracking-widest uppercase text-xs">The Core Foundation</span>
+</div>
+<h2 class="text-5xl lg:text-8xl font-headline font-black uppercase leading-none mb-10">The Mana <br/><span class="text-zinc-800">Prestige</span></h2>
+<div class="space-y-6 text-lg text-zinc-400 font-body leading-relaxed">
+<p>
+                            In New Zealand’s construction landscape, 'Mana' isn't just a label—it's the bedrock of our operation. It refers to prestige, authority, and spiritual power. For us, Mana is found in the <span class="text-white font-bold">structural integrity</span> of the systems we build and the unwavering <span class="text-white font-bold">guardianship (Kaitiakitanga)</span> we provide for every worker on our sites.
+                        </p>
+<p>
+                            We are strictly New Zealand-owned and operated, based in the heart of Christchurch. Our connection to Aotearoa is deep, and our commitment to the safety of our local workforce is absolute.
+                        </p>
+</div>
+<div class="grid grid-cols-2 gap-8 border-t border-white/5 pt-12 mt-12">
+<div>
+<h4 class="font-headline font-bold text-primary uppercase text-[10px] tracking-widest mb-3">Authentic Connection</h4>
+<p class="text-xl text-white font-black font-headline uppercase">Kia Ora</p>
+<p class="text-[10px] text-zinc-500 uppercase font-bold mt-1">Our Greeting, Our Value</p>
+</div>
+<div>
+<h4 class="font-headline font-bold text-primary uppercase text-[10px] tracking-widest mb-3">Operational Hub</h4>
+<p class="text-xl text-white font-black font-headline uppercase">Canterbury</p>
+<p class="text-[10px] text-zinc-500 uppercase font-bold mt-1">Christchurch Local</p>
+</div>
+</div>
+</div>
+<div class="relative reveal-on-scroll group">
+<div class="aspect-[4/5] bg-surface border border-white/5 p-2 overflow-hidden">
+<img alt="Industrial Site" class="w-full h-full object-cover grayscale transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKuGwcwWPGbhIvV0mxwSZX5ZqkJrlUuG904e16moflqvL7HnjkMRpG-xIBUFwGR9_4s-fUbxFr8iY-9a9okMhctLYUv9pkVUSDCdiI2sYabCIrrOqu4rl_O-b5SZ-lb-Qfu8jnSLJh269hEEu7_MEQWNfKinmOIcyrXTpoDtvfeLSjrFNNoRK2J3lbqed4tGMtvmLcf46osSqTGgycJAeEIxo6xZzELA0m0xjj1VbrOvj_mayp3Iq7FG26ZXD_vwvlSy0qQ-mKyu8"/>
+</div>
+<div class="absolute -bottom-8 -left-8 bg-primary px-8 py-6 text-white font-headline font-black text-3xl shadow-2xl">
+                        Kaitiakitanga
+                    </div>
+<div class="absolute -top-4 -right-4 w-24 h-24 border-t-2 border-r-2 border-primary"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. INTERNATIONAL DNA (Terry & Keith) -->
+<section class="py-32 bg-background border-y border-white/5" id="expertise">
+<div class="container mx-auto px-6">
+<div class="text-center mb-24 reveal-on-scroll">
+<h2 class="text-6xl lg:text-9xl font-headline font-black uppercase tracking-tighter mb-6">Global <span class="text-primary">DNA</span></h2>
+<p class="text-zinc-500 uppercase tracking-[0.4em] font-headline text-[10px] font-bold">Standard of Excellence | Local Implementation</p>
+</div>
+<div class="grid md:grid-cols-2 gap-12 reveal-on-scroll">
+<!-- Terry -->
+<div class="bg-surface p-12 relative border border-white/5 group">
+<div class="flex items-center gap-6 mb-10">
+<div class="w-24 h-24 bg-zinc-800 grayscale rounded-sm overflow-hidden border border-white/10 group-hover:grayscale-0 transition-all duration-500">
+<img alt="Terry Pohatu" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8cr8nOQvpN6KRZZ3TzarNrAch9ytS9eEDAt-t1zygrp1uc2LAn5ZXDdGqU2Iqy1IzBNFDy8RpvUeLxjJUCexMrdj6GDI3Wg2PbSrJw8XxhhQZ3IowKqktrHHeTxLJ_TaZ88CXdB9L3v_wPLB1l8AV-R5WElZ7Ze9zHZRSlNwbJTkqmAQjOkHm7fJG5Q6mB6vMNbmdF24tluDjDnfpk_gSH5n4pg6FLJuwM3OScPrVYQWd83RCts8iOS0oJA0pg7gvnJlIA5zD3jQ"/>
+</div>
+<div>
+<h3 class="text-3xl font-headline font-black uppercase text-white">Terry Pohatu</h3>
+<div class="flex items-center gap-2 mt-1">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="text-primary font-bold text-[10px] uppercase tracking-widest">Canada Expertise</span>
+</div>
+</div>
+</div>
+<p class="text-zinc-400 font-body text-lg italic mb-8 leading-relaxed">"We are bringing North American industrial rigging protocols to the unique topographical challenges of New Zealand."</p>
+<div class="h-1 w-full bg-white/5 overflow-hidden">
+<div class="h-full bg-primary w-0 group-hover:w-full transition-all duration-700"></div>
+</div>
+</div>
+<!-- Keith -->
+<div class="bg-surface p-12 relative border border-white/5 group">
+<div class="flex items-center gap-6 mb-10">
+<div class="w-24 h-24 bg-zinc-800 grayscale rounded-sm overflow-hidden border border-white/10 group-hover:grayscale-0 transition-all duration-500">
+<img alt="Keith Timmins" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuACBDx6pYBWftyxJYdcg6ycQ2DyCAWcKIanaVwYlFV2nbveqyRH2-2L1ymK9eNCJI0MrlFCHq3UpMF7InGIk4BW0mNU1r_Elkd-yGd-u8B0Jv7W1JJHBKpHfRC4Tac1pvW19NXQtCfxcUhWKDUIIXyZqKOSBOVdzcU_i3TLGKMsBQrDgmHLdZBwE6b4uRh05GxZPWozvTNuq7x1VHEYMBY3j_kNt42wmq5FhQMRupESXSas1jzG_v0fNTqMP1ci4CwsJm9EIE-4XPY"/>
+</div>
+<div>
+<h3 class="text-3xl font-headline font-black uppercase text-white">Keith Timmins</h3>
+<div class="flex items-center gap-2 mt-1">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="text-primary font-bold text-[10px] uppercase tracking-widest">UK Precision</span>
+</div>
+</div>
+</div>
+<p class="text-zinc-400 font-body text-lg italic mb-8 leading-relaxed">"The British standard of scaffolding is about millimeter precision in dense, high-stakes urban environments."</p>
+<div class="h-1 w-full bg-white/5 overflow-hidden">
+<div class="h-full bg-primary w-0 group-hover:w-full transition-all duration-700"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. SPECIALIZED CAPABILITIES -->
+<section class="py-32 bg-zinc-950" id="services">
+<div class="container mx-auto px-6">
+<h2 class="text-5xl font-headline font-black uppercase mb-20 reveal-on-scroll">Expertise <span class="text-primary">Verticles</span></h2>
+<div class="grid lg:grid-cols-2 gap-8">
+<!-- Service Card 01 -->
+<div class="industrial-slab p-12 reveal-on-scroll group bg-surface hover:bg-zinc-900 transition-colors">
+<div class="flex justify-between items-start mb-10">
+<span class="material-symbols-outlined text-5xl text-primary" data-icon="house">house</span>
+<span class="text-7xl font-headline font-black text-white/5 group-hover:text-primary/10 transition-colors">01</span>
+</div>
+<h3 class="text-3xl font-headline font-black uppercase mb-4 text-white">Residential</h3>
+<p class="text-zinc-500 font-medium leading-relaxed mb-0">Specialized access for high-end Canterbury builds and multi-unit developments. We treat every home with high-rise precision.</p>
+</div>
+<!-- Service Card 02 -->
+<div class="industrial-slab p-12 reveal-on-scroll group bg-surface hover:bg-zinc-900 transition-colors">
+<div class="flex justify-between items-start mb-10">
+<span class="material-symbols-outlined text-5xl text-primary" data-icon="corporate_fare">corporate_fare</span>
+<span class="text-7xl font-headline font-black text-white/5 group-hover:text-primary/10 transition-colors">02</span>
+</div>
+<h3 class="text-3xl font-headline font-black uppercase mb-4 text-white">Commercial</h3>
+<p class="text-zinc-500 font-medium leading-relaxed mb-0">Rapid deployment for office towers and retail infrastructure. Engineered to meet strict NZ compliance and project timelines.</p>
+</div>
+<!-- Service Card 03 -->
+<div class="industrial-slab p-12 reveal-on-scroll group bg-surface hover:bg-zinc-900 transition-colors">
+<div class="flex justify-between items-start mb-10">
+<span class="material-symbols-outlined text-5xl text-primary" data-icon="precision_manufacturing">precision_manufacturing</span>
+<span class="text-7xl font-headline font-black text-white/5 group-hover:text-primary/10 transition-colors">03</span>
+</div>
+<h3 class="text-3xl font-headline font-black uppercase mb-4 text-white">Industrial</h3>
+<p class="text-zinc-500 font-medium leading-relaxed mb-0">Heavy-duty rigging for processing plants and warehouses. Built for high wind loads and harsh industrial conditions.</p>
+</div>
+<!-- Service Card 04 -->
+<div class="industrial-slab p-12 reveal-on-scroll group bg-surface hover:bg-zinc-900 transition-colors">
+<div class="flex justify-between items-start mb-10">
+<span class="material-symbols-outlined text-5xl text-primary" data-icon="architecture">architecture</span>
+<span class="text-7xl font-headline font-black text-white/5 group-hover:text-primary/10 transition-colors">04</span>
+</div>
+<h3 class="text-3xl font-headline font-black uppercase mb-4 text-white">Complex</h3>
+<p class="text-zinc-500 font-medium leading-relaxed mb-0">Cantilevered decks, suspended scaffolds, and birdcage systems. When other providers say it's impossible, we design the way.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. PROJECT GALLERY (Industrial Slider) -->
+<section class="py-32 bg-background overflow-hidden" id="gallery">
+<div class="container mx-auto px-6 mb-16 flex flex-col md:flex-row md:items-end justify-between gap-6">
+<div class="reveal-on-scroll">
+<h2 class="text-5xl lg:text-7xl font-headline font-black uppercase tracking-tighter">The <span class="text-primary">Portfolio</span></h2>
+<p class="text-zinc-500 mt-4 uppercase tracking-widest text-xs font-bold">Selected Works | Canterbury Wide</p>
+</div>
+<div class="flex gap-4">
+<button class="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center text-white hover:bg-primary hover:border-primary transition-all group">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<button class="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center text-white hover:bg-primary hover:border-primary transition-all group">
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="horizontal-scroll px-6 reveal-on-scroll">
+<div class="gallery-item group">
+<div class="relative h-[600px] overflow-hidden">
+<img alt="Complex Site Scaffolding" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/ADBb0uii4yGmva5E2HWFkOhclny8muNrea9TeyvJIR3saHznXXoyKBHVGbK7Eb-DpVRrvdpbvs9Hvlg7fdaAb5ztaxdsJbC43YC4q5qzyUm2ZrMvyTAbuhIexWh2SjA2i26bF6ALAgGsBS7NwX0DCDmBxP-yhF2DB791gSgX_yHK1NQlCQSZFdrk2PPf09dhoyicGYL0nQitWNr55uFhWd1pHeYnolOgipxYwet-Ys6Me5JFlgOp0O8j3X3T8baH255b33icZhOM36P-Xg"/>
+<div class="absolute bottom-0 left-0 p-8 bg-gradient-to-t from-black to-transparent w-full">
+<span class="text-primary font-black text-[10px] uppercase tracking-widest">Christchurch Commercial</span>
+<h4 class="text-2xl font-headline font-black uppercase text-white">Highsted Heritage Facade</h4>
+</div>
+</div>
+</div>
+<div class="gallery-item group">
+<div class="relative h-[600px] overflow-hidden">
+<img alt="Residential Build" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/ADBb0ug2xKxH9HzeJFLdGOcpaf9-rtHxovNtY59ZIaldryEhz0CpH5Tsm7WeP1cvTqyBcABsAyWWzRQF_lDXEkX7NhXdREZ966t8yp9nQg6fyes7RNEaU0s6PX3nLZyrquEpTr5sEWmEOtLEbDbczrINcRXRxBfBu_whi59vYRmQgFjnD6JMSnIs9vJw274rmMQQqo_0ZrW5el1Xh5uFa_Weg3NzSI6DVnEWcB2UiUJaduMm672Uj4l5he60f4d8bm7LtHCYMI6TyXhE"/>
+<div class="absolute bottom-0 left-0 p-8 bg-gradient-to-t from-black to-transparent w-full">
+<span class="text-primary font-black text-[10px] uppercase tracking-widest">Residential Access</span>
+<h4 class="text-2xl font-headline font-black uppercase text-white">Bishopdale Multi-Unit</h4>
+</div>
+</div>
+</div>
+<div class="gallery-item group">
+<div class="relative h-[600px] overflow-hidden">
+<img alt="Industrial Logistics" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/ADBb0ui5IBhXnBDY0-bEOniL4NQVaqHZoOynz6qOsxpE5NjFZuOpwUvGFIMqllkR7RlNWis3oDddb3UZVCvSdEB4a0DmhxrJw7W96cmY3kC4AqjfvmdfYdq_xQFnw3tSBFwJ1vWdLJktimsHGqkwQ5bKlmBSkb_Wn7QaXoROeS9rFOvfSgKec0iZbkjLeLsS_TJu7zNVdJGZ_iB5afAT4JiHmAAqDtKqjh2hyvfFPDy_gltp3xCUH9T3dJ1iGOSyg7QlPMMZ8aqJxD4MvA"/>
+<div class="absolute bottom-0 left-0 p-8 bg-gradient-to-t from-black to-transparent w-full">
+<span class="text-primary font-black text-[10px] uppercase tracking-widest">Industrial Logistics</span>
+<h4 class="text-2xl font-headline font-black uppercase text-white">Mana Fleet Deployment</h4>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. THE MANA ADVANTAGE -->
+<section class="py-32 bg-zinc-900 border-t border-white/10">
+<div class="container mx-auto px-6">
+<div class="grid lg:grid-cols-2 gap-24 items-center">
+<div class="reveal-on-scroll">
+<h2 class="text-4xl lg:text-7xl font-headline font-black uppercase mb-8">The Mana <span class="text-primary">Edge</span></h2>
+<p class="text-zinc-400 mb-12 text-lg">While corporate giants offer scale, Mana offers agility and founder-led precision that only a specialist Canterbury firm can provide.</p>
+<div class="space-y-10">
+<div class="flex gap-8 items-start">
+<div class="w-14 h-14 bg-primary/10 rounded-sm flex items-center justify-center flex-shrink-0 text-primary">
+<span class="material-symbols-outlined text-3xl">bolt</span>
+</div>
+<div>
+<h4 class="text-xl font-headline font-black uppercase text-white mb-2">Agility vs. Bureaucracy</h4>
+<p class="text-zinc-500 leading-relaxed">Instant site decisions. Terry and Keith are hands-on, bypassing corporate approval delays for custom rig designs.</p>
+</div>
+</div>
+<div class="flex gap-8 items-start">
+<div class="w-14 h-14 bg-primary/10 rounded-sm flex items-center justify-center flex-shrink-0 text-primary">
+<span class="material-symbols-outlined text-3xl">verified</span>
+</div>
+<div>
+<h4 class="text-xl font-headline font-black uppercase text-white mb-2">Global Safety Standards</h4>
+<p class="text-zinc-500 leading-relaxed">International rigging protocols applied to every joint. Zero safety incident commitment since 2019.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4 reveal-on-scroll">
+<div class="bg-black/60 p-10 border border-white/5 flex flex-col justify-between h-48 group hover:border-primary/50 transition-all">
+<span class="text-primary font-black text-[10px] tracking-widest uppercase">Strengths</span>
+<p class="text-sm font-bold text-white uppercase leading-tight">Complex Rigging<br/>Global DNA<br/>Safety First</p>
+</div>
+<div class="bg-black/60 p-10 border border-white/5 flex flex-col justify-between h-48 group hover:border-primary/50 transition-all">
+<span class="text-zinc-700 font-black text-[10px] tracking-widest uppercase group-hover:text-primary transition-colors">Strategy</span>
+<p class="text-sm font-bold text-white uppercase leading-tight">Precision Over<br/>Market Volume</p>
+</div>
+<div class="bg-black/60 p-10 border border-white/5 flex flex-col justify-between h-48 group hover:border-primary/50 transition-all">
+<span class="text-zinc-700 font-black text-[10px] tracking-widest uppercase group-hover:text-primary transition-colors">Network</span>
+<p class="text-sm font-bold text-white uppercase leading-tight">Local Iwi<br/>Relationships</p>
+</div>
+<div class="bg-black/60 p-10 border border-white/5 flex flex-col justify-between h-48 group hover:border-primary/50 transition-all">
+<span class="text-primary font-black text-[10px] tracking-widest uppercase">Focus</span>
+<p class="text-sm font-bold text-white uppercase leading-tight">Zero Safety<br/>Incidents</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 7. CONTACT & ESTIMATE -->
+<section class="py-32 bg-background relative overflow-hidden" id="contact">
+<div class="container mx-auto px-6 relative z-10">
+<div class="max-w-6xl mx-auto">
+<div class="text-center mb-16 reveal-on-scroll">
+<h2 class="text-6xl md:text-9xl font-headline font-black uppercase text-white tracking-tighter mb-8">Secure Your Site</h2>
+<p class="text-xl font-headline font-bold text-primary mb-12">Call for a Technical Estimate: <a class="underline" href="tel:0508626272">0508 626 272</a></p>
+</div>
+<div class="grid lg:grid-cols-5 gap-0 shadow-2xl reveal-on-scroll">
+<div class="lg:col-span-2 bg-primary p-12 text-white flex flex-col justify-between">
+<div>
+<h3 class="text-3xl font-headline font-black uppercase mb-6 leading-tight">Christchurch Headquarters</h3>
+<p class="mb-8 text-white/80 font-medium">Providing complete scaffolding services across the Canterbury region since 2019.</p>
+<div class="space-y-6">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined">mail</span>
+<span class="font-bold">terry@manascaffolding.co.nz</span>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined">location_on</span>
+<span class="font-bold">Bishopdale, Christchurch</span>
+</div>
+</div>
+</div>
+<div class="mt-12">
+<img alt="White Logo" class="h-12 w-auto brightness-0 invert opacity-50" src="https://lh3.googleusercontent.com/aida/ADBb0ugbyY1o2WhH_I_YYOYNFVfaX3tRZ-sTMppV9BMQAZcSUbLLSlL_nu-2RQXDGb6LP2oH_10k5vXzwnKfieLRLUxZCljGti856004bPebrK_pJ6IlDvuXjoG3_J-2GAQxJ9CHFEtij7lOeg1rCqiBQCQ_1r3_oLgUsXsQtozt6TeVwtBaagGv6_c6wp5UluOI3SQkFRY3hmcfdp8VORSPXAG0rxbSHyQ35vW7R-qVk-8G-EkLjvH3JcnaxZPq17cHzYefPdK8iBfIFA"/>
+</div>
+</div>
+<div class="lg:col-span-3 bg-surface p-12 border-y border-r border-white/5">
+<form class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="space-y-2">
+<label class="text-[10px] font-headline font-black uppercase tracking-widest text-primary">Full Name</label>
+<input class="w-full bg-background border-white/5 text-white p-4 focus:ring-primary focus:border-primary transition-all" placeholder="John Smith" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-[10px] font-headline font-black uppercase tracking-widest text-primary">Email Address</label>
+<input class="w-full bg-background border-white/5 text-white p-4 focus:ring-primary focus:border-primary transition-all" placeholder="john@company.co.nz" type="email"/>
+</div>
+<div class="md:col-span-2 space-y-2">
+<label class="text-[10px] font-headline font-black uppercase tracking-widest text-primary">Project Type</label>
+<select class="w-full bg-background border-white/5 text-white p-4 focus:ring-primary focus:border-primary transition-all">
+<option>High-End Residential</option>
+<option>Commercial Construction</option>
+<option>Industrial Shutdown/Maintenance</option>
+<option>Complex Structure Access</option>
+</select>
+</div>
+<div class="md:col-span-2 space-y-2">
+<label class="text-[10px] font-headline font-black uppercase tracking-widest text-primary">Project Details</label>
+<textarea class="w-full bg-background border-white/5 text-white p-4 h-32 focus:ring-primary focus:border-primary transition-all" placeholder="Briefly describe your site requirements..."></textarea>
+</div>
+<button class="md:col-span-2 bg-primary text-white font-headline font-black uppercase tracking-[0.2em] py-6 hover:bg-orange-700 transition-all text-lg shadow-xl">Request Site Inspection</button>
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-black border-t border-white/5 py-16">
+<div class="container mx-auto px-6">
+<div class="flex flex-col lg:flex-row justify-between items-center gap-12">
+<div class="text-center lg:text-left">
+<img alt="Mana Scaffolding" class="h-12 w-auto mb-6 mx-auto lg:mx-0" src="https://lh3.googleusercontent.com/aida/ADBb0ugbyY1o2WhH_I_YYOYNFVfaX3tRZ-sTMppV9BMQAZcSUbLLSlL_nu-2RQXDGb6LP2oH_10k5vXzwnKfieLRLUxZCljGti856004bPebrK_pJ6IlDvuXjoG3_J-2GAQxJ9CHFEtij7lOeg1rCqiBQCQ_1r3_oLgUsXsQtozt6TeVwtBaagGv6_c6wp5UluOI3SQkFRY3hmcfdp8VORSPXAG0rxbSHyQ35vW7R-qVk-8G-EkLjvH3JcnaxZPq17cHzYefPdK8iBfIFA"/>
+<p class="text-xs text-zinc-600 uppercase font-bold tracking-[0.2em]">© 2026 Mana Scaffolding Ltd. <br class="md:hidden"/> Christchurch, New Zealand.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-8 md:gap-16">
+<a class="text-[10px] font-headline font-bold uppercase tracking-widest text-zinc-500 hover:text-primary transition-colors" href="#">Safety Protocols</a>
+<a class="text-[10px] font-headline font-bold uppercase tracking-widest text-zinc-500 hover:text-primary transition-colors" href="#">Iwi Values</a>
+<a class="text-[10px] font-headline font-bold uppercase tracking-widest text-zinc-500 hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="text-[10px] font-headline font-bold uppercase tracking-widest text-zinc-500 hover:text-primary transition-colors" href="#">Terms</a>
+</div>
+</div>
+</div>
+</footer>
+<script>
+    // 1. DYNAMIC SCAFFOLDING SIDEBAR PROGRESS
+    const mast = document.getElementById('scaffold-mast');
+    const segmentsCount = 20;
+    
+    // Create scaffold elements
+    for(let i=0; i<segmentsCount; i++) {
+        const seg = document.createElement('div');
+        seg.className = 'scaffold-segment';
+        seg.style.top = `${(i/segmentsCount)*100}%`;
+        
+        const coupler = document.createElement('div');
+        coupler.className = 'coupler';
+        coupler.style.top = `${(i/segmentsCount)*100}%`;
+        
+        mast.appendChild(seg);
+        mast.appendChild(coupler);
+    }
+
+    const segments = document.querySelectorAll('.scaffold-segment');
+    const couplers = document.querySelectorAll('.coupler');
+
+    window.addEventListener('scroll', () => {
+        const scrollPercent = window.scrollY / (document.documentElement.scrollHeight - window.innerHeight);
+        const activeIdx = Math.floor(scrollPercent * segmentsCount);
+
+        segments.forEach((seg, idx) => {
+            if(idx <= activeIdx) seg.classList.add('active');
+            else seg.classList.remove('active');
+        });
+
+        couplers.forEach((cup, idx) => {
+            if(idx <= activeIdx) cup.classList.add('active');
+            else cup.classList.remove('active');
+        });
+
+        // REVEAL ANIMATIONS
+        document.querySelectorAll('.reveal-on-scroll').forEach(el => {
+            const rect = el.getBoundingClientRect();
+            if(rect.top < window.innerHeight * 0.85) {
+                el.classList.add('visible');
+            }
+        });
+    });
+
+    // Mobile Menu Basic Toggle (Visual only for now)
+    document.getElementById('mobile-menu-btn').addEventListener('click', () => {
+        alert('Mana Mobile Navigation Under Construction');
+    });
+
+    // Initial Trigger for reveal animations
+    window.dispatchEvent(new Event('scroll'));
+</script>
+</body></html>

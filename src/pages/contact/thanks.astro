@@ -1,0 +1,90 @@
+---
+import Base from '../../layouts/Base.astro';
+
+const businessInfo = {
+  name: 'Mana Scaffolding Limited',
+  phone: '0508 626 272',
+  email: 'terry@manascaffolding.co.nz',
+};
+---
+
+<Base title="Request Sent" description="Your scaffolding quote request has been sent successfully" hideSidebar={true}>
+  <main id="main-content" class="pt-32 pb-20 min-h-screen flex items-center">
+    <section class="py-20 bg-background w-full">
+      <div class="container mx-auto px-6 max-w-2xl text-center">
+        <div class="reveal-on-scroll mb-8">
+          <div class="inline-flex items-center justify-center w-20 h-20 rounded-full bg-primary/20 border-2 border-primary mb-6">
+            <span class="material-symbols-outlined text-5xl text-primary">check_circle</span>
+          </div>
+        </div>
+        
+        <h1 class="text-4xl md:text-5xl font-headline font-black uppercase tracking-tighter mb-6 reveal-on-scroll">
+          Request <span class="text-primary">Sent</span>
+        </h1>
+        
+        <p class="text-xl text-zinc-400 mb-8 reveal-on-scroll">
+          Thank you for contacting Mana Scaffolding. We've received your quote request and will respond within 24 hours.
+        </p>
+        
+        <div class="bg-surface border border-white/5 p-8 mb-10 reveal-on-scroll">
+          <h2 class="text-xl font-headline font-black uppercase text-white mb-6">What Happens Next?</h2>
+          <div class="space-y-4 text-left">
+            <div class="flex items-start gap-4">
+              <div class="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0">
+                <span class="text-primary font-bold text-sm">1</span>
+              </div>
+              <div>
+                <p class="text-white font-bold mb-1">We Review Your Request</p>
+                <p class="text-zinc-500 text-sm">Our team assesses your project requirements and location.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0">
+                <span class="text-primary font-bold text-sm">2</span>
+              </div>
+              <div>
+                <p class="text-white font-bold mb-1">Technical Consultation</p>
+                <p class="text-zinc-500 text-sm">We'll call to discuss specifications and site access.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0">
+                <span class="text-primary font-bold text-sm">3</span>
+              </div>
+              <div>
+                <p class="text-white font-bold mb-1">Detailed Quote</p>
+                <p class="text-zinc-500 text-sm">You'll receive a comprehensive estimate within 24 hours.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="flex flex-col sm:flex-row gap-4 justify-center reveal-on-scroll">
+          <a 
+            href="/" 
+            class="bg-primary text-white font-headline font-black uppercase px-8 py-4 tracking-widest hover:bg-orange-600 transition-colors border-b-4 border-orange-800"
+          >
+            Return to Homepage
+          </a>
+          <a 
+            href="tel:0508626272" 
+            class="border-2 border-white text-white font-headline font-black uppercase px-8 py-4 tracking-widest hover:bg-white hover:text-black transition-colors"
+          >
+            Call Now: 0508 626 272
+          </a>
+        </div>
+        
+        <div class="mt-12 pt-8 border-t border-white/5 reveal-on-scroll">
+          <p class="text-zinc-500 text-sm mb-2">Need immediate assistance?</p>
+          <a href="tel:0508626272" class="text-primary font-bold hover:text-orange-600 transition-colors">
+            {businessInfo.phone}
+          </a>
+          <span class="text-zinc-600 mx-2">|</span>
+          <a href="mailto:terry@manascaffolding.co.nz" class="text-primary font-bold hover:text-orange-600 transition-colors">
+            {businessInfo.email}
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+</Base>

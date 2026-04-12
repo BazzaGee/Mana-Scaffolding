@@ -1,0 +1,91 @@
+{
+  "data": {
+    "id": "h2adTNL9jaAop323o",
+    "actId": "KoJrdxJCTtpon81KY",
+    "userId": "j0JshfLr2lsvk2wxg",
+    "startedAt": "2026-01-16T10:49:21.757Z",
+    "finishedAt": null,
+    "status": "RUNNING",
+    "statusMessage": "Crawled 0/1 pages, 0 failed requests, desired concurrency 10.",
+    "isStatusMessageTerminal": null,
+    "meta": {
+      "origin": "API",
+      "userAgent": "curl/8.14.1"
+    },
+    "stats": {
+      "inputBodyLen": 270,
+      "migrationCount": 0,
+      "rebootCount": 0,
+      "restartCount": 0,
+      "durationMillis": 41903,
+      "resurrectCount": 0,
+      "runTimeSecs": 41.903,
+      "metamorph": 0,
+      "computeUnits": 0.046558888888888886,
+      "memAvgBytes": 46889618.19099676,
+      "memMaxBytes": 70111232,
+      "memCurrentBytes": 44285952,
+      "cpuAvgUsage": 0.5520675383692277,
+      "cpuMaxUsage": 80.44220588235295,
+      "cpuCurrentUsage": 0.04371456500488759,
+      "netRxBytes": 77561,
+      "netTxBytes": 30475
+    },
+    "options": {
+      "build": "latest",
+      "timeoutSecs": 0,
+      "memoryMbytes": 4096,
+      "maxTotalChargeUsd": 5,
+      "maxItems": null,
+      "diskMbytes": 8192
+    },
+    "buildId": "mABEtHkzcItANIOpT",
+    "defaultKeyValueStoreId": "47ZLfbxrkPm5psE1Y",
+    "defaultDatasetId": "g9bZzMx8b1isUd2EH",
+    "defaultRequestQueueId": "NYx3cPRBD5J6oXN2b",
+    "pricingInfo": {
+      "minimalMaxTotalChargeUsd": 0.0062,
+      "pricingModel": "PAY_PER_EVENT",
+      "isPriceChangeNotificationSuppressed": true,
+      "createdAt": "2025-07-31T09:38:52.740Z",
+      "startedAt": "2025-07-31T09:38:52.740Z",
+      "apifyMarginPercentage": 0.2,
+      "pricingPerEvent": {
+        "actorChargeEvents": {
+          "actor-start": {
+            "eventTitle": "Actor start",
+            "eventDescription": "Flat charge for starting an Actor run.",
+            "isOneTimeEvent": true,
+            "eventPriceUsd": 0.006
+          },
+          "post": {
+            "eventTitle": "Post",
+            "eventDescription": "Each post written to the dataset.",
+            "eventPriceUsd": 0.005
+          },
+          "filter-applied": {
+            "eventTitle": "Add-on: Date filter",
+            "eventDescription": "Extra cost per post scraped with a date filter.",
+            "eventPriceUsd": 0.002
+          }
+        }
+      }
+    },
+    "chargedEventCounts": {
+      "actor-start": 1,
+      "post": 0,
+      "filter-applied": 0
+    },
+    "platformUsageBillingModel": "DEVELOPER",
+    "accountedChargedEventCounts": {
+      "actor-start": 1,
+      "post": 0,
+      "filter-applied": 0
+    },
+    "generalAccess": "FOLLOW_USER_SETTING",
+    "buildNumber": "0.0.240",
+    "containerUrl": "https://hemsgbwwqvqm.runs.apify.net",
+    "usageTotalUsd": 0.006,
+    "consoleUrl": "https://console.apify.com/view/runs/h2adTNL9jaAop323o"
+  }
+}

@@ -1,0 +1,366 @@
+{
+  "research_metadata": {
+    "business_slug": "manascaffoldingastro",
+    "research_date": "2026-04-03",
+    "research_version": "1.0",
+    "data_confidence_score": 0.85,
+    "sources_consulted": [
+      "New Zealand Companies Office",
+      "Tracxn Company Profile",
+      "Company Hub NZ",
+      "Business South Magazine (Facebook)",
+      "Official Website (manascaffolding.co.nz)",
+      "NZ Gazette",
+      "Industry Directories"
+    ]
+  },
+  "business_identity": {
+    "legal_name": "MANA SCAFFOLDING LIMITED",
+    "trading_name": "Mana Scaffolding",
+    "company_number": "7795497",
+    "nzbn": "9429032545562",
+    "entity_type": "Private Limited Company",
+    "incorporation_date": "2019-10-24",
+    "company_status": "Active",
+    "country_of_origin": "New Zealand",
+    "business_description": "Scaffolding construction services provider specializing in residential, commercial, and industrial scaffolding solutions across Canterbury region",
+    "tagline": "Kia Ora, we're Mana Scaffolding. We provide a complete scaffolding service across Canterbury."
+  },
+  "location": {
+    "registered_address": {
+      "street": "65c Highsted Road, Bishopdale",
+      "city": "Christchurch",
+      "region": "Canterbury",
+      "postal_code": "8053",
+      "country": "New Zealand"
+    },
+    "service_area": [
+      "Christchurch",
+      "Canterbury Region",
+      "South Island, New Zealand"
+    ],
+    "coordinates": {
+      "latitude": -43.4975,
+      "longitude": 172.6036
+    }
+  },
+  "contact_information": {
+    "phone": {
+      "primary": "0508 626 272",
+      "format": "Free phone (NZ toll-free)",
+      "international": "+64 508 626 272"
+    },
+    "email": {
+      "primary": "terry@manascaffolding.co.nz",
+      "contact_name": "Terry Pohatu"
+    },
+    "website": {
+      "url": "https://www.manascaffolding.co.nz/",
+      "status": "Active - Coming Soon page",
+      "platform": "Squarespace"
+    },
+    "social_media": {
+      "facebook": {
+        "url": "https://www.facebook.com/p/Mana-Scaffolding-Ltd-61559601844506/",
+        "status": "Active",
+        "page_name": "Mana Scaffolding Ltd"
+      },
+      "linkedin": {
+        "url": null,
+        "status": "Not found"
+      },
+      "instagram": {
+        "url": null,
+        "status": "Not found"
+      }
+    }
+  },
+  "leadership_and_ownership": {
+    "directors": [
+      {
+        "name": "Terry Alan POHATU",
+        "status": "Current",
+        "appointment_date": "2019-10-24",
+        "tenure": "6 years 5 months",
+        "role": "Founder & Director",
+        "background": "Brings international experience, co-founded company in 2019"
+      },
+      {
+        "name": "Keith William TIMMINS",
+        "status": "Current",
+        "appointment_date": "2023-05-14",
+        "tenure": "2 years 10 months",
+        "role": "Director",
+        "background": "Brings international experience from Canada and UK, joined 2023"
+      }
+    ],
+    "shareholding": {
+      "as_of_date": "2024-09-03",
+      "shareholders": [
+        {
+          "name": "Terry Alan POHATU",
+          "percentage": 67.00,
+          "shares": 8862716,
+          "type": "Majority Shareholder"
+        },
+        {
+          "name": "Keith William TIMMINS",
+          "percentage": 33.00,
+          "shares": 4337284,
+          "type": "Minority Shareholder"
+        }
+      ],
+      "total_shares": 13200000
+    }
+  },
+  "business_model": {
+    "industry": "Scaffolding Construction Services",
+    "industry_classification": "Construction - Specialized Trade Services",
+    "service_offerings": [
+      "Residential scaffolding",
+      "Commercial scaffolding",
+      "Industrial scaffolding",
+      "Custom scaffolding solutions",
+      "Scaffold hire and installation",
+      "Temporary access solutions",
+      "Safety-oriented scaffolding services"
+    ],
+    "target_markets": [
+      "Residential construction",
+      "Commercial construction",
+      "Industrial projects",
+      "Complex construction projects",
+      "Canterbury region businesses"
+    ],
+    "value_proposition": "Complete scaffolding service with international expertise, tackling complex projects with safety-focused approach",
+    "reputation": "Built reputation for tackling complex projects with directors bringing international experience from Canada and UK"
+  },
+  "digital_presence": {
+    "website_analysis": {
+      "url": "https://www.manascaffolding.co.nz/",
+      "status": "Coming Soon",
+      "platform": "Squarespace",
+      "features": [
+        "Click-to-call phone number",
+        "Email contact form",
+        "Logo and branding present",
+        "Minimal content - under construction"
+      ],
+      "seo_status": "Limited - placeholder page",
+      "last_updated": "2026-03-20"
+    },
+    "social_media_presence": {
+      "facebook": {
+        "url": "https://www.facebook.com/p/Mana-Scaffolding-Ltd-61559601844506/",
+        "status": "Active",
+        "content_type": "Business updates",
+        "engagement": "Featured in Business South Magazine posts"
+      },
+      "google_business_profile": {
+        "status": "Not verified in search results",
+        "url": null
+      }
+    },
+    "online_mentions": [
+      {
+        "source": "Business South Magazine",
+        "type": "Feature article",
+        "url": "https://www.facebook.com/100092090173509/posts/with-directors-bringing-international-experience-from-canada-and-the-uk-mana-sca/835591926187139/",
+        "sentiment": "Positive",
+        "content": "Highlighting company's reputation for complex projects and international expertise"
+      },
+      {
+        "source": "Tracxn",
+        "type": "Company profile",
+        "url": "https://tracxn.com/d/legal-entities/new-zealand/mana-scaffolding-limited/__vgDtEU_AoxXeeJNj9DMszf2KVZRAMkopZ-wQnJ8KS-c",
+        "sentiment": "Neutral",
+        "content": "Company data and financial information"
+      }
+    ]
+  },
+  "competitive_landscape": {
+    "market_position": "Small-to-medium sized scaffolding provider in Christchurch/Canterbury region",
+    "key_competitors": [
+      {
+        "name": "United Scaffolding Group New Zealand",
+        "location": "Multiple NZ locations including Christchurch",
+        "size": "51-200 employees",
+        "parent_company": "Waco International",
+        "services": ["Modular scaffolding", "Formwork", "Engineering drawings", "On-site labour"],
+        "competitive_advantage": "Large multinational backing, 1.1M+ stock items, 7 branches nationwide",
+        "url": "https://unitedscaffolding.co.nz/"
+      },
+      {
+        "name": "Secure Scaffold",
+        "location": "Christchurch, Canterbury",
+        "services": ["Scaffolding", "Temporary fencing"],
+        "specialization": "Safety-oriented, police-vetted staff, high-profile projects (NZ Defense Force, Ministry of Education)",
+        "competitive_advantage": "Security clearance, government contracts",
+        "url": "https://scaffolders.co.nz/directory/scaffolding/christchurch/"
+      },
+      {
+        "name": "Upright Scaffolding Ltd",
+        "location": "Christchurch",
+        "size": "Family-owned, 70+ years in business",
+        "services": ["Scaffolding construction", "Scaffold solutions"],
+        "competitive_advantage": "70 years local experience, family-owned, strong client relationships",
+        "url": "https://www.uprightscaffolding.co.nz/"
+      },
+      {
+        "name": "Canterbury Scaffolding",
+        "location": "489 Sawyers Arms Road, Harewood, Christchurch 8051",
+        "phone": "03 349 4269",
+        "services": ["Residential scaffolding", "Commercial scaffolding", "Demolition scaffolding", "Falsework"],
+        "url": "https://canterburyscaffolding.co.nz/"
+      },
+      {
+        "name": "Bramwell Scaffolding Ltd",
+        "location": "Dunedin, Wanaka (South Island)",
+        "size": "65+ years in business",
+        "services": ["Scaffolding", "Formwork", "Propping", "Events & Staging", "Shrinkwrapping"],
+        "competitive_advantage": "65 years experience, Layher systems access, chartered engineering expertise",
+        "url": "https://bramwellscaffolding.co.nz/"
+      },
+      {
+        "name": "Geeves Scaffolding",
+        "location": "Multiple NZ locations (Auckland, Hamilton, Hawke's Bay, Wellington, Timaru, Dunedin)",
+        "services": ["Scaffolding", "Nationwide coverage"],
+        "competitive_advantage": "Nationwide presence, multiple branches",
+        "url": "https://geeves.co.nz/"
+      }
+    ],
+    "competitive_advantages": [
+      "International experience from directors (Canada, UK)",
+      "Specialization in complex projects",
+      "Local Christchurch/Canterbury focus",
+      "Ngāi Tahu whānau connection (potential)",
+      "Personalized service as smaller operator"
+    ],
+    "market_gaps": [
+      "Limited digital presence compared to competitors",
+      "No visible project portfolio online",
+      "Website under construction",
+      "Limited social media activity"
+    ]
+  },
+  "industry_context": {
+    "industry": "Scaffolding Services - New Zealand",
+    "market_characteristics": [
+      "Fragmented market with national players and local specialists",
+      "Strong demand driven by construction activity",
+      "Safety and compliance critical factors",
+      "Relationship-based business model",
+      "Project-based revenue streams"
+    ],
+    "key_success_factors": [
+      "Safety record and compliance",
+      "Equipment quality and availability",
+      "Skilled labour force",
+      "Project management capabilities",
+      "Client relationships",
+      "Geographic coverage"
+    ],
+    "regulatory_environment": [
+      "New Zealand Standard AS/NZS1576 for scaffolding",
+      "Health and Safety at Work Act 2015",
+      "Building Act 2004",
+      "Local council requirements"
+    ],
+    "market_trends": [
+      "Increasing focus on worker safety and wellbeing",
+      "Technology adoption for project management",
+      "Modular and system scaffolding growth",
+      "Sustainability considerations",
+      "Skills shortage in construction trades"
+    ]
+  },
+  "swot_analysis": {
+    "strengths": [
+      "Experienced leadership with international expertise",
+      "Established since 2019 (6+ years)",
+      "Reputation for complex projects",
+      "Local Christchurch market knowledge",
+      "Stable ownership structure"
+    ],
+    "weaknesses": [
+      "Limited online presence",
+      "Website not fully developed",
+      "Smaller scale compared to national competitors",
+      "Limited marketing visibility",
+      "No visible project portfolio"
+    ],
+    "opportunities": [
+      "Christchurch rebuild and construction boom",
+      "Digital marketing and SEO improvement",
+      "Partnership with main contractors",
+      "Ngāi Tahu business network",
+      "Specialization in niche scaffolding segments",
+      "Website completion and content marketing"
+    ],
+    "threats": [
+      "Large competitors with more resources",
+      "Economic downturn affecting construction",
+      "Skills shortage in scaffolding trades",
+      "Increasing safety compliance costs",
+      "Material cost inflation"
+    ]
+  },
+  "data_gaps_and_recommendations": {
+    "missing_data": [
+      "Google Business Profile verification status",
+      "Employee count and team information",
+      "Specific project portfolio and case studies",
+      "Revenue and financial performance",
+      "Equipment inventory details",
+      "Certifications and accreditations",
+      "Insurance coverage details"
+    ],
+    "recommended_next_steps": [
+      "Verify and optimize Google Business Profile",
+      "Complete website with portfolio and services",
+      "Gather customer testimonials and reviews",
+      "Document key projects with photos",
+      "Expand social media presence",
+      "List on industry directories",
+      "Develop relationships with main contractors"
+    ]
+  },
+  "research_sources": [
+    {
+      "name": "New Zealand Companies Office",
+      "type": "Government Registry",
+      "url": "https://companiesoffice.govt.nz/",
+      "data_provided": "Company registration, directors, shareholding"
+    },
+    {
+      "name": "Tracxn",
+      "type": "Business Intelligence Platform",
+      "url": "https://tracxn.com/d/legal-entities/new-zealand/mana-scaffolding-limited/__vgDtEU_AoxXeeJNj9DMszf2KVZRAMkopZ-wQnJ8KS-c",
+      "data_provided": "Company profile, cap table, board information"
+    },
+    {
+      "name": "Company Hub NZ",
+      "type": "Business Directory",
+      "url": "https://www.companyhub.nz/",
+      "data_provided": "Company details and status"
+    },
+    {
+      "name": "Business South Magazine",
+      "type": "Media Publication",
+      "url": "https://www.facebook.com/100092090173509/",
+      "data_provided": "Company feature and background information"
+    },
+    {
+      "name": "Official Website",
+      "type": "Company Website",
+      "url": "https://www.manascaffolding.co.nz/",
+      "data_provided": "Contact information, branding"
+    },
+    {
+      "name": "Facebook Business Page",
+      "type": "Social Media",
+      "url": "https://www.facebook.com/p/Mana-Scaffolding-Ltd-61559601844506/",
+      "data_provided": "Business presence, contact info"
+    }
+  ]
+}

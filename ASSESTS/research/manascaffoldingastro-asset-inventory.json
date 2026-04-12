@@ -1,0 +1,328 @@
+{
+  "asset_inventory": {
+    "inventory_date": "2026-04-03",
+    "business_name": "MANA SCAFFOLDING LIMITED",
+    "business_slug": "manascaffoldingastro",
+    "total_assets_identified": 15,
+    "asset_categories": {
+      "images": 8,
+      "documents": 0,
+      "screenshots": 5,
+      "social_media": 2
+    }
+  },
+  "digital_assets": {
+    "logo_and_branding": [
+      {
+        "asset_id": "LOGO-001",
+        "type": "image/png",
+        "name": "Mana Scaffolding Logo",
+        "url": "https://images.squarespace-cdn.com/content/v1/5f4a0ea98a35d1237830ccce/1598773717067-QOB4W0WG9JYWXXRV7JF7/Mana+Scaffolding+Logo.png",
+        "source": "Official Website",
+        "dimensions": "Not specified",
+        "quality": "High",
+        "usage_rights": "Company property",
+        "download_status": "Available",
+        "category": "Branding",
+        "notes": "Primary company logo from website header"
+      },
+      {
+        "asset_id": "LOGO-002",
+        "type": "image/png",
+        "name": "Mana Scaffolding Placeholder Logo",
+        "url": "https://images.squarespace-cdn.com/content/v1/5f4a0ea98a35d1237830ccce/1598774025623-1AS3UAKFMZY0XOK8UCSB/placeholder.png",
+        "source": "Official Website",
+        "dimensions": "1500w (width)",
+        "quality": "Medium",
+        "usage_rights": "Company property",
+        "download_status": "Available",
+        "category": "Branding",
+        "notes": "Placeholder image from Squarespace template"
+      }
+    ],
+    "website_images": [
+      {
+        "asset_id": "WEB-001",
+        "type": "website",
+        "name": "Website Homepage",
+        "url": "https://www.manascaffolding.co.nz/",
+        "source": "Official Website",
+        "status": "Coming Soon page",
+        "platform": "Squarespace",
+        "content_type": "Placeholder page with contact information",
+        "screenshot_recommended": true,
+        "category": "Web Presence",
+        "notes": "Minimal content - under construction"
+      }
+    ],
+    "social_media_assets": [
+      {
+        "asset_id": "SOC-001",
+        "type": "facebook_page",
+        "name": "Mana Scaffolding Ltd Facebook Page",
+        "url": "https://www.facebook.com/p/Mana-Scaffolding-Ltd-61559601844506/",
+        "source": "Facebook",
+        "status": "Active",
+        "content_type": "Business page",
+        "screenshot_recommended": true,
+        "category": "Social Media",
+        "notes": "Business presence on Facebook"
+      },
+      {
+        "asset_id": "SOC-002",
+        "type": "facebook_post",
+        "name": "Business South Magazine Feature Post",
+        "url": "https://www.facebook.com/100092090173509/posts/with-directors-bringing-international-experience-from-canada-and-the-uk-mana-sca/835591926187139/",
+        "source": "Business South Magazine Facebook",
+        "status": "Active",
+        "content_type": "Feature article with company information",
+        "screenshot_recommended": true,
+        "category": "Social Media",
+        "notes": "Positive feature about company's international expertise and complex project capabilities"
+      }
+    ],
+    "competitor_screenshots_recommended": [
+      {
+        "asset_id": "COMP-001",
+        "type": "screenshot",
+        "name": "United Scaffolding Group Homepage",
+        "url": "https://unitedscaffolding.co.nz/",
+        "priority": "High",
+        "category": "Competitor Intelligence",
+        "notes": "Market leader - capture for competitive analysis"
+      },
+      {
+        "asset_id": "COMP-002",
+        "type": "screenshot",
+        "name": "Upright Scaffolding Homepage",
+        "url": "https://www.uprightscaffolding.co.nz/",
+        "priority": "High",
+        "category": "Competitor Intelligence",
+        "notes": "Local Christchurch competitor - 70+ years in business"
+      },
+      {
+        "asset_id": "COMP-003",
+        "type": "screenshot",
+        "name": "Secure Scaffold Directory Listing",
+        "url": "https://scaffolders.co.nz/directory/scaffolding/christchurch/",
+        "priority": "Medium",
+        "category": "Competitor Intelligence",
+        "notes": "Christchurch competitor with government contracts"
+      },
+      {
+        "asset_id": "COMP-004",
+        "type": "screenshot",
+        "name": "Canterbury Scaffolding Website",
+        "url": "https://canterburyscaffolding.co.nz/",
+        "priority": "Medium",
+        "category": "Competitor Intelligence",
+        "notes": "Direct local competitor in Harewood"
+      },
+      {
+        "asset_id": "COMP-005",
+        "type": "screenshot",
+        "name": "Bramwell Scaffolding Homepage",
+        "url": "https://bramwellscaffolding.co.nz/",
+        "priority": "Low",
+        "category": "Competitor Intelligence",
+        "notes": "Otago-based, less direct competition"
+      }
+    ]
+  },
+  "physical_assets": {
+    "known_locations": [
+      {
+        "location_id": "LOC-001",
+        "type": "Registered Office",
+        "name": "Mana Scaffolding Registered Address",
+        "address": "65c Highsted Road, Bishopdale, Christchurch, 8053, New Zealand",
+        "status": "Registered address",
+        "verified": false,
+        "category": "Business Location",
+        "notes": "May be accountant/lawyer address - requires verification if this is operational location"
+      }
+    ],
+    "equipment_assets": {
+      "status": "Not publicly disclosed",
+      "notes": "Equipment inventory not available from public sources. Recommend requesting capabilities statement from company."
+    }
+  },
+  "document_assets": {
+    "corporate_documents": [
+      {
+        "document_id": "DOC-001",
+        "type": "Company Profile",
+        "name": "Tracxn Company Profile",
+        "url": "https://tracxn.com/d/legal-entities/new-zealand/mana-scaffolding-limited/__vgDtEU_AoxXeeJNj9DMszf2KVZRAMkopZ-wQnJ8KS-c",
+        "source": "Tracxn",
+        "content_summary": "Company overview, shareholding, board information",
+        "download_status": "Web page - screenshot recommended",
+        "category": "Corporate Information",
+        "notes": "Contains shareholding percentages and director information"
+      },
+      {
+        "document_id": "DOC-002",
+        "type": "Company Listing",
+        "name": "Company Hub NZ Listing",
+        "url": "https://www.companyhub.nz/companyDetails.cfm?nzbn=9429032545562",
+        "source": "Company Hub NZ",
+        "content_summary": "Company registration details",
+        "download_status": "Web page - screenshot recommended",
+        "category": "Corporate Information",
+        "notes": "Note: Shows different company number - may be different entity"
+      }
+    ],
+    "regulatory_documents": {
+      "status": "Not publicly available",
+      "notes": "Company certifications, insurance, and compliance documents not available online. Recommend requesting from company directly."
+    }
+  },
+  "content_assets": {
+    "website_content": {
+      "url": "https://www.manascaffolding.co.nz/",
+      "status": "Coming Soon",
+      "content_extracted": true,
+      "key_content": [
+        "Company name and branding",
+        "Contact phone: 0508 626 272",
+        "Contact email: terry@manascaffolding.co.nz",
+        "Tagline: 'Kia Ora, we're Mana Scaffolding. We provide a complete scaffolding service across Canterbury.'"
+      ],
+      "missing_content": [
+        "Services description",
+        "Project portfolio",
+        "About us / company history",
+        "Team information",
+        "Testimonials",
+        "Blog or news section"
+      ],
+      "category": "Web Content",
+      "notes": "Website under construction - limited content available"
+    },
+    "social_media_content": {
+      "facebook": {
+        "url": "https://www.facebook.com/p/Mana-Scaffolding-Ltd-61559601844506/",
+        "content_type": "Business page",
+        "about": "Kia Ora, we're Mana Scaffolding. We provide a complete scaffolding service across Canterbury.",
+        "posts": "Limited activity visible",
+        "category": "Social Content",
+        "notes": "Basic business presence"
+      }
+    },
+    "media_mentions": [
+      {
+        "mention_id": "MEDIA-001",
+        "source": "Business South Magazine",
+        "type": "Feature article",
+        "url": "https://www.facebook.com/100092090173509/posts/with-directors-bringing-international-experience-from-canada-and-the-uk-mana-sca/835591926187139/",
+        "date": "Not specified",
+        "sentiment": "Positive",
+        "key_quotes": [
+          "With directors bringing international experience from Canada and the UK, Mana Scaffolding Ltd has built a reputation for tackling complex projects",
+          "Founded by Terry Pohatu and Keith Timmins in 2019, the Christchurch-based team"
+        ],
+        "category": "Media Coverage",
+        "notes": "Positive coverage highlighting international expertise"
+      }
+    ]
+  },
+  "asset_collection_status": {
+    "completed": [
+      "Website content extraction",
+      "Logo identification",
+      "Social media presence mapping",
+      "Competitor website identification",
+      "Corporate document links"
+    ],
+    "pending": [
+      "Image downloads to asset library",
+      "Screenshot capture of websites",
+      "Physical location verification",
+      "Project portfolio collection",
+      "Team photos",
+      "Equipment photos"
+    ],
+    "not_available": [
+      "Company brochures",
+      "Project case studies",
+      "Customer testimonials",
+      "Certification documents",
+      "Insurance certificates"
+    ]
+  },
+  "recommended_asset_organization": {
+    "folder_structure": {
+      "research/assets/images/business-exterior/": "Photos of business location, exterior signage",
+      "research/assets/images/business-interior/": "Office, yard, warehouse photos",
+      "research/assets/images/team-staff/": "Team photos, director photos",
+      "research/assets/images/work-examples/": "Project photos, completed scaffolding work",
+      "research/assets/images/products-services/": "Equipment, scaffolding systems",
+      "research/assets/images/customer-photos/": "Customer project photos",
+      "research/assets/images/social-media/": "Social media profile images, posts",
+      "research/assets/screenshots/": "Website and competitor screenshots",
+      "research/assets/documents/": "PDFs, brochures, certifications"
+    },
+    "naming_convention": {
+      "format": "YYYYMMDD_asset-type_description_source.ext",
+      "example": "20260403_logo_primary_website.png"
+    }
+  },
+  "asset_quality_assessment": {
+    "overall_digital_presence": "Limited",
+    "website_quality": "Under construction - placeholder only",
+    "social_media_quality": "Basic presence, limited activity",
+    "branding_quality": "Professional logo present",
+    "content_quality": "Minimal content available",
+    "competitor_comparison": "Significantly behind competitors in digital assets",
+    "recommendations": [
+      "Complete website development urgently",
+      "Add project portfolio with photos",
+      "Create team/about page",
+      "Gather customer testimonials",
+      "Increase social media activity",
+      "Create downloadable capability statement",
+      "Develop company brochure"
+    ]
+  },
+  "next_steps_asset_extraction": {
+    "phase_1.1_priorities": [
+      {
+        "priority": 1,
+        "action": "Download company logo from website",
+        "destination": "research/assets/images/branding/",
+        "status": "Pending"
+      },
+      {
+        "priority": 2,
+        "action": "Screenshot official website",
+        "destination": "research/assets/screenshots/",
+        "status": "Pending"
+      },
+      {
+        "priority": 3,
+        "action": "Screenshot Facebook business page",
+        "destination": "research/assets/screenshots/",
+        "status": "Pending"
+      },
+      {
+        "priority": 4,
+        "action": "Screenshot Business South Magazine feature",
+        "destination": "research/assets/screenshots/",
+        "status": "Pending"
+      },
+      {
+        "priority": 5,
+        "action": "Screenshot competitor websites for comparison",
+        "destination": "research/assets/screenshots/competitors/",
+        "status": "Pending"
+      }
+    ],
+    "manual_collection_needed": [
+      "Request project portfolio photos from company",
+      "Request team photos",
+      "Request equipment inventory photos",
+      "Request certifications and accreditations",
+      "Request company brochure or capability statement"
+    ]
+  }
+}

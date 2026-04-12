@@ -1,0 +1,280 @@
+---
+import Base from '../../layouts/Base.astro';
+
+const businessInfo = {
+  name: 'Mana Scaffolding Limited',
+  description: 'Complete scaffolding services for Canterbury. Residential, commercial, and industrial solutions with international expertise.',
+  url: 'https://manasastro.pages.dev',
+  phone: '0508 626 272',
+  email: 'terry@manascaffolding.co.nz',
+  address: {
+    street: '65c Highsted Road, Bishopdale',
+    city: 'Christchurch',
+    region: 'Canterbury',
+    postcode: '8053',
+    country: 'New Zealand'
+  },
+  coordinates: {
+    lat: -43.4975,
+    lng: 172.6036
+  },
+  hours: [
+    { day: 'Monday', open: '07:00', close: '17:00' },
+    { day: 'Tuesday', open: '07:00', close: '17:00' },
+    { day: 'Wednesday', open: '07:00', close: '17:00' },
+    { day: 'Thursday', open: '07:00', close: '17:00' },
+    { day: 'Friday', open: '07:00', close: '17:00' },
+    { day: 'Saturday', open: 'By appointment', close: '' },
+    { day: 'Sunday', open: 'Closed', close: '' }
+  ],
+  social: {
+    facebook: 'https://www.facebook.com/p/Mana-Scaffolding-Ltd-61559601844506/'
+  }
+};
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": "https://manasastro.pages.dev/#organization",
+  "name": businessInfo.name,
+  "description": businessInfo.description,
+  "url": businessInfo.url,
+  "telephone": businessInfo.phone,
+  "email": businessInfo.email,
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": businessInfo.address.street,
+    "addressLocality": businessInfo.address.city,
+    "addressRegion": businessInfo.address.region,
+    "postalCode": businessInfo.address.postcode,
+    "addressCountry": "NZ"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": businessInfo.coordinates.lat,
+    "longitude": businessInfo.coordinates.lng
+  },
+  "openingHoursSpecification": businessInfo.hours.filter(h => h.open !== 'Closed' && h.open !== 'By appointment').map(h => ({
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": h.day,
+    "opens": h.open,
+    "closes": h.close
+  })),
+  "sameAs": [
+    businessInfo.social.facebook
+  ],
+  "priceRange": "$$",
+  "areaServed": {
+    "@type": "GeoCircle",
+    "geoMidpoint": {
+      "@type": "GeoCoordinates",
+      "latitude": businessInfo.coordinates.lat,
+      "longitude": businessInfo.coordinates.lng
+    },
+    "geoRadius": "100000"
+  },
+  "serviceType": [
+    "Residential Scaffolding",
+    "Commercial Scaffolding",
+    "Industrial Scaffolding",
+    "Complex Access Solutions"
+  ]
+};
+
+const servicesSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Scaffolding Services",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Residential Scaffolding",
+      "description": "Professional scaffolding solutions for Canterbury residential construction, renovation, and maintenance projects.",
+      "url": "https://manasastro.pages.dev/services/residential-scaffolding"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Commercial Scaffolding",
+      "description": "Enterprise-grade scaffolding for Christchurch and Canterbury commercial projects.",
+      "url": "https://manasastro.pages.dev/services/commercial-scaffolding"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Industrial Scaffolding",
+      "description": "Heavy-duty scaffolding for industrial facilities, processing plants, and warehouses.",
+      "url": "https://manasastro.pages.dev/services/industrial-scaffolding"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Complex Access Solutions",
+      "description": "Specialized scaffolding for challenging structures, heritage buildings, and unique access requirements.",
+      "url": "https://manasastro.pages.dev/services/complex-access-solutions"
+    }
+  ]
+};
+---
+
+<Base title="Contact" description="Contact Mana Scaffolding for scaffolding estimates in Canterbury - Phone: 0508 626 272" hideSidebar={true}>
+  <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(servicesSchema)} />
+  
+  <main id="main-content" class="pt-24 pb-16">
+    <section class="py-20 bg-background">
+      <div class="container mx-auto px-6">
+        <h1 class="text-display-xl font-headline font-black uppercase tracking-tighter mb-6 reveal-on-scroll">
+          Contact <span class="text-primary">Us</span>
+        </h1>
+        <p class="text-zinc-400 text-lg max-w-2xl mb-16 reveal-on-scroll">
+          Get in touch for a free scaffolding estimate. We serve all of Canterbury from our Christchurch base.
+        </p>
+        
+        <div class="grid lg:grid-cols-2 gap-12 max-w-6xl">
+          <div class="reveal-on-scroll">
+            <div class="bg-primary text-white p-10 mb-8">
+              <h2 class="text-3xl font-headline font-black uppercase mb-6">Get In Touch</h2>
+              <div class="space-y-6">
+                <div class="flex items-start gap-4">
+                  <div class="w-10 h-10 bg-white/10 rounded-sm flex items-center justify-center flex-shrink-0">
+                    <span class="material-symbols-outlined text-xl">call</span>
+                  </div>
+                  <div>
+                    <p class="text-white/70 text-xs uppercase tracking-widest mb-1">Phone</p>
+                    <a href="tel:0508626272" class="text-lg font-bold hover:underline">{businessInfo.phone}</a>
+                  </div>
+                </div>
+                <div class="flex items-start gap-4">
+                  <div class="w-10 h-10 bg-white/10 rounded-sm flex items-center justify-center flex-shrink-0">
+                    <span class="material-symbols-outlined text-xl">mail</span>
+                  </div>
+                  <div>
+                    <p class="text-white/70 text-xs uppercase tracking-widest mb-1">Email</p>
+                    <a href="mailto:terry@manascaffolding.co.nz" class="font-bold hover:underline">{businessInfo.email}</a>
+                  </div>
+                </div>
+                <div class="flex items-start gap-4">
+                  <div class="w-10 h-10 bg-white/10 rounded-sm flex items-center justify-center flex-shrink-0">
+                    <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M20.5 3l-.16.03L15 5.1 9 3 3.36 4.9c-.21.07-.36.25-.36.48V20.5c0 .28.22.5.5.5l.16-.03L9 18.9l6 2.1 5.64-1.9c.21-.07.36-.25.36-.48V3.5c0-.28-.22-.5-.5-.5zM15 19l-6-2.11V5l6 2.11V19z"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <p class="text-white/70 text-xs uppercase tracking-widest mb-1">Visit Us</p>
+                    <p class="font-bold">{businessInfo.address.street}</p>
+                    <p class="font-bold">{businessInfo.address.city}, {businessInfo.address.postcode}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Google Maps Embed -->
+            <div class="bg-surface border border-white/5 overflow-hidden mb-8">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2796.4726!2d172.601411!3d-43.497502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d3188f8c5c8c5c5%3A0x500ef868479b8fb0!2s65c%20Highsted%20Rd%2C%20Bishopdale%2C%20Christchurch%208053%2C%20New%20Zealand!5e0!3m2!1sen!2snz!4v1712345678901!5m2!1sen!2snz"
+                width="100%" 
+                height="350" 
+                style="border:0; filter: grayscale(100%) invert(92%) contrast(83%);" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"
+                class="w-full"
+                title="Mana Scaffolding Location"
+              ></iframe>
+            </div>
+            
+            <div class="bg-surface border border-white/5 p-10">
+              <h3 class="text-xl font-headline font-black uppercase text-white mb-6">Business Hours</h3>
+              <div class="space-y-3">
+                {businessInfo.hours.map((h) => (
+                  <div class="flex justify-between text-sm">
+                    <span class="text-zinc-500">{h.day}</span>
+                    <span class="text-white font-medium">
+                      {h.open === 'Closed' ? 'Closed' : h.open === 'By appointment' ? 'By appointment' : `${h.open} - ${h.close}`}
+                    </span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+          
+          <div class="reveal-on-scroll">
+            <div class="bg-surface border border-white/5 p-10">
+              <h2 class="text-2xl font-headline font-black uppercase text-white mb-8">Request a Quote</h2>
+              <form class="space-y-6" action="https://formsubmit.co/terry@manascaffolding.co.nz" method="POST">
+                <input type="hidden" name="_subject" value="New scaffolding quote request from manasastro.pages.dev" />
+                <input type="hidden" name="_captcha" value="false" />
+                <input type="hidden" name="_template" value="table" />
+                <input type="hidden" name="_next" value="https://manasastro.pages.dev/contact/thanks" />
+                
+                <div class="grid md:grid-cols-2 gap-6">
+                  <div>
+                    <label class="text-label-xs font-headline font-black uppercase tracking-widest text-primary block mb-2">Name *</label>
+                    <input 
+                      type="text" 
+                      name="name"
+                      required
+                      class="w-full bg-background border border-white/10 text-white p-4 focus:ring-2 focus:ring-primary focus:border-primary transition-all rounded-sm" 
+                      placeholder="Your name"
+                    />
+                  </div>
+                  <div>
+                    <label class="text-label-xs font-headline font-black uppercase tracking-widest text-primary block mb-2">Phone *</label>
+                    <input 
+                      type="tel" 
+                      name="phone"
+                      required
+                      class="w-full bg-background border border-white/10 text-white p-4 focus:ring-2 focus:ring-primary focus:border-primary transition-all rounded-sm" 
+                      placeholder="021 123 4567"
+                    />
+                  </div>
+                </div>
+                
+                <div>
+                  <label class="text-label-xs font-headline font-black uppercase tracking-widest text-primary block mb-2">Email *</label>
+                  <input 
+                    type="email" 
+                    name="email"
+                    required
+                    class="w-full bg-background border border-white/10 text-white p-4 focus:ring-2 focus:ring-primary focus:border-primary transition-all rounded-sm" 
+                    placeholder="your@email.com"
+                  />
+                </div>
+                
+                <div>
+                  <label class="text-label-xs font-headline font-black uppercase tracking-widest text-primary block mb-2">Project Type</label>
+                  <select name="project_type" class="w-full bg-background border border-white/10 text-white p-4 focus:ring-2 focus:ring-primary focus:border-primary transition-all rounded-sm">
+                    <option value="residential">Residential</option>
+                    <option value="commercial">Commercial</option>
+                    <option value="industrial">Industrial</option>
+                    <option value="complex">Complex Access</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+                
+                <div>
+                  <label class="text-label-xs font-headline font-black uppercase tracking-widest text-primary block mb-2">Project Details *</label>
+                  <textarea 
+                    name="message"
+                    required
+                    class="w-full bg-background border border-white/10 text-white p-4 h-32 focus:ring-2 focus:ring-primary focus:border-primary transition-all rounded-sm" 
+                    placeholder="Please describe your project, including approximate height, duration, and location..."
+                  ></textarea>
+                </div>
+                
+                <button 
+                  type="submit" 
+                  class="w-full bg-primary text-white font-headline font-black uppercase tracking-widest py-5 hover:bg-orange-600 transition-colors border-b-4 border-orange-800 text-lg"
+                >
+                  Send Request
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</Base>

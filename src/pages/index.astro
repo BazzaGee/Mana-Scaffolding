@@ -1,0 +1,425 @@
+---
+import Base from '../layouts/Base.astro';
+
+const galleryImages = [
+  { src: '/images/Mana facebook pic.jpg', title: 'Mana Scaffolding at Work', category: 'On Site' },
+  { src: '/images/Mana facebook pic2.jpg', title: 'Complex Project Access', category: 'Commercial' },
+  { src: '/images/Mana-Scaffolding-trucks-at-work.jpg', title: 'Mana Fleet Deployment', category: 'Logistics' },
+  { src: '/images/N1.jpg', title: 'Project Timelapse Frame 1', category: 'Progress' },
+  { src: '/images/N2.jpg', title: 'Project Timelapse Frame 2', category: 'Progress' },
+  { src: '/images/N3.jpg', title: 'Project Timelapse Frame 3', category: 'Progress' },
+  { src: '/images/N4.jpg', title: 'Project Timelapse Frame 4', category: 'Progress' },
+  { src: '/images/N5.jpg', title: 'Project Timelapse Frame 5', category: 'Progress' },
+  { src: '/images/N6.jpg', title: 'Project Timelapse Frame 6', category: 'Progress' },
+  { src: '/images/N7.jpg', title: 'Project Timelapse Frame 7', category: 'Progress' },
+  { src: '/images/N8.jpg', title: 'Project Timelapse Frame 8', category: 'Progress' },
+  { src: '/images/N9.jpg', title: 'Project Timelapse Frame 9', category: 'Progress' },
+];
+---
+
+<Base title="Home" description="Mana Scaffolding - Complete scaffolding service across Canterbury with international expertise from Canada and UK">
+
+  <main id="main-content" class="pr-0 md:pr-[70px]">
+    <!-- Hero Section with Video -->
+    <section class="relative min-h-screen flex items-center pt-24 lg:pt-20">
+      <div class="scaffolding-grid-bg absolute inset-0 pointer-events-none"></div>
+      
+      <div class="container mx-auto px-6 lg:px-12 relative z-10">
+        <div class="grid lg:grid-cols-2 gap-12 lg:gap-8 items-center">
+          
+          <!-- Left Column - Header & CTA -->
+          <div class="order-2 lg:order-1 flex flex-col justify-center">
+            <div class="inline-flex items-center gap-3 border border-primary/30 bg-primary/10 px-4 py-2 mb-6 w-fit">
+              <span class="relative flex h-2 w-2">
+                <span class="animate-ping-slow absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+              </span>
+              <span class="text-label-xs font-headline font-black text-primary uppercase tracking-widest">Christchurch Based | Since 2019</span>
+            </div>
+            
+            <h1 class="hero-title font-headline text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-black leading-tight tracking-tighter uppercase mb-6">
+              <span class="text-white">Scaffolding Built</span><br/>
+              <span class="text-primary">Right First</span><br/>
+              <span class="text-white">Time</span>
+            </h1>
+            
+            <p class="max-w-lg text-zinc-400 text-sm md:text-base lg:text-lg mb-8 leading-relaxed">
+              Complex access solutions for Canterbury's toughest projects. Founder-led precision. Zero safety compromises. Get your technical estimate today.
+            </p>
+            
+            <!-- Clickable CTA Buttons -->
+            <div class="flex flex-col sm:flex-row gap-4">
+              <a 
+                href="/contact"
+                class="inline-flex items-center justify-center bg-primary text-white font-headline font-bold uppercase whitespace-nowrap px-8 md:px-10 py-4 md:py-5 text-sm md:text-base tracking-wider transition-all duration-300 hover:bg-orange-600 border-b-4 border-orange-800 shadow-[0_4px_20px_rgba(212,68,28,0.4)] hover:shadow-[0_8px_30px_rgba(212,68,28,0.5)]"
+              >
+                <span class="flex items-center gap-2 md:gap-3">
+                  Get Your Free Quote
+                  <svg class="w-4 h-4 md:w-5 md:h-5 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
+                  </svg>
+                </span>
+              </a>
+              <a 
+                href="/services"
+                class="inline-flex items-center justify-center border-2 border-white/50 text-white font-headline font-bold uppercase whitespace-nowrap px-8 md:px-10 py-4 md:py-5 text-sm md:text-base tracking-wider transition-all duration-300 hover:bg-white hover:text-black hover:border-white"
+              >
+                <span class="flex items-center gap-2 md:gap-3">
+                  See What We Do
+                  <svg class="w-4 h-4 md:w-5 md:h-5 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-4 6h-4v2h4v-2zM5 19V5h14v14H5zm2-8h10v2H7v-2z"/>
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+          
+          <!-- Right Column - Hero Video -->
+          <div class="order-1 lg:order-2 relative">
+            <div class="relative aspect-[4/3] lg:aspect-square bg-surface border-2 border-primary/20 overflow-hidden group">
+              <video 
+                autoplay 
+                loop 
+                muted 
+                playsinline
+                class="w-full h-full object-cover transition-all duration-700 grayscale md:group-hover:grayscale-0 [filter:none!important] md:[filter:grayscale(1)!important] md:group-hover:[filter:grayscale(0)!important]"
+              >
+                <source src="/videos/timelapse.mp4" type="video/mp4" />
+              </video>
+              
+              <!-- Decorative corners -->
+              <div class="absolute top-0 left-0 w-16 h-16 border-t-2 border-l-2 border-primary z-10 pointer-events-none"></div>
+              <div class="absolute bottom-0 right-0 w-16 h-16 border-b-2 border-r-2 border-primary z-10 pointer-events-none"></div>
+            </div>
+            
+            <!-- Floating accent box -->
+            <div class="absolute -bottom-6 -left-6 bg-primary px-6 py-3 text-white font-headline font-bold text-sm md:text-xl shadow-2xl hidden md:block pointer-events-none">
+              500+ Projects Delivered
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="absolute bottom-0 left-0 w-full h-32 bg-gradient-dark z-10 pointer-events-none"></div>
+    </section>
+
+    <!-- Mana Identity Section -->
+    <section class="py-32 bg-zinc-950 relative overflow-hidden" id="identity">
+      <div class="container mx-auto px-6 md:px-12 relative z-10">
+        <div class="grid lg:grid-cols-2 gap-24 items-center">
+          <div class="reveal-on-scroll">
+            <div class="flex items-center gap-4 mb-6">
+              <div class="h-[2px] w-12 bg-primary"></div>
+              <span class="text-primary font-headline font-black tracking-widest text-label-xs">The Core Foundation</span>
+            </div>
+            <h2 class="text-5xl lg:text-headline-large font-headline font-black uppercase leading-none mb-10">The Mana <br/><span class="text-zinc-800">Prestige</span></h2>
+            <div class="space-y-6 text-lg text-zinc-400 leading-relaxed">
+              <p>
+                In New Zealand's construction landscape, 'Mana' isn't just a label—it's the bedrock of our operation. It refers to prestige, authority, and spiritual power. For us, Mana is found in the <span class="text-white font-bold">structural integrity</span> of the systems we build and the unwavering <span class="text-white font-bold">guardianship (Kaitiakitanga)</span> we provide for every worker on our sites.
+              </p>
+              <p>
+                We are strictly New Zealand-owned and operated, based in the heart of Christchurch. Our connection to Aotearoa is deep, and our commitment to the safety of our local workforce is absolute.
+              </p>
+            </div>
+            <div class="grid grid-cols-2 gap-8 border-t border-white/5 pt-12 mt-12">
+              <div>
+                <h4 class="font-headline font-bold text-primary uppercase text-label-xs mb-3">Authentic Connection</h4>
+                <p class="text-xl text-white font-black font-headline uppercase">Kia Ora</p>
+                <p class="text-label-xs text-zinc-500 font-bold mt-1">Our Greeting, Our Value</p>
+              </div>
+              <div>
+                <h4 class="font-headline font-bold text-primary uppercase text-label-xs mb-3">Operational Hub</h4>
+                <p class="text-xl text-white font-black font-headline uppercase">Canterbury</p>
+                <p class="text-label-xs text-zinc-500 font-bold mt-1">Christchurch Local</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Image -->
+          <div class="relative reveal-on-scroll">
+            <div class="aspect-[4/5] bg-surface border border-white/5 p-2 overflow-hidden">
+              <img alt="Mana Scaffolding at Work" class="w-full h-full object-cover" src="/images/Mana facebook pic.jpg" loading="lazy" decoding="async" />
+            </div>
+            <div class="absolute -bottom-8 -left-8 bg-primary px-6 py-4 text-white font-headline font-bold text-sm md:text-xl shadow-2xl">
+              Zero Incidents Since 2019
+            </div>
+            <div class="absolute -top-4 -right-4 w-24 h-24 border-t-2 border-r-2 border-primary"></div>
+          </div>
+            <div class="absolute -bottom-8 -left-8 bg-primary px-6 py-4 text-white font-headline font-bold text-sm md:text-xl shadow-2xl">
+              Zero Incidents Since 2019
+            </div>
+            <div class="absolute -top-4 -right-4 w-24 h-24 border-t-2 border-r-2 border-primary"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- International DNA Section -->
+    <section class="py-32 bg-background border-y border-white/5" id="expertise">
+      <div class="container mx-auto px-6 md:px-12">
+        <div class="text-center mb-24 reveal-on-scroll">
+          <h2 class="text-6xl lg:text-display-xl font-headline font-black uppercase tracking-tighter mb-6">Global <span class="text-primary">DNA</span></h2>
+          <p class="text-zinc-500 uppercase tracking-[0.4em] font-headline text-label-xs font-bold">Standard of Excellence | Local Implementation</p>
+        </div>
+        <div class="grid md:grid-cols-2 gap-12 reveal-on-scroll">
+          <div class="bg-surface p-12 relative border border-white/5 group hover:border-primary/30 transition-all duration-500">
+            <div class="flex items-center gap-6 mb-10">
+              <div class="w-24 h-24 bg-surface-variant rounded-sm overflow-hidden border border-white/10 flex items-center justify-center">
+                <img alt="Terry Pohatu" class="w-full h-full object-cover" src="/images/N5.jpg" loading="lazy" decoding="async" />
+              </div>
+              <div>
+                <h3 class="text-3xl font-headline font-black uppercase text-white">Terry Pohatu</h3>
+                <div class="flex items-center gap-2 mt-1">
+                  <span class="w-2 h-2 rounded-full bg-primary"></span>
+                  <span class="text-primary font-bold text-label-xs tracking-widest">Canada Expertise</span>
+                </div>
+              </div>
+            </div>
+            <p class="text-zinc-400 text-lg italic mb-8 leading-relaxed">"We are bringing North American industrial rigging protocols to the unique topographical challenges of New Zealand."</p>
+            <div class="h-1 w-full bg-white/5 overflow-hidden">
+              <div class="h-full bg-primary w-0 group-hover:w-full transition-all duration-700"></div>
+            </div>
+          </div>
+          <div class="bg-surface p-12 relative border border-white/5 group hover:border-primary/30 transition-all duration-500">
+            <div class="flex items-center gap-6 mb-10">
+              <div class="w-24 h-24 bg-surface-variant rounded-sm overflow-hidden border border-white/10 flex items-center justify-center">
+                <img alt="Keith Timmins" class="w-full h-full object-cover" src="/images/N7.jpg" loading="lazy" decoding="async" />
+              </div>
+              <div>
+                <h3 class="text-3xl font-headline font-black uppercase text-white">Keith Timmins</h3>
+                <div class="flex items-center gap-2 mt-1">
+                  <span class="w-2 h-2 rounded-full bg-primary"></span>
+                  <span class="text-primary font-bold text-label-xs tracking-widest">UK Precision</span>
+                </div>
+              </div>
+            </div>
+            <p class="text-zinc-400 text-lg italic mb-8 leading-relaxed">"The British standard of scaffolding is about millimeter precision in dense, high-stakes urban environments."</p>
+            <div class="h-1 w-full bg-white/5 overflow-hidden">
+              <div class="h-full bg-primary w-0 group-hover:w-full transition-all duration-700"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-32 bg-zinc-950" id="services">
+      <div class="container mx-auto px-6 md:px-12">
+        <h2 class="text-3xl md:text-5xl font-headline font-black uppercase mb-16 reveal-on-scroll">Expertise <span class="text-primary">Verticals</span></h2>
+        <div class="grid lg:grid-cols-2 gap-8">
+          <a href="/services/residential-scaffolding" class="industrial-slab p-8 md:p-12 reveal-on-scroll group bg-surface hover:bg-zinc-900 transition-all duration-300 cursor-pointer block">
+            <div class="flex justify-between items-start mb-8">
+              <svg class="w-10 h-10 md:w-12 md:h-12 text-primary" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+              </svg>
+              <span class="text-6xl md:text-7xl font-headline font-black text-white/5 group-hover:text-primary/20 transition-colors">01</span>
+            </div>
+            <h3 class="text-2xl md:text-3xl font-headline font-black uppercase mb-3 text-white group-hover:text-primary transition-colors">Residential</h3>
+            <p class="text-zinc-500 font-medium leading-relaxed text-sm md:text-base">Specialized access for Canterbury homes and multi-unit developments. High-rise precision for every build.</p>
+          </a>
+          <a href="/services/commercial-scaffolding" class="industrial-slab p-8 md:p-12 reveal-on-scroll group bg-surface hover:bg-zinc-900 transition-all duration-300 cursor-pointer block">
+            <div class="flex justify-between items-start mb-8">
+              <svg class="w-10 h-10 md:w-12 md:h-12 text-primary" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 7V3H2v18h20V7H12zM6 19H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4V9h2v2zm0-4H4V5h2v2zm4 12H8v-2h2v2zm0-4H8v-2h2v2zm0-4H8V9h2v2zm0-4H8V5h2v2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2V9h8v10z"/>
+              </svg>
+              <span class="text-6xl md:text-7xl font-headline font-black text-white/5 group-hover:text-primary/20 transition-colors">02</span>
+            </div>
+            <h3 class="text-2xl md:text-3xl font-headline font-black uppercase mb-3 text-white group-hover:text-primary transition-colors">Commercial</h3>
+            <p class="text-zinc-500 font-medium leading-relaxed text-sm md:text-base">Rapid deployment for office towers and retail. Engineered for NZ compliance and tight timelines.</p>
+          </a>
+          <a href="/services/industrial-scaffolding" class="industrial-slab p-8 md:p-12 reveal-on-scroll group bg-surface hover:bg-zinc-900 transition-all duration-300 cursor-pointer block">
+            <div class="flex justify-between items-start mb-8">
+              <svg class="w-10 h-10 md:w-12 md:h-12 text-primary" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M22 12V8h-2V5h-2V2h-2v3h-2V2h-2v3H8V2H6v5H4v4H2v2h2v2H2v2h2v2H2v2h2v-2h2v2h2v-2h2v2h2v-2h2v2h2v-2h2v2h2v-2h2v-2h-2v-2h2v-2h-2v-2h2zm-4 6h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2V8h2v2zm-4 8h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2V8h2v2zm-4 8H8v-2h2v2zm0-4H8v-2h2v2zm0-4H8V8h2v2zm-4 8H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4V8h2v2z"/>
+              </svg>
+              <span class="text-6xl md:text-7xl font-headline font-black text-white/5 group-hover:text-primary/20 transition-colors">03</span>
+            </div>
+            <h3 class="text-2xl md:text-3xl font-headline font-black uppercase mb-3 text-white group-hover:text-primary transition-colors">Industrial</h3>
+            <p class="text-zinc-500 font-medium leading-relaxed text-sm md:text-base">Heavy-duty rigging for processing plants and warehouses. Built for high winds and harsh conditions.</p>
+          </a>
+          <a href="/services/complex-access-solutions" class="industrial-slab p-8 md:p-12 reveal-on-scroll group bg-surface hover:bg-zinc-900 transition-all duration-300 cursor-pointer block">
+            <div class="flex justify-between items-start mb-8">
+              <svg class="w-10 h-10 md:w-12 md:h-12 text-primary" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 3L2 12h3v8h6v-6h2v6h6v-8h3L12 3zm5 15h-2v-6H9v6H7v-7.81l5-4.5 5 4.5V18z"/>
+              </svg>
+              <span class="text-6xl md:text-7xl font-headline font-black text-white/5 group-hover:text-primary/20 transition-colors">04</span>
+            </div>
+            <h3 class="text-2xl md:text-3xl font-headline font-black uppercase mb-3 text-white group-hover:text-primary transition-colors">Complex Access</h3>
+            <p class="text-zinc-500 font-medium leading-relaxed text-sm md:text-base">Cantilevered decks, suspended scaffolds, and birdcage systems. When others say impossible, we deliver.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section with All Images -->
+    <section class="py-32 bg-background overflow-hidden" id="gallery">
+      <div class="container mx-auto px-6 md:px-12 mb-16 flex flex-col md:flex-row md:items-end justify-between gap-6">
+        <div class="reveal-on-scroll">
+          <h2 class="text-5xl lg:text-headline-large font-headline font-black uppercase tracking-tighter">The <span class="text-primary">Portfolio</span></h2>
+          <p class="text-zinc-500 mt-4 uppercase tracking-widest text-xs font-bold">Selected Works | Canterbury Wide</p>
+        </div>
+        <div class="flex gap-3">
+          <button id="gallery-prev" class="w-10 h-10 md:w-12 md:h-12 rounded-full bg-primary/20 border border-primary/40 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all cursor-pointer flex-shrink-0" aria-label="Previous image">
+            <svg class="w-5 h-5 md:w-6 md:h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+            </svg>
+          </button>
+          <button id="gallery-next" class="w-10 h-10 md:w-12 md:h-12 rounded-full bg-primary/20 border border-primary/40 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all cursor-pointer flex-shrink-0" aria-label="Next image">
+            <svg class="w-5 h-5 md:w-6 md:h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div id="gallery-scroll" class="flex gap-6 px-6 md:px-12 overflow-x-auto no-scrollbar reveal-on-scroll pb-8 snap-x snap-mandatory">
+        {galleryImages.map((img, i) => (
+          <div class="flex-shrink-0 w-full md:w-[70vw] lg:w-[600px] snap-start group cursor-pointer">
+            <div class="relative h-[350px] md:h-[450px] overflow-hidden bg-surface border border-white/5">
+              <img 
+                alt={img.title} 
+                class="w-full h-full object-cover transition-all duration-700 group-hover:scale-105" 
+                src={img.src} 
+                loading="lazy"
+                decoding="async"
+              />
+              <div class="absolute bottom-0 left-0 p-6 md:p-8 bg-gradient-to-t from-black to-transparent w-full">
+                <span class="text-primary font-black text-label-xs uppercase tracking-widest">{img.category}</span>
+                <h4 class="text-xl md:text-2xl font-headline font-black uppercase text-white">{img.title}</h4>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+      <p class="text-zinc-600 text-xs uppercase tracking-widest text-center mt-6">Swipe or use arrows to navigate</p>
+    </section>
+
+    <!-- Mana Advantage Section -->
+    <section class="py-32 bg-zinc-900 border-t border-white/10">
+      <div class="container mx-auto px-6 md:px-12">
+        <div class="grid lg:grid-cols-2 gap-24 items-center">
+          <div class="reveal-on-scroll">
+            <h2 class="text-4xl lg:text-headline-large font-headline font-black uppercase mb-8">The Mana <span class="text-primary">Edge</span></h2>
+            <p class="text-zinc-400 mb-12 text-lg">While corporate giants offer scale, Mana offers agility and founder-led precision that only a specialist Canterbury firm can provide.</p>
+            <div class="space-y-10">
+              <div class="flex gap-8 items-start">
+                <div class="w-14 h-14 bg-primary/10 rounded-sm flex items-center justify-center flex-shrink-0 text-primary">
+                  <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M7 2v11h3v9l7-12h-4l4-8z"/>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="text-xl font-headline font-black uppercase text-white mb-2">Agility vs. Bureaucracy</h4>
+                  <p class="text-zinc-500 leading-relaxed">Instant site decisions. Terry and Keith are hands-on, bypassing corporate approval delays for custom rig designs.</p>
+                </div>
+              </div>
+              <div class="flex gap-8 items-start">
+                <div class="w-14 h-14 bg-primary/10 rounded-sm flex items-center justify-center flex-shrink-0 text-primary">
+                  <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="text-xl font-headline font-black uppercase text-white mb-2">Global Safety Standards</h4>
+                  <p class="text-zinc-500 leading-relaxed">International rigging protocols applied to every joint. Zero safety incident commitment since 2019.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="grid grid-cols-2 gap-4 reveal-on-scroll">
+            <div class="bg-black/60 p-10 border border-white/5 flex flex-col justify-between h-48 group hover:border-primary/50 transition-all cursor-pointer">
+              <span class="text-primary font-black text-label-xs tracking-widest uppercase">Strengths</span>
+              <p class="text-sm font-bold text-white uppercase leading-tight">Complex Rigging<br/>Global DNA<br/>Safety First</p>
+            </div>
+            <div class="bg-black/60 p-10 border border-white/5 flex flex-col justify-between h-48 group hover:border-primary/50 transition-all cursor-pointer">
+              <span class="text-zinc-700 font-black text-label-xs tracking-widest uppercase group-hover:text-primary transition-colors">Strategy</span>
+              <p class="text-sm font-bold text-white uppercase leading-tight">Precision Over<br/>Market Volume</p>
+            </div>
+            <div class="bg-black/60 p-10 border border-white/5 flex flex-col justify-between h-48 group hover:border-primary/50 transition-all cursor-pointer">
+              <span class="text-zinc-700 font-black text-label-xs tracking-widest uppercase group-hover:text-primary transition-colors">Network</span>
+              <p class="text-sm font-bold text-white uppercase leading-tight">Local Iwi<br/>Relationships</p>
+            </div>
+            <div class="bg-black/60 p-10 border border-white/5 flex flex-col justify-between h-48 group hover:border-primary/50 transition-all cursor-pointer">
+              <span class="text-primary font-black text-label-xs tracking-widest uppercase">Focus</span>
+              <p class="text-sm font-bold text-white uppercase leading-tight">Zero Safety<br/>Incidents</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-32 bg-background relative overflow-hidden">
+      <div class="container mx-auto px-6 md:px-12 relative z-10 text-center">
+        <h2 class="text-6xl md:text-display-xl font-headline font-black uppercase text-white tracking-tighter mb-8 reveal-on-scroll">Ready to Start?</h2>
+        <p class="text-xl font-headline font-bold text-primary mb-12 reveal-on-scroll">Call for a Technical Estimate: <a class="underline hover:text-orange-600 transition-colors" href="tel:0508626272">0508 626 272</a></p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center reveal-on-scroll">
+          <a href="/contact" class="bg-primary text-white font-headline font-black uppercase px-12 py-5 tracking-widest transition-all hover:bg-orange-600 border-b-4 border-orange-800 shadow-lg">
+            Get a Quote
+          </a>
+          <a href="/services" class="border-2 border-white text-white font-headline font-black uppercase px-12 py-5 tracking-widest transition-all hover:bg-white hover:text-black">
+            View Services
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    // Gallery Scroll Navigation with Touch Support
+    const galleryScroll = document.getElementById('gallery-scroll');
+    const prevBtn = document.getElementById('gallery-prev');
+    const nextBtn = document.getElementById('gallery-next');
+    
+    if(galleryScroll && prevBtn && nextBtn) {
+      const cardWidth = galleryScroll.querySelector('.flex-shrink-0')?.offsetWidth || 600;
+      const gap = 24;
+      const scrollAmount = cardWidth + gap;
+      
+      // Button navigation
+      prevBtn.addEventListener('click', () => {
+        galleryScroll.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+      });
+      
+      nextBtn.addEventListener('click', () => {
+        galleryScroll.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+      });
+      
+      // Touch/swipe support
+      let touchStartX = 0;
+      let touchEndX = 0;
+      
+      galleryScroll.addEventListener('touchstart', (e) => {
+        touchStartX = e.changedTouches[0].screenX;
+      }, { passive: true });
+      
+      galleryScroll.addEventListener('touchend', (e) => {
+        touchEndX = e.changedTouches[0].screenX;
+        handleSwipe();
+      }, { passive: true });
+      
+      function handleSwipe() {
+        const swipeThreshold = 50;
+        const diff = touchStartX - touchEndX;
+        
+        if (Math.abs(diff) > swipeThreshold) {
+          if (diff > 0) {
+            // Swiped left - go next
+            galleryScroll.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+          } else {
+            // Swiped right - go prev
+            galleryScroll.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+          }
+        }
+      }
+      
+      // Keyboard navigation
+      galleryScroll.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowLeft') {
+          galleryScroll.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+        } else if (e.key === 'ArrowRight') {
+          galleryScroll.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+        }
+      });
+    }
+  </script>
+</Base>

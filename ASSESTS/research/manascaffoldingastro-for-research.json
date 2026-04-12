@@ -1,0 +1,46 @@
+{
+  "business_name": "MANA SCAFFOLDING LIMITED",
+  "location": {
+    "address": "65c Highsted Road, Bishopdale",
+    "city": "Christchurch",
+    "state": "Canterbury",
+    "zip": "8053",
+    "country": "New Zealand"
+  },
+  "industry": "Scaffolding Construction Services",
+  "exact_identifiers": {
+    "google_business_profile": "",
+    "facebook": "",
+    "instagram": "",
+    "yelp": "",
+    "website": "",
+    "phone": "",
+    "email": ""
+  },
+  "company_details": {
+    "cin": "7795497",
+    "status": "Active",
+    "entity_type": "Private Limited Company",
+    "date_of_incorporation": "October 24, 2019",
+    "country_of_origin": "New Zealand",
+    "directors": [
+      {
+        "name": "Terry Alan POHATU",
+        "status": "Current",
+        "appointment_date": "October 24, 2019"
+      },
+      {
+        "name": "Keith William TIMMINS",
+        "status": "Current",
+        "appointment_date": "May 14, 2023"
+      }
+    ],
+    "shareholders": [
+      {
+        "name": "Terry Alan POHATU",
+        "holdings_percentage": "67.00%"
+      }
+    ]
+  },
+  "validation_notes": "New Zealand scaffolding company incorporated Oct 2019, based in Christchurch. Directors: Terry Pohatu and Keith Timmins."
+}

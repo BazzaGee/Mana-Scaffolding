@@ -1,0 +1,106 @@
+---
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+import ScaffoldSidebar from '../components/ScaffoldSidebar.astro';
+
+export interface Props {
+  title: string;
+  description?: string;
+  image?: string;
+  canonicalURL?: string;
+  sidebar?: boolean;
+  hideSidebar?: boolean;
+}
+
+const { 
+  title, 
+  description = 'Mana Scaffolding - Complete scaffolding service across Canterbury with international expertise',
+  image = '/logos/Mana-Scaffolding-Logo.png',
+  canonicalURL = Astro.url.href,
+  sidebar = true,
+  hideSidebar = false
+} = Astro.props;
+
+const siteName = 'Mana Scaffolding Limited';
+const siteUrl = 'https://manasastro.pages.dev';
+const fullTitle = `${title} | ${siteName}`;
+---
+
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <meta name="generator" content={Astro.generator} />
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href={canonicalURL} />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/logos/Mana-Scaffolding-Logo.png" />
+    
+    <!-- Title -->
+    <title>{fullTitle}</title>
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={new URL(image, siteUrl)} />
+    <meta property="og:site_name" content={siteName} />
+    <meta property="og:locale" content="en_NZ" />
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content={canonicalURL} />
+    <meta name="twitter:title" content={fullTitle} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={new URL(image, siteUrl)} />
+    
+    <!-- Additional SEO -->
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content={siteName} />
+    <meta name="geo.region" content="NZ-CAN" />
+    <meta name="geo.placename" content="Christchurch" />
+    
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#D4441C" />
+    
+    <!-- Preconnect to external resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  </head>
+  <body class="bg-background text-zinc-300 font-body overflow-x-hidden">
+    <a href="#main-content" class="skip-to-content">Skip to content</a>
+    <Nav />
+    {sidebar && !hideSidebar && <ScaffoldSidebar />}
+    <slot />
+    <Footer sidebar={sidebar && !hideSidebar} />
+    
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const revealElements = document.querySelectorAll('.reveal-on-scroll');
+        
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+            }
+          });
+        }, {
+          threshold: 0.1,
+          rootMargin: '0px 0px -50px 0px'
+        });
+        
+        revealElements.forEach(el => observer.observe(el));
+      });
+    </script>
+  </body>
+</html>
+
+<style is:global>
+  @import '../styles/global.css';
+</style>
