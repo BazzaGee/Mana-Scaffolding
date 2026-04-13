@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "skills": {
+    "qwen-image-2": {
+      "source": "inference-sh/skills",
+      "sourceType": "github",
+      "computedHash": "242ddfe7bf06d744c87720bbfa0eae96eee10da0cf9d0a1460190aec2728656a"
+    }
+  }
+}

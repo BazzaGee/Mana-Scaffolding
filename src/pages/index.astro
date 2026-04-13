@@ -258,17 +258,20 @@ const galleryImages = [
           <h2 class="text-5xl lg:text-headline-large font-headline font-black uppercase tracking-tighter">The <span class="text-primary">Portfolio</span></h2>
           <p class="text-zinc-500 mt-4 uppercase tracking-widest text-xs font-bold">Selected Works | Canterbury Wide</p>
         </div>
-        <div class="flex gap-3">
-          <button id="gallery-prev" class="w-10 h-10 md:w-12 md:h-12 rounded-full bg-primary/20 border border-primary/40 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all cursor-pointer flex-shrink-0" aria-label="Previous image">
-            <svg class="w-5 h-5 md:w-6 md:h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
-            </svg>
-          </button>
-          <button id="gallery-next" class="w-10 h-10 md:w-12 md:h-12 rounded-full bg-primary/20 border border-primary/40 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all cursor-pointer flex-shrink-0" aria-label="Next image">
-            <svg class="w-5 h-5 md:w-6 md:h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
-            </svg>
-          </button>
+        <div class="flex flex-col items-center gap-3">
+          <div class="flex gap-3">
+            <button id="gallery-prev" class="w-10 h-10 md:w-12 md:h-12 rounded-full bg-primary/20 border border-primary/40 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all cursor-pointer flex-shrink-0" aria-label="Previous image">
+              <svg class="w-5 h-5 md:w-6 md:h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+              </svg>
+            </button>
+            <button id="gallery-next" class="w-10 h-10 md:w-12 md:h-12 rounded-full bg-primary/20 border border-primary/40 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all cursor-pointer flex-shrink-0" aria-label="Next image">
+              <svg class="w-5 h-5 md:w-6 md:h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+              </svg>
+            </button>
+          </div>
+          <p class="text-zinc-600 text-xs uppercase tracking-widest text-center">Swipe or use arrows to navigate</p>
         </div>
       </div>
       <div id="gallery-scroll" class="flex gap-6 px-6 md:px-12 overflow-x-auto no-scrollbar reveal-on-scroll pb-8 snap-x snap-mandatory">
@@ -290,7 +293,6 @@ const galleryImages = [
           </div>
         ))}
       </div>
-      <p class="text-zinc-600 text-xs uppercase tracking-widest text-center mt-6">Swipe or use arrows to navigate</p>
     </section>
 
     <!-- Mana Advantage Section -->

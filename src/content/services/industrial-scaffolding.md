@@ -1,274 +1,32 @@
 ---
 title: 'Industrial Scaffolding Services'
-description: 'Heavy-duty scaffolding for industrial facilities, processing plants, warehouses, and manufacturing sites across Canterbury.'
+description: 'Heavy-duty scaffolding for industrial facilities, processing plants, warehouses, and manufacturing sites across Canterbury. Engineered for hazardous environments with shutdown and turnaround support.'
 service_type: 'Industrial'
 image: '/images/services/industrial-scaffolding.jpg'
+keywords:
+  - industrial scaffolding Christchurch
+  - heavy duty scaffolding Canterbury
+  - plant maintenance scaffolding NZ
+  - shutdown scaffolding contractors
+  - processing plant scaffolding
+  - industrial scaffolding hire
+  - Canterbury industrial scaffolding
+  - tank scaffolding services
+faq:
+  - question: 'What is industrial scaffolding and how does it differ from standard scaffolding?'
+    answer: 'Industrial scaffolding is engineered for heavy-duty applications including high load capacities, hazardous environments, and continuous operations. It uses reinforced components, additional bracing, and requires engineering certification. Unlike standard scaffolding, it must integrate with site safety management systems, permit-to-work processes, and isolation procedures.'
+  - question: 'Can you provide scaffolding during plant shutdowns and turnarounds?'
+    answer: 'Yes. Shutdown and turnaround scaffolding is one of our core capabilities. We offer rapid mobilisation, extended shift capability including 24/7 support, multiple trade coordination, and equipment-specific access platforms. We understand critical path scheduling and work to tight turnaround timelines.'
+  - question: 'How do you handle scaffolding in hazardous environments?'
+    answer: 'We conduct thorough hazard assessments, implement site-specific safety plans, coordinate isolation procedures, use appropriate PPE, and follow contamination prevention protocols. Our teams hold site-specific inductions and comply with all permit-to-work requirements for each facility.'
+  - question: 'What load capacities can your industrial scaffolding support?'
+    answer: 'Our industrial scaffolding systems are engineered to specification based on project requirements. This includes platform loads for workers and materials, point loads from equipment, dynamic loads from operations, and environmental loads. All systems come with engineering certification and load verification documentation.'
+  - question: 'Do you provide emergency scaffolding deployment for industrial facilities?'
+    answer: 'Yes. We maintain rapid deployment capability for urgent industrial access needs, including after-hours availability and critical path response. Our emergency service includes immediate site assessment, safety-first approach, and fast mobilisation to minimise production downtime.'
 ---
 
-# Industrial Scaffolding Services
+Industrial facilities don't tolerate shortcuts. Processing plants, manufacturing sites, and logistics centres operate in demanding environments where scaffolding must withstand **heavy loads, hazardous conditions, and round-the-clock operations**. Mana Scaffolding brings international industrial rigging protocols to Canterbury's toughest sites.
 
-Specialized heavy-duty scaffolding for Canterbury's industrial sector. From processing plants to warehouses, we provide engineered access for the most demanding environments.
+Our teams are trained for the realities of industrial work: shutdown and turnaround mobilisation, hazardous area protocols, permit-to-work systems, and containment procedures. Whether it's a 24/7 maintenance scaffold for a processing plant or a heavy-duty platform for equipment installation, we **engineer every system to specification**.
 
-## Services Overview
-
-Industrial facilities present unique challenges—hazardous environments, continuous operations, and heavy load requirements. Mana Scaffolding brings international industrial protocols to Canterbury's processing, manufacturing, and logistics sectors.
-
-### What We Provide
-
-**Industrial Access Solutions:**
-- Processing plant maintenance access
-- Manufacturing facility work platforms
-- Warehouse and logistics centre access
-- Tank and vessel scaffolding
-- Heavy equipment installation platforms
-- Shutdown and turnaround scaffolding
-
-## Industrial Project Types
-
-### Maintenance Shutdowns
-
-Planned maintenance access:
-- Rapid mobilization
-- Extended shift capability
-- Multiple trade coordination
-- Equipment-specific access
-- 24/7 project support
-
-### Capital Projects
-
-New installations and upgrades:
-- Equipment installation platforms
-- Services access systems
-- Structural modification access
-- Integration with existing operations
-- Progressive handover
-
-### Ongoing Maintenance
-
-Continuous operational support:
-- Routine maintenance access
-- Inspection platforms
-- Services maintenance
-- Safety system access
-- Preventative maintenance
-
-### Emergency Response
-
-Urgent access needs:
-- Rapid deployment capability
-- After-hours availability
-- Critical path access
-- Safety-first response
-
-## Our Industrial Approach
-
-### Hazard Assessment
-
-Industrial sites require:
-- Hazardous area identification
-- Risk assessment
-- Isolation coordination
-- Emergency planning
-- Specialized procedures
-
-### Engineering Design
-
-Industrial loads demand:
-- Heavy-duty design calculations
-- Load verification
-- Equipment support specifications
-- Engineering certification
-- Producer statements
-
-### Operational Integration
-
-Working around operations:
-- Shift coordination
-- Production scheduling
-- Safety alignment
-- Communication protocols
-- Contamination prevention
-
-## Industrial-Specific Features
-
-### Heavy-Duty Systems
-
-**Load Capacity:**
-- Platform loads to specification
-- Equipment support capacity
-- Material staging areas
-- Point load distribution
-
-**Construction:**
-- Heavy-gauge components
-- Reinforced connections
-- Additional bracing
-- Engineering verification
-
-### Hazardous Environment Adaptation
-
-**Chemical Exposure:**
-- Appropriate material selection
-- Protective treatments
-- Contamination prevention
-- Decontamination procedures
-
-**Temperature Extremes:**
-- Heat-adjacent work platforms
-- Cold store access systems
-- Thermal expansion consideration
-- Appropriate PPE requirements
-
-**Dust and Particulates:**
-- Containment systems
-- Clean area maintenance
-- Equipment protection
-- Hygiene protocols
-
-### Access to Heights
-
-**Tall Structures:**
-- Multi-lift configurations
-- Lift access integration
-- Material handling systems
-- Extended duration considerations
-
-**Confined Access:**
-- Internal tank access
-- Vessel entry systems
-- Limited space solutions
-- Specialized training requirements
-
-## Safety for Industrial
-
-### Specialized Protocols
-
-**Industrial hazards require:**
-- Site-specific inductions
-- Hazardous area training
-- Isolation procedures
-- Emergency response plans
-- Contamination prevention
-
-### Coordination Requirements
-
-Working with site safety:
-- Integration with site systems
-- Permit-to-work coordination
-- Isolation certificates
-- Emergency procedures alignment
-- Communication integration
-
-## Compliance for Industrial
-
-### Regulatory Framework
-
-Industrial scaffolding must address:
-- Site safety management systems
-- Hazardous area requirements
-- Engineering certification
-- Health monitoring where required
-- Emergency response capability
-
-### Our Industrial Compliance
-
-- Engineering certification
-- Hazard-specific documentation
-- Site integration plans
-- Training records
-- Inspection compliance
-
-## Engineering Support
-
-### Design Capability
-
-We engineer for:
-- Point loads from equipment
-- Dynamic loads from operations
-- Environmental loads (wind, temperature)
-- Multiple trade loading
-- Specialized access requirements
-
-### Documentation
-
-Complete engineering records:
-- Design calculations
-- Certification documents
-- Load specifications
-- Modification approvals
-- Verification records
-
-## Pricing for Industrial
-
-### Rate Structures
-
-Industrial project pricing:
-- Daily rates (shutdowns)
-- Weekly rates (maintenance)
-- Monthly rates (capital projects)
-- Fixed pricing (major projects)
-
-### Value Considerations
-
-Pricing reflects:
-- Engineering requirements
-- Hazardous environment factors
-- Extended shift capability
-- Urgency requirements
-- Compliance complexity
-
-*Contact us for industrial project quotes.*
-
-## Why Choose Mana Scaffolding for Industrial
-
-### International Protocols
-
-We bring experience from:
-- Canadian industrial facilities
-- UK processing plants
-- International best practices
-- Hazardous environment protocols
-
-### Industrial Capabilities
-
-- Heavy-duty systems
-- Engineering integration
-- Hazardous environment expertise
-- Shutdown experience
-- Continuous operation support
-
-### Professional Standards
-
-- Site Safe qualified teams
-- Industrial hazard training
-- Full insurance coverage
-- Engineering partnerships
-- Reliable performance
-
-## Getting Started
-
-### Site Assessment
-
-Industrial projects begin with:
-- Site familiarization
-- Hazard identification
-- Operational understanding
-- Access requirements
-- Schedule integration
-
-### Information Required
-
-For industrial quotes:
-- Facility type and operations
-- Hazardous environment details
-- Work scope and specifications
-- Schedule requirements
-- Isolation capabilities
-
-### Contact Us
-
-**Phone:** 0508 626 272  
-**Email:** terry@manascaffolding.co.nz  
-**Service Area:** Christchurch and Canterbury-wide
-
-**Discuss your industrial scaffolding requirements with our experienced team.**
+From rapid emergency deployment to long-term capital project support, Mana delivers the heavy-duty access solutions that industrial operations depend on — with the **engineering documentation and compliance records** to match.

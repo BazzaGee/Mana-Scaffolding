@@ -72,6 +72,7 @@ const fullTitle = `${title} | ${siteName}`;
     <!-- Preconnect to external resources -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <slot name="head" />
   </head>
   <body class="bg-background text-zinc-300 font-body overflow-x-hidden">
     <a href="#main-content" class="skip-to-content">Skip to content</a>
@@ -81,22 +82,27 @@ const fullTitle = `${title} | ${siteName}`;
     <Footer sidebar={sidebar && !hideSidebar} />
     
     <script>
-      document.addEventListener('DOMContentLoaded', () => {
-        const revealElements = document.querySelectorAll('.reveal-on-scroll');
+      function initRevealOnScroll() {
+        const revealElements = document.querySelectorAll('.reveal-on-scroll:not(.visible)');
         
         const observer = new IntersectionObserver((entries) => {
           entries.forEach(entry => {
             if (entry.isIntersecting) {
               entry.target.classList.add('visible');
+              observer.unobserve(entry.target);
             }
           });
         }, {
-          threshold: 0.1,
-          rootMargin: '0px 0px -50px 0px'
+          threshold: 0,
+          rootMargin: '0px 0px 0px 0px'
         });
         
         revealElements.forEach(el => observer.observe(el));
-      });
+      }
+
+      document.addEventListener('DOMContentLoaded', initRevealOnScroll);
+      document.addEventListener('astro:after-swap', initRevealOnScroll);
+      if (document.readyState !== 'loading') initRevealOnScroll();
     </script>
   </body>
 </html>

@@ -1,233 +1,32 @@
 ---
 title: 'Residential Scaffolding Services'
-description: 'Professional scaffolding solutions for Canterbury residential construction, renovation, and maintenance projects.'
+description: 'Professional scaffolding solutions for Canterbury residential construction, renovation, and maintenance projects. Site Safe certified, fully compliant, and available Christchurch-wide.'
 service_type: 'Residential'
 image: '/images/services/residential-scaffolding.jpg'
+keywords:
+  - residential scaffolding Christchurch
+  - home renovation scaffolding Canterbury
+  - scaffolding for house painting
+  - residential scaffolding hire NZ
+  - Christchurch scaffolding company
+  - house scaffolding rental
+  - residential scaffolding quotes
+  - Canterbury home scaffolding
+faq:
+  - question: 'How much does residential scaffolding cost in Christchurch?'
+    answer: 'Residential scaffolding in Christchurch typically ranges from $400 for short-term roof repair access to $4,500+ for major renovation projects. Factors include height, duration, number of elevations, and complexity. We provide free, no-obligation quotes within 24 hours.'
+  - question: 'Do I need scaffolding for painting my house?'
+    answer: 'If your home is single-storey with easy ground-level access, you may not need scaffolding. However, for two-storey homes, steep sections, or extensive exterior work, scaffolding is required by NZ health and safety regulations for any work above 4 metres.'
+  - question: 'How long does it take to install residential scaffolding?'
+    answer: 'Most residential scaffolding can be installed within a single day. Simple single-elevation setups may take just a few hours, while full-wrap two-storey configurations typically take 4-6 hours. Complex heritage projects may require additional planning time.'
+  - question: 'Do you protect my property during scaffolding installation?'
+    answer: 'Yes. We use padded contact points, protective sheeting on finished surfaces, and take care around landscaping, driveways, and paths. We assess each property individually and discuss protection measures during our initial site visit.'
+  - question: 'Is residential scaffolding regulated in New Zealand?'
+    answer: 'Yes. Any scaffolding over 4 metres requires registration, regular inspections by a competent person, and documented safe work method statements. Mana Scaffolding handles all compliance requirements including registrations, inspections, and documentation.'
 ---
 
-# Residential Scaffolding Services
+When your home is your biggest investment, every stage of construction or renovation deserves proper access. Mana Scaffolding delivers tailored residential scaffolding systems across Christchurch and Canterbury — from single-storey painting jobs to multi-unit developments.
 
-Complete scaffolding solutions for Canterbury homes, from single-story renovations to multi-unit developments.
+We understand the unique demands of working on residential properties. Your neighbours, your garden, your driveway, your family's daily routine — every factor matters. Our systems are designed to **protect what matters** while giving tradespeople safe, efficient access to get the job done right.
 
-## Services Overview
-
-Mana Scaffolding provides tailored residential scaffolding across Christchurch and Canterbury. We understand that your home is your most valuable asset—our systems protect both workers and your property throughout construction.
-
-### What We Provide
-
-**Full Residential Access Solutions:**
-- Exterior painting and rendering access
-- Roof repair and replacement scaffolding
-- New build construction access
-- Renovation project scaffolding
-- Multi-unit development access
-- Heritage home restoration systems
-
-## Residential Project Types
-
-### New Home Construction
-
-For builders constructing new homes:
-- Multiple lift configurations
-- Bricklayer access platforms
-- Roof truss installation access
-- Final finishing platforms
-- Flexible modification during construction phases
-
-### Renovations and Additions
-
-For home improvements:
-- Second-story additions
-- Extension work
-- Re-cladding access
-- Window replacement
-- Structural repairs
-
-### Maintenance and Repairs
-
-For ongoing home maintenance:
-- Roof repairs
-- Painting access
-- Gutter and fascia work
-- Cladding repairs
-- Chimney access
-
-### Heritage Restorations
-
-For character homes:
-- Non-invasive support systems
-- Protection of historic elements
-- Sympathetic access solutions
-- Documentation compliance
-
-## Our Approach
-
-### Site Assessment
-
-Every residential project begins with:
-- Site condition evaluation
-- Access requirements discussion
-- Duration planning
-- Safety consideration review
-- Written quotation
-
-### Custom Solutions
-
-We design for your specific home:
-- Building configuration considered
-- Neighbor impacts minimized
-- Garden protection options
-- Access route planning
-- Material staging areas
-
-### Installation Process
-
-Professional installation includes:
-- Experienced team
-- Safety systems implemented
-- Tag system in place
-- User briefing provided
-- Documentation complete
-
-### Project Support
-
-During your project:
-- Inspection compliance maintained
-- Modifications available
-- Support contact provided
-- Safety verification ongoing
-
-## Residential-Focused Features
-
-### Property Protection
-
-**Surface Protection:**
-- Padded contact points
-- Protection of finished surfaces
-- Landscaping consideration
-- Driveway and path protection
-
-**Minimal Impact:**
-- Efficient footprint
-- Neighbor consideration
-- Clean site maintenance
-- Careful removal
-
-### Family Considerations
-
-**Safety Features:**
-- Controlled access systems
-- Warning signage
-- Exclusion zones marked
-- Family briefing available
-
-**Convenience:**
-- Driveway access maintained where possible
-- Access routes planned with you
-- Noise considerations discussed
-- Flexible scheduling
-
-## Compliance for Residential
-
-### Legal Requirements
-
-For residential scaffolding over 4 metres:
-- Scaffold registration required
-- Regular inspection compliance
-- Safe work method documentation
-- Competent person oversight
-
-### Our Compliance Package
-
-We provide:
-- All required registrations
-- Inspection schedules maintained
-- Documentation supplied
-- Handover procedures
-- Removal compliance
-
-## Canterbury Residential Experience
-
-### Local Knowledge
-
-We understand:
-- Local ground conditions
-- Weather pattern impacts
-- Heritage requirements
-- Council compliance
-- Neighbor considerations
-
-### Christchurch-Specific
-
-Post-earthquake considerations:
-- Structural sensitivity
-- Foundation awareness
-- Seismic compliance
-- Heritage implications
-
-## Pricing Approach
-
-### Transparent Quotes
-
-Our quotations include:
-- Complete installation
-- Hire period rates
-- Modification allowances
-- Removal costs
-- No hidden extras
-
-### Typical Residential Costs
-
-**Indicative Pricing:**
-- Single elevation painting access (2 weeks): $600-$1,200
-- Two-story full wrap (4 weeks): $1,800-$3,000
-- Roof repair access (1 week): $400-$800
-- Major renovation project (6 weeks): $2,500-$4,500
-
-*Pricing varies by project specifics. Contact us for accurate quotes.*
-
-## Why Choose Mana Scaffolding
-
-### Residential Expertise
-
-We've supported hundreds of Canterbury homes:
-- Family-owned properties
-- Investment renovations
-- Builder partnerships
-- Heritage restorations
-- New builds
-
-### Professional Standards
-
-- Site Safe qualified teams
-- Full insurance coverage
-- Comprehensive documentation
-- Reliable scheduling
-- Quality equipment
-
-### Local Service
-
-Based in Christchurch:
-- Quick response to inquiries
-- Local team
-- Canterbury-wide service
-- After-project support
-
-## Getting Started
-
-### Information to Provide
-
-For accurate quoting:
-- Site address
-- Work scope description
-- Approximate duration
-- Height requirements
-- Any constraints
-
-### Contact Us
-
-**Phone:** 0508 626 272  
-**Email:** terry@manascaffolding.co.nz  
-**Service Area:** Christchurch and Canterbury
-
-**Request a quote today for your residential scaffolding needs.**
+Backed by international expertise and a zero-incident safety record since 2019, Mana brings the same engineering precision used on industrial projects directly to your home. **Fully compliant, fully insured**, and available Canterbury-wide.
