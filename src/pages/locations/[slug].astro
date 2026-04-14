@@ -230,7 +230,7 @@ const faqJsonLd = (location.data.faq || []).length > 0 ? {
         <img 
           src={heroImage} 
           alt={location.data.title} 
-          class="w-full h-full object-cover opacity-30"
+          class="w-full h-full object-cover opacity-30 scroll-color"
           loading="lazy"
         />
       </div>
@@ -277,7 +277,7 @@ const faqJsonLd = (location.data.faq || []).length > 0 ? {
         <div class="grid lg:grid-cols-2 gap-16 items-center">
           <div class="relative reveal-on-scroll">
             <div class="aspect-[4/3] bg-surface border border-white/5 p-2 overflow-hidden">
-              <img alt={location.data.title} class="w-full h-full object-cover" src={heroImage} loading="lazy" decoding="async" />
+              <img alt={location.data.title} class="w-full h-full object-cover scroll-color" src={heroImage} loading="lazy" decoding="async" />
             </div>
             <div class="absolute -top-4 -right-4 w-24 h-24 border-t-2 border-r-2 border-primary"></div>
             <div class="absolute -bottom-4 -left-4 w-24 h-24 border-b-2 border-l-2 border-primary"></div>

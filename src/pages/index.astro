@@ -82,7 +82,7 @@ const galleryImages = [
                 loop 
                 muted 
                 playsinline
-                class="w-full h-full object-cover transition-all duration-700 grayscale md:group-hover:grayscale-0 [filter:none!important] md:[filter:grayscale(1)!important] md:group-hover:[filter:grayscale(0)!important]"
+                class="w-full h-full object-cover scroll-color"
               >
                 <source src="/videos/timelapse.mp4" type="video/mp4" />
               </video>
@@ -138,7 +138,7 @@ const galleryImages = [
           <!-- Image -->
           <div class="relative reveal-on-scroll">
             <div class="aspect-[4/5] bg-surface border border-white/5 p-2 overflow-hidden">
-              <img alt="Mana Scaffolding at Work" class="w-full h-full object-cover" src="/images/Mana facebook pic.jpg" loading="lazy" decoding="async" />
+              <img alt="Mana Scaffolding at Work" class="w-full h-full object-cover scroll-color" src="/images/Mana facebook pic.jpg" loading="lazy" decoding="async" />
             </div>
             <div class="absolute -bottom-8 -left-8 bg-primary px-6 py-4 text-white font-headline font-bold text-sm md:text-xl shadow-2xl">
               Zero Incidents Since 2019
@@ -165,7 +165,7 @@ const galleryImages = [
           <div class="bg-surface p-12 relative border border-white/5 group hover:border-primary/30 transition-all duration-500">
             <div class="flex items-center gap-6 mb-10">
               <div class="w-24 h-24 bg-surface-variant rounded-sm overflow-hidden border border-white/10 flex items-center justify-center">
-                <img alt="Terry Pohatu" class="w-full h-full object-cover" src="/images/N5.jpg" loading="lazy" decoding="async" />
+                <img alt="Terry Pohatu" class="w-full h-full object-cover scroll-color" src="/images/N5.jpg" loading="lazy" decoding="async" />
               </div>
               <div>
                 <h3 class="text-3xl font-headline font-black uppercase text-white">Terry Pohatu</h3>
@@ -183,7 +183,7 @@ const galleryImages = [
           <div class="bg-surface p-12 relative border border-white/5 group hover:border-primary/30 transition-all duration-500">
             <div class="flex items-center gap-6 mb-10">
               <div class="w-24 h-24 bg-surface-variant rounded-sm overflow-hidden border border-white/10 flex items-center justify-center">
-                <img alt="Keith Timmins" class="w-full h-full object-cover" src="/images/N7.jpg" loading="lazy" decoding="async" />
+                <img alt="Keith Timmins" class="w-full h-full object-cover scroll-color" src="/images/N7.jpg" loading="lazy" decoding="async" />
               </div>
               <div>
                 <h3 class="text-3xl font-headline font-black uppercase text-white">Keith Timmins</h3>
@@ -280,7 +280,7 @@ const galleryImages = [
             <div class="relative h-[350px] md:h-[450px] overflow-hidden bg-surface border border-white/5">
               <img 
                 alt={img.title} 
-                class="w-full h-full object-cover transition-all duration-700 group-hover:scale-105" 
+                class="w-full h-full object-cover transition-all duration-700 group-hover:scale-105 scroll-color" 
                 src={img.src} 
                 loading="lazy"
                 decoding="async"

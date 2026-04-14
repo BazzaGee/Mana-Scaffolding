@@ -42,8 +42,7 @@
   }
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Manrope:wght@300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap');
+
 
 .material-symbols-outlined {
   font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
@@ -130,6 +129,21 @@
   .reveal-on-scroll.visible {
     opacity: 1;
     transform: translateY(0);
+  }
+
+  .scroll-color {
+    filter: grayscale(1);
+    transition: filter 4.5s ease-in-out, transform 0.5s ease-out !important;
+  }
+
+  .scroll-color.colorized {
+    filter: grayscale(0);
+  }
+
+  @media (max-width: 768px) {
+    .scroll-color {
+      filter: none;
+    }
   }
 
   .scaffolding-grid-bg {
@@ -277,16 +291,6 @@
     max-width: 100vw;
   }
   
-  /* Mobile images always in color */
-  img {
-    filter: none !important;
-  }
-  
-  /* Mobile video always in color */
-  video {
-    filter: none !important;
-  }
-  
   /* Reduce header sizes on mobile */
   h1 {
     font-size: 1.75rem !important;
@@ -307,24 +311,69 @@
   }
 }
 
+/* ========================================
+   EDITORIAL PROSE SYSTEM
+   Industrial Monolith × Editorial Readability
+   ======================================== */
+
+.prose {
+  font-size: 1.0625rem;
+  line-height: 1.8;
+  color: #d4d4d8;
+}
+
+.prose > *:first-child {
+  margin-top: 0;
+}
+
+/* --- Drop Cap for Article Opener --- */
+.prose > p:first-of-type::first-letter {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 3.5em;
+  font-weight: 900;
+  float: left;
+  line-height: 0.8;
+  margin-right: 0.12em;
+  margin-top: 0.05em;
+  color: #D4441C;
+  text-transform: uppercase;
+}
+
+/* --- Headings --- */
 .prose h1 {
-  font-size: 1.875rem;
+  font-size: 2.25rem;
   font-family: 'Space Grotesk', sans-serif;
   font-weight: 900;
   text-transform: uppercase;
+  letter-spacing: -0.02em;
   color: white;
-  margin-top: 3rem;
-  margin-bottom: 1.5rem;
+  margin-top: 3.5rem;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid #D4441C;
 }
 
 .prose h2 {
-  font-size: 1.875rem;
+  font-size: 1.75rem;
   font-family: 'Space Grotesk', sans-serif;
   font-weight: 900;
   text-transform: uppercase;
+  letter-spacing: -0.01em;
   color: white;
   margin-top: 3rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
+  position: relative;
+  padding-left: 1rem;
+}
+
+.prose h2::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.15em;
+  width: 4px;
+  height: 0.7em;
+  background: #D4441C;
 }
 
 .prose h3 {
@@ -332,69 +381,221 @@
   font-family: 'Space Grotesk', sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  color: white;
+  letter-spacing: 0.02em;
+  color: #e4e4e7;
+  margin-top: 2.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.prose h4 {
+  font-size: 1rem;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #D4441C;
   margin-top: 2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
+/* --- Paragraphs --- */
 .prose p {
+  color: #d4d4d8;
+  line-height: 1.8;
+  margin-bottom: 1.25rem;
+}
+
+.prose p + p {
+  margin-top: 0;
+}
+
+/* --- Lead / Intro Paragraph --- */
+.prose .lead,
+.prose > p:first-of-type {
+  font-size: 1.1875rem;
   color: #a1a1aa;
-  line-height: 1.75;
-  margin-bottom: 1.5rem;
+  line-height: 1.85;
+  margin-bottom: 1.75rem;
 }
 
-.prose ul {
-  color: #a1a1aa;
-  margin-bottom: 1.5rem;
-  list-style-type: disc;
-  list-style-position: inside;
+/* --- Links --- */
+.prose a {
+  color: #D4441C;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(212, 68, 28, 0.3);
+  transition: all 0.2s ease;
 }
 
-.prose ul > * + * {
-  margin-top: 0.5rem;
+.prose a:hover {
+  color: #ea580c;
+  border-bottom-color: #ea580c;
 }
 
-.prose ol {
-  color: #a1a1aa;
-  margin-bottom: 1.5rem;
-  list-style-type: decimal;
-  list-style-position: inside;
-}
-
-.prose ol > * + * {
-  margin-top: 0.5rem;
-}
-
-.prose li {
-  margin-left: 1.5rem;
-  color: #a1a1aa;
-}
-
+/* --- Strong / Emphasis --- */
 .prose strong {
   color: white;
   font-weight: 700;
 }
 
-.prose a {
-  color: #D4441C;
-  transition: color 0.15s ease;
-}
-
-.prose a:hover {
-  color: #ea580c;
-}
-
-.prose blockquote {
-  border-left: 4px solid #D4441C;
-  padding-left: 1.5rem;
+.prose em {
+  color: #e4e4e7;
   font-style: italic;
-  color: #71717a;
-  margin: 2rem 0;
 }
 
+/* --- Unordered Lists --- */
+.prose ul {
+  color: #d4d4d8;
+  margin-bottom: 1.5rem;
+  margin-top: 0.75rem;
+  padding-left: 0;
+  list-style: none;
+}
+
+.prose ul li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #d4d4d8;
+  line-height: 1.7;
+}
+
+.prose ul li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.6em;
+  width: 6px;
+  height: 6px;
+  background: #D4441C;
+}
+
+.prose ul li:last-child {
+  margin-bottom: 0;
+}
+
+/* --- Ordered Lists --- */
+.prose ol {
+  color: #d4d4d8;
+  margin-bottom: 1.5rem;
+  margin-top: 0.75rem;
+  padding-left: 0;
+  list-style: none;
+  counter-reset: prose-ol;
+}
+
+.prose ol li {
+  position: relative;
+  padding-left: 2.5rem;
+  margin-bottom: 0.625rem;
+  color: #d4d4d8;
+  line-height: 1.7;
+  counter-increment: prose-ol;
+}
+
+.prose ol li::before {
+  content: counter(prose-ol);
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 900;
+  font-size: 0.875rem;
+  color: #D4441C;
+  background: rgba(212, 68, 28, 0.1);
+  width: 1.75rem;
+  height: 1.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(212, 68, 28, 0.2);
+}
+
+.prose ol li:last-child {
+  margin-bottom: 0;
+}
+
+/* --- Task Lists / Checkboxes --- */
+.prose ul li input[type="checkbox"],
+.prose li input[type="checkbox"] {
+  appearance: none;
+  width: 1rem;
+  height: 1rem;
+  border: 2px solid #3f3f46;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+  position: relative;
+}
+
+.prose ul li input[type="checkbox"]:checked,
+.prose li input[type="checkbox"]:checked {
+  background: #D4441C;
+  border-color: #D4441C;
+}
+
+.prose ul li input[type="checkbox"]:checked::after,
+.prose li input[type="checkbox"]:checked::after {
+  content: '✓';
+  color: white;
+  font-size: 0.625rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* --- Blockquote / Pull Quote --- */
+.prose blockquote {
+  position: relative;
+  border-left: 4px solid #D4441C;
+  padding: 1.25rem 1.5rem;
+  margin: 2rem 0;
+  background: linear-gradient(135deg, rgba(212, 68, 28, 0.05), transparent);
+  font-style: normal;
+}
+
+.prose blockquote::before {
+  content: '"';
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 4rem;
+  font-weight: 900;
+  color: rgba(212, 68, 28, 0.2);
+  position: absolute;
+  top: -0.5rem;
+  left: 0.75rem;
+  line-height: 1;
+}
+
+.prose blockquote p {
+  color: #e4e4e7;
+  font-size: 1.125rem;
+  font-style: italic;
+  line-height: 1.7;
+  margin-bottom: 0;
+}
+
+.prose blockquote strong {
+  color: #D4441C;
+}
+
+/* --- Horizontal Rule / Section Divider --- */
+.prose hr {
+  border: none;
+  margin: 2.5rem 0;
+  height: 1px;
+  background: linear-gradient(to right, #D4441C, rgba(212, 68, 28, 0.2), transparent);
+}
+
+/* --- Tables --- */
 .prose table {
   width: 100%;
-  margin-bottom: 2rem;
+  margin: 2rem 0;
+  border-collapse: collapse;
+  background: linear-gradient(145deg, #0f0f0f, #080808);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.prose thead {
+  border-bottom: 2px solid #D4441C;
 }
 
 .prose th {
@@ -403,20 +604,327 @@
   font-family: 'Space Grotesk', sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 0.875rem;
-  padding: 0.75rem 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  padding: 1rem 1.25rem;
 }
 
 .prose td {
-  padding: 0.75rem 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-  color: #a1a1aa;
+  padding: 0.875rem 1.25rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+  color: #d4d4d8;
+  font-size: 0.9375rem;
 }
 
+.prose tr:last-child td {
+  border-bottom: none;
+}
+
+.prose tr:hover td {
+  background: rgba(212, 68, 28, 0.03);
+}
+
+/* --- Inline Code --- */
 .prose code {
-  background-color: #1a1a1a;
+  background-color: rgba(212, 68, 28, 0.1);
+  border: 1px solid rgba(212, 68, 28, 0.15);
   padding: 0.125rem 0.5rem;
   color: #D4441C;
   font-size: 0.875rem;
+  font-family: 'Space Grotesk', monospace;
+}
+
+/* --- Images & Figures --- */
+.prose img {
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  margin: 2rem 0;
+}
+
+.prose figure {
+  margin: 2rem 0;
+  position: relative;
+}
+
+.prose figcaption {
+  font-size: 0.8125rem;
+  color: #71717a;
+  text-align: center;
+  margin-top: 0.75rem;
+  font-style: italic;
+}
+
+/* --- EDITORIAL COMPONENTS (Custom HTML in Markdown) --- */
+
+/* Callout / Industrial Slab Box */
+.prose .callout {
+  background: linear-gradient(145deg, #0f0f0f, #080808);
+  border-left: 4px solid #D4441C;
+  padding: 1.5rem 1.75rem;
+  margin: 2rem 0;
+  position: relative;
+}
+
+.prose .callout::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40%;
+  height: 100%;
+  background: linear-gradient(to left, rgba(212, 68, 28, 0.03), transparent);
+  pointer-events: none;
+}
+
+.prose .callout-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  color: #D4441C;
+  margin-bottom: 0.75rem;
+  display: block;
+}
+
+.prose .callout p {
+  margin-bottom: 0.5rem;
+  color: #a1a1aa;
+}
+
+.prose .callout p:last-child {
+  margin-bottom: 0;
+}
+
+/* Warning / Alert Box */
+.prose .warning {
+  background: rgba(212, 68, 28, 0.08);
+  border: 1px solid rgba(212, 68, 28, 0.2);
+  border-left: 4px solid #D4441C;
+  padding: 1.5rem 1.75rem;
+  margin: 2rem 0;
+}
+
+.prose .warning-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  color: #D4441C;
+  margin-bottom: 0.75rem;
+  display: block;
+}
+
+/* Stat Highlight */
+.prose .stat-highlight {
+  display: flex;
+  gap: 2rem;
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: linear-gradient(145deg, #0f0f0f, #080808);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.prose .stat-item {
+  text-align: center;
+  flex: 1;
+}
+
+.prose .stat-number {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 2rem;
+  font-weight: 900;
+  color: #D4441C;
+  display: block;
+  line-height: 1;
+  margin-bottom: 0.375rem;
+}
+
+.prose .stat-label {
+  font-size: 0.6875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #71717a;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 500;
+}
+
+/* Key Takeaway Box */
+.prose .takeaway {
+  background: linear-gradient(135deg, rgba(212, 68, 28, 0.08), rgba(212, 68, 28, 0.02));
+  border: 1px solid rgba(212, 68, 28, 0.15);
+  padding: 1.75rem;
+  margin: 2.5rem 0;
+  position: relative;
+}
+
+.prose .takeaway::before {
+  content: 'KEY TAKEAWAY';
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.625rem;
+  font-weight: 900;
+  letter-spacing: 0.3em;
+  color: #D4441C;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+.prose .takeaway p {
+  color: #e4e4e7;
+  font-size: 1.0625rem;
+  margin-bottom: 0;
+}
+
+/* Comparison Grid */
+.prose .compare {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  margin: 2rem 0;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.prose .compare-col {
+  padding: 1.5rem;
+  background: #0a0a0a;
+}
+
+.prose .compare-col h4 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid #D4441C;
+}
+
+.prose .compare-col ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.prose .compare-col li {
+  font-size: 0.9375rem;
+  margin-bottom: 0.375rem;
+}
+
+/* Checklist */
+.prose .checklist {
+  background: linear-gradient(145deg, #0f0f0f, #080808);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-left: 4px solid #D4441C;
+  padding: 1.5rem 1.75rem;
+  margin: 2rem 0;
+}
+
+.prose .checklist-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  color: #D4441C;
+  margin-bottom: 0.75rem;
+  display: block;
+}
+
+/* Prose CTA */
+.prose .cta-inline {
+  background: linear-gradient(135deg, #D4441C, #b33a16);
+  padding: 1.75rem;
+  margin: 2.5rem 0;
+  text-align: center;
+}
+
+.prose .cta-inline p {
+  color: white;
+  font-size: 1.0625rem;
+  margin-bottom: 0.75rem;
+  font-weight: 500;
+}
+
+.prose .cta-inline p:last-child {
+  margin-bottom: 0;
+}
+
+.prose .cta-inline a {
+  display: inline-block;
+  background: white;
+  color: #D4441C;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-size: 0.8125rem;
+  padding: 0.75rem 2rem;
+  border: none;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.prose .cta-inline a:hover {
+  background: #050505;
+  color: white;
+  border-bottom: none;
+}
+
+/* --- Section Number --- */
+.prose .section-number {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 900;
+  font-size: 3rem;
+  color: rgba(212, 68, 28, 0.1);
+  line-height: 1;
+  margin-bottom: -0.5rem;
+  display: block;
+}
+
+/* --- Responsive Prose --- */
+@media (max-width: 768px) {
+  .prose {
+    font-size: 1rem;
+  }
+
+  .prose > p:first-of-type::first-letter {
+    font-size: 2.75em;
+  }
+
+  .prose h1 {
+    font-size: 1.5rem;
+  }
+
+  .prose h2 {
+    font-size: 1.375rem;
+  }
+
+  .prose h3 {
+    font-size: 1.125rem;
+  }
+
+  .prose .stat-highlight {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .prose .stat-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    text-align: left;
+  }
+
+  .prose .stat-number {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+  }
+
+  .prose .compare {
+    grid-template-columns: 1fr;
+  }
 }

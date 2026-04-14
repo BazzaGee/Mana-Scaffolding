@@ -7,229 +7,94 @@ category: 'Legal'
 tags: ['insurance', 'liability', 'coverage', 'protection']
 ---
 
-# Scaffolding Insurance: Understanding Your Coverage
+A scaffold collapses on a commercial site and injures a passerby. A tradesman drops a tool from a residential scaffold and damages a parked car. A storm damages scaffolding that's been erected on your property for three weeks. In each of these scenarios, the question of who pays — and whose insurance responds — depends on coverage that should have been confirmed before the scaffold went up, not after something went wrong.
 
-Insurance issues cause confusion and leave projects exposed. Know what's covered and ensure adequate protection.
+Insurance is the least glamorous aspect of any scaffolding project, and it's the one most people skip past in the contract. But when something goes wrong on a scaffolding project, the difference between adequate coverage and a coverage gap can be the difference between a managed incident and a financial catastrophe.
 
-## Insurance Types Involved
+---
 
-### Scaffolding Provider's Insurance
+## The Three Insurance Layers
 
-**What Providers Should Carry:**
+Every scaffolding project involves at least three parties, each with their own insurance responsibilities: the scaffolding provider, the property owner, and the contractor performing the work. Understanding who carries what coverage — and where the gaps between them fall — is essential.
 
-**Public Liability:**
-- Covers third-party injury
-- Property damage to others
-- Minimum typically $1-5 million
-- Essential for any provider
+### The Scaffolding Provider's Coverage
 
-**Professional Indemnity:**
-- Design errors and omissions
-- Engineering advice coverage
-- Important for engineered structures
-- Varies by provider
+A professional scaffolding company should carry four types of insurance as a minimum. **Public liability insurance** covers third-party injury and property damage to others, with coverage typically ranging from $1 million to $5 million. This is the foundational policy that protects against the most common and costly scaffold-related claims.
 
-**Workers' Compensation:**
-- Employee injury coverage
-- Mandatory for all employers
-- Covers workplace accidents
-- Claims through ACC in NZ
+**Professional indemnity insurance** covers design errors and omissions — critical when the scaffolding provider is supplying engineering advice or designing complex structures. Not every provider carries this, and it's worth asking specifically.
 
-**Equipment Insurance:**
-- Covers owned equipment
-- Theft and damage protection
-- May not cover while on hire
-- Check specific terms
+**Workers' compensation** through ACC covers employee injuries and is mandatory for all New Zealand employers. And **equipment insurance** covers the provider's owned equipment against theft and damage — though the terms may not extend to equipment while it's on hire at your site.
 
-### Property Owner's Insurance
+### The Property Owner's Position
 
-**What Property Owners Need:**
+Property owners aren't passive bystanders in the insurance equation. Your own **public liability** policy may cover scaffold-related incidents on your property, but it's essential to check with your insurer rather than assume. **Property insurance** covers the building itself but may exclude construction work — which means you need to notify your insurer before any major work begins and check exclusion clauses carefully.
 
-**Public Liability:**
-- Your liability to third parties
-- May cover scaffold-related incidents
-- Check with your insurer
-- Adequate limits essential
+**Contract works insurance** covers the project during construction and is often separate from your standard property policy. It's frequently required by contract and strongly recommended for any major project. Skipping it to save premium is a decision that only looks smart until something goes wrong.
 
-**Property Insurance:**
-- Building coverage
-- May exclude construction work
-- Notify insurer of major work
-- Check exclusion clauses
+### The Contractor's Responsibilities
 
-**Contract Works:**
-- Coverage during construction
-- Often separate from property policy
-- May be required by contract
-- Recommended for major projects
+Any contractor working from the scaffold should carry their own **public liability insurance** with a minimum of $1 million coverage. **Contract works insurance** covering materials and work in progress may also be required, depending on the contract terms. Verifying current coverage before work begins isn't bureaucratic — it's prudent.
 
-### Contractor's Insurance
+<div class="callout">
+<span class="callout-title">KEY DISTINCTION</span>
+The scaffolding provider is liable for safe design and installation, equipment condition, inspection compliance, and employee safety. They are typically NOT liable for work performed from the scaffold, damage caused by workers using the scaffold, weather events affecting the scaffold, or unauthorized modifications.
+</div>
 
-**What Contractors Should Carry:**
+---
 
-**Public Liability:**
-- Essential for any contractor
-- Covers their work activities
-- Minimum $1 million recommended
-- Verify current coverage
+## Where Coverage Gaps Hide
 
-**Contract Works:**
-- Coverage for the project
-- Materials and work in progress
-- Often required contractually
-- Check specific requirements
+The most dangerous insurance situations arise not from missing policies but from gaps between them — areas where everyone assumes someone else is covered.
 
-## Who's Liable for What?
+**Property insurance policies** commonly exclude construction work, may not cover scaffold damage, and often contain exclusion clauses that specifically carve out building projects. The standard advice to notify your insurer before major work isn't a courtesy — it's a condition of maintaining coverage.
 
-### Scaffolding Provider
+**Public liability policies** may carry height restrictions that kick in above certain levels, commonly exclude construction work unless specifically endorsed, may require notification before scaffold-related activities begin, and might have limits that are inadequate for the actual risk exposure.
 
-**Liable For:**
-- Safe design and installation
-- Equipment condition and maintenance
-- Inspection compliance
-- Employee safety
-- Their professional advice
+**Contract works policies** can include duration limits, value restrictions, specific exclusions for certain types of work, and may not cover damage to existing structures — only new work.
 
-**Not Typically Liable For:**
-- Work performed from scaffold
-- Damage caused by workers using scaffold
-- Weather events affecting scaffold
-- Unauthorized modifications
+<div class="warning">
+<span class="warning-title">UNDERINSURANCE RISK</span>
+The consequences of inadequate coverage include claims being denied or reduced, personal liability exposure, project financial impact, and legal costs that fall outside policy limits. Review your limits annually, increase coverage for major projects, consider worst-case scenarios, and seek professional insurance advice for anything beyond straightforward residential work.
+</div>
 
-### Property Owner
+---
 
-**Liable For:**
-- Site conditions notification
-- Providing safe access
-- Occupant safety
-- Permissions and consents
-- Insurance coverage
+## Contract Clauses That Protect Everyone
 
-**Not Typically Liable For:**
-- Scaffold installation defects
-- Equipment failures
-- Provider employee injuries
+The scaffolding hire contract is where insurance expectations become enforceable obligations. At minimum, your contract should specify minimum coverage amounts, require certificates of currency before work begins, name interested parties where appropriate, require notification of any coverage changes during the project, and include evidence requirements that ensure you're not taking someone's word for it.
 
-### Principal Contractor
+Typical requirements include public liability of $1–5 million, professional indemnity of $1 million where design services are involved, evidence provided before work starts, and confirmation that coverage is maintained throughout the project.
 
-**Liable For:**
-- Overall site safety
-- Trade coordination
-- Worker management
-- Site-specific safety plans
-- Their employees' actions
+**Indemnity clauses** — where each party takes responsibility for their own negligence — provide clear liability allocation that's reasonable and enforceable. **Hold harmless clauses**, where one party agrees to indemnify another, can be one-way or mutual and should always be reviewed for enforceability in the New Zealand legal context.
 
-## Coverage Gaps to Watch
+---
 
-### Common Exclusions
+## The Pre-Hire Insurance Checklist
 
-**Property Insurance:**
-- Often excludes construction work
-- May not cover scaffold damage
-- Check exclusion clauses carefully
-- Notify insurer before major work
+Before engaging any scaffolding provider, seven questions will tell you most of what you need to know about their insurance position:
 
-**Public Liability:**
-- May have height restrictions
-- Construction work exclusions common
-- May require notification
-- Limits may be inadequate
+<div class="checklist">
+<span class="checklist-title">INSURANCE VERIFICATION CHECKLIST</span>
+- [ ] What insurance do you carry?
+- [ ] What are the coverage limits?
+- [ ] Can you provide current certificates?
+- [ ] Does your insurance cover this specific project type?
+- [ ] Are there any exclusions I should know about?
+- [ ] Who's covered under your policy?
+- [ ] What's the claims process if something goes wrong?
+</div>
 
-**Contract Works:**
-- May have duration limits
-- Value restrictions possible
-- Specific exclusions apply
-- May not cover existing structures
+The documentation you should obtain includes certificates of currency for public liability, professional indemnity certificates where applicable, workers' compensation evidence, insurance company details, and policy numbers with expiry dates. This isn't paperwork for paperwork's sake — it's the evidence trail that protects everyone involved.
 
-### Underinsurance Risks
+---
 
-**Consequences:**
-- Claims denied or reduced
-- Personal liability exposure
-- Project financial impact
-- Legal costs not covered
+## Our Insurance Commitment
 
-**Adequate Coverage:**
-- Review limits annually
-- Increase for major projects
-- Consider worst-case scenarios
-- Professional advice recommended
+At Mana Scaffolding, we carry a minimum of **$2 million public liability coverage** for all scaffolding operations, **$1 million professional indemnity** covering engineering advice and design services, and **full ACC coverage** for all employees. Current certificates of currency are available on request, policies are updated annually, and we can provide specific project documentation and additional insured arrangements where required.
 
-## Contract Clauses to Include
+Insurance isn't exciting. But it's the foundation that allows every other aspect of your project to proceed with confidence. If you have questions about coverage for an upcoming scaffolding project, we're happy to walk through the specifics.
 
-### Insurance Requirements
-
-**In Your Contract:**
-- Specify minimum coverage amounts
-- Require certificates of currency
-- Name interested parties
-- Require notification of changes
-- Include evidence requirements
-
-**Typical Requirements:**
-- Public liability: $1-5 million
-- Professional indemnity: $1 million (for design)
-- Evidence provided before work starts
-- Coverage maintained throughout
-
-### Indemnity Clauses
-
-**Mutual Indemnity:**
-- Each party responsible for their negligence
-- Clear liability allocation
-- Reasonable and enforceable
-
-**Hold Harmless:**
-- One party indemnifies another
-- Can be one-way or mutual
-- Check enforceability
-
-## Before Hiring Scaffolding
-
-### Questions to Ask Providers
-
-1. What insurance do you carry?
-2. What are the coverage limits?
-3. Can you provide certificates?
-4. Does insurance cover this project type?
-5. Are there any exclusions I should know about?
-6. Who's covered under your policy?
-7. What's the claims process?
-
-### Documentation to Obtain
-
-- Certificate of currency for public liability
-- Professional indemnity certificate (if applicable)
-- Workers' comp evidence
-- Insurance company details
-- Policy numbers and expiry dates
-
-## Mana Scaffolding's Insurance Coverage
-
-### What We Provide
-
-**Public Liability:**
-- Minimum $2 million coverage
-- Covers scaffolding operations
-- NZ-wide coverage
-- Current certificates available
-
-**Professional Indemnity:**
-- Engineering advice coverage
-- Design services protected
-- $1 million minimum
-- Applicable to complex projects
-
-**Workers' Compensation:**
-- Full ACC coverage
-- All employees covered
-- Compliant with NZ law
-
-### Evidence Available
-
-- Certificates of currency on request
-- Updated annually
-- Specific project documentation
-- Additional insured arrangements possible
-
-**Insurance questions? Contact Mana Scaffolding at 0508 626 272 for current coverage details.**
+<div class="cta-inline">
+<p>Don't discover a coverage gap after something goes wrong. Let's confirm your protection before the scaffold goes up.</p>
+<a href="/contact">Verify Your Coverage</a>
+</div>

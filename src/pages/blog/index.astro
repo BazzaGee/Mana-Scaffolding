@@ -122,7 +122,7 @@ function getImageForPost(post: any): { src: string; isAI: boolean } {
           Industry knowledge, safety guides, and expert advice from Canterbury's scaffolding specialists.
         </p>
         
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" data-stagger-group="blog-cards">
           {sortedPosts.map((post) => {
             const { src: blogImage, isAI } = getImageForPost(post);
             return (
