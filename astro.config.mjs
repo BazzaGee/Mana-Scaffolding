@@ -6,14 +6,14 @@ export default defineConfig({
   output: 'static',
   integrations: [
     sitemap({
-      hostname: 'https://manasastro.pages.dev',
+      hostname: 'https://mana-scaffolding.pages.dev',
       changefreq: 'weekly',
       priority: 0.7,
       lastmod: new Date(),
       filter: (page) => !page.includes('/404'),
     }),
   ],
-  site: 'https://manasastro.pages.dev',
+  site: 'https://mana-scaffolding.pages.dev',
   compressHTML: true,
   build: {
     inlineStylesheets: 'auto'

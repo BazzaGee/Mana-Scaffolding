@@ -1,0 +1,62 @@
+name: Cloudflare Pages Deploy
+
+on:
+  push:
+    branches:
+      - "**"
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+permissions:
+  contents: read
+  deployments: write
+  pull-requests: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Build Astro site
+        run: pnpm run build
+
+      - name: Determine deployment type
+        id: deploy-type
+        run: |
+          if [[ "${{ github.event_name }}" == "pull_request" ]]; then
+            echo "branch=${{ github.head_ref }}" >> $GITHUB_OUTPUT
+            echo "production=false" >> $GITHUB_OUTPUT
+          elif [[ "${{ github.ref }}" == "refs/heads/main" ]]; then
+            echo "branch=main" >> $GITHUB_OUTPUT
+            echo "production=true" >> $GITHUB_OUTPUT
+          else
+            BRANCH_NAME="${GITHUB_REF#refs/heads/}"
+            echo "branch=$BRANCH_NAME" >> $GITHUB_OUTPUT
+            echo "production=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/pages-action@v1
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          projectName: mana-scaffolding
+          directory: dist
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ steps.deploy-type.outputs.branch }}
+          wranglerVersion: "4"
