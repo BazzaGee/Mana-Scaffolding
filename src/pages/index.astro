@@ -1,33 +1,96 @@
 ---
 import Base from '../layouts/Base.astro';
+import { Image } from 'astro:assets';
+import heroMain from '../assets/images/hero-main.jpg';
+import heroCommercial from '../assets/images/hero-commercial.jpg';
+import heroTrucks from '../assets/images/hero-trucks.jpg';
+import teamTerry from '../assets/images/team-terry.jpg';
+import teamKeith from '../assets/images/team-keith.jpg';
+import galleryN1 from '../assets/images/gallery-N1.jpg';
+import galleryN2 from '../assets/images/gallery-N2.jpg';
+import galleryN3 from '../assets/images/gallery-N3.jpg';
+import galleryN4 from '../assets/images/gallery-N4.jpg';
+import galleryN5 from '../assets/images/gallery-N5.jpg';
+import galleryN6 from '../assets/images/gallery-N6.jpg';
+import galleryN7 from '../assets/images/gallery-N7.jpg';
+import galleryN8 from '../assets/images/gallery-N8.jpg';
+import galleryN9 from '../assets/images/gallery-N9.jpg';
 
 const galleryImages = [
-  { src: '/images/Mana facebook pic.jpg', title: 'Mana Scaffolding at Work', category: 'On Site' },
-  { src: '/images/Mana facebook pic2.jpg', title: 'Complex Project Access', category: 'Commercial' },
-  { src: '/images/Mana-Scaffolding-trucks-at-work.jpg', title: 'Mana Fleet Deployment', category: 'Logistics' },
-  { src: '/images/N1.jpg', title: 'Project Timelapse Frame 1', category: 'Progress' },
-  { src: '/images/N2.jpg', title: 'Project Timelapse Frame 2', category: 'Progress' },
-  { src: '/images/N3.jpg', title: 'Project Timelapse Frame 3', category: 'Progress' },
-  { src: '/images/N4.jpg', title: 'Project Timelapse Frame 4', category: 'Progress' },
-  { src: '/images/N5.jpg', title: 'Project Timelapse Frame 5', category: 'Progress' },
-  { src: '/images/N6.jpg', title: 'Project Timelapse Frame 6', category: 'Progress' },
-  { src: '/images/N7.jpg', title: 'Project Timelapse Frame 7', category: 'Progress' },
-  { src: '/images/N8.jpg', title: 'Project Timelapse Frame 8', category: 'Progress' },
-  { src: '/images/N9.jpg', title: 'Project Timelapse Frame 9', category: 'Progress' },
+  { src: heroMain, title: 'Mana Scaffolding at Work', category: 'On Site' },
+  { src: heroCommercial, title: 'Complex Project Access', category: 'Commercial' },
+  { src: heroTrucks, title: 'Mana Fleet Deployment', category: 'Logistics' },
+  { src: galleryN1, title: 'Project Timelapse Frame 1', category: 'Progress' },
+  { src: galleryN2, title: 'Project Timelapse Frame 2', category: 'Progress' },
+  { src: galleryN3, title: 'Project Timelapse Frame 3', category: 'Progress' },
+  { src: galleryN4, title: 'Project Timelapse Frame 4', category: 'Progress' },
+  { src: galleryN5, title: 'Project Timelapse Frame 5', category: 'Progress' },
+  { src: galleryN6, title: 'Project Timelapse Frame 6', category: 'Progress' },
+  { src: galleryN7, title: 'Project Timelapse Frame 7', category: 'Progress' },
+  { src: galleryN8, title: 'Project Timelapse Frame 8', category: 'Progress' },
+  { src: galleryN9, title: 'Project Timelapse Frame 9', category: 'Progress' },
 ];
+
+const siteUrl = 'https://mana-scaffolding.pages.dev';
+
+const localBusinessJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": `${siteUrl}/#business`,
+  "name": "Mana Scaffolding Limited",
+  "image": `${siteUrl}/logos/Mana-Scaffolding-Logo.png`,
+  "telephone": "0508626272",
+  "url": siteUrl,
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Christchurch",
+    "addressRegion": "Canterbury",
+    "addressCountry": "NZ"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "-43.5320",
+    "longitude": "172.6362"
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+    "opens": "07:00",
+    "closes": "17:00"
+  },
+  "priceRange": "$$",
+  "description": "Complete scaffolding service across Canterbury with international expertise from Canada and UK",
+  "foundingDate": "2019",
+  "areaServed": {
+    "@type": "Place",
+    "name": "Canterbury, New Zealand"
+  }
+};
+
+const organizationJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": `${siteUrl}/#organization`,
+  "name": "Mana Scaffolding Limited",
+  "url": siteUrl,
+  "logo": `${siteUrl}/logos/Mana-Scaffolding-Logo.png`,
+  "sameAs": []
+};
 ---
 
 <Base title="Home" description="Mana Scaffolding - Complete scaffolding service across Canterbury with international expertise from Canada and UK">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(localBusinessJsonLd)} />
+    <script type="application/ld+json" set:html={JSON.stringify(organizationJsonLd)} />
+  </Fragment>
 
   <main id="main-content" class="pr-0 md:pr-[70px]">
-    <!-- Hero Section with Video -->
     <section class="relative min-h-screen flex items-center pt-24 lg:pt-20">
       <div class="scaffolding-grid-bg absolute inset-0 pointer-events-none"></div>
       
       <div class="container mx-auto px-6 lg:px-12 relative z-10">
         <div class="grid lg:grid-cols-2 gap-12 lg:gap-8 items-center">
           
-          <!-- Left Column - Header & CTA -->
           <div class="order-2 lg:order-1 flex flex-col justify-center">
             <div class="inline-flex items-center gap-3 border border-primary/30 bg-primary/10 px-4 py-2 mb-6 w-fit">
               <span class="relative flex h-2 w-2">
@@ -47,7 +110,6 @@ const galleryImages = [
               Complex access solutions for Canterbury's toughest projects. Founder-led precision. Zero safety compromises. Get your technical estimate today.
             </p>
             
-            <!-- Clickable CTA Buttons -->
             <div class="flex flex-col sm:flex-row gap-4">
               <a 
                 href="/contact"
@@ -74,7 +136,6 @@ const galleryImages = [
             </div>
           </div>
           
-          <!-- Right Column - Hero Video -->
           <div class="order-1 lg:order-2 relative">
             <div class="relative aspect-[4/3] lg:aspect-square bg-surface border-2 border-primary/20 overflow-hidden group">
               <video 
@@ -82,17 +143,16 @@ const galleryImages = [
                 loop 
                 muted 
                 playsinline
+                poster="/videos/timelapse-poster.jpg"
                 class="w-full h-full object-cover scroll-color"
               >
                 <source src="/videos/timelapse.mp4" type="video/mp4" />
               </video>
               
-              <!-- Decorative corners -->
               <div class="absolute top-0 left-0 w-16 h-16 border-t-2 border-l-2 border-primary z-10 pointer-events-none"></div>
               <div class="absolute bottom-0 right-0 w-16 h-16 border-b-2 border-r-2 border-primary z-10 pointer-events-none"></div>
             </div>
             
-            <!-- Floating accent box -->
             <div class="absolute -bottom-6 -left-6 bg-primary px-6 py-3 text-white font-headline font-bold text-sm md:text-xl shadow-2xl hidden md:block pointer-events-none">
               500+ Projects Delivered
             </div>
@@ -103,7 +163,6 @@ const galleryImages = [
       <div class="absolute bottom-0 left-0 w-full h-32 bg-gradient-dark z-10 pointer-events-none"></div>
     </section>
 
-    <!-- Mana Identity Section -->
     <section class="py-32 bg-zinc-950 relative overflow-hidden" id="identity">
       <div class="container mx-auto px-6 md:px-12 relative z-10">
         <div class="grid lg:grid-cols-2 gap-24 items-center">
@@ -135,16 +194,10 @@ const galleryImages = [
             </div>
           </div>
           
-          <!-- Image -->
           <div class="relative reveal-on-scroll">
             <div class="aspect-[4/5] bg-surface border border-white/5 p-2 overflow-hidden">
-              <img alt="Mana Scaffolding at Work" class="w-full h-full object-cover scroll-color" src="/images/Mana facebook pic.jpg" loading="lazy" decoding="async" />
+              <Image src={heroMain} alt="Mana Scaffolding at Work" class="w-full h-full object-cover scroll-color" loading="lazy" />
             </div>
-            <div class="absolute -bottom-8 -left-8 bg-primary px-6 py-4 text-white font-headline font-bold text-sm md:text-xl shadow-2xl">
-              Zero Incidents Since 2019
-            </div>
-            <div class="absolute -top-4 -right-4 w-24 h-24 border-t-2 border-r-2 border-primary"></div>
-          </div>
             <div class="absolute -bottom-8 -left-8 bg-primary px-6 py-4 text-white font-headline font-bold text-sm md:text-xl shadow-2xl">
               Zero Incidents Since 2019
             </div>
@@ -154,7 +207,6 @@ const galleryImages = [
       </div>
     </section>
 
-    <!-- International DNA Section -->
     <section class="py-32 bg-background border-y border-white/5" id="expertise">
       <div class="container mx-auto px-6 md:px-12">
         <div class="text-center mb-24 reveal-on-scroll">
@@ -165,7 +217,7 @@ const galleryImages = [
           <div class="bg-surface p-12 relative border border-white/5 group hover:border-primary/30 transition-all duration-500">
             <div class="flex items-center gap-6 mb-10">
               <div class="w-24 h-24 bg-surface-variant rounded-sm overflow-hidden border border-white/10 flex items-center justify-center">
-                <img alt="Terry Pohatu" class="w-full h-full object-cover scroll-color" src="/images/N5.jpg" loading="lazy" decoding="async" />
+                <Image alt="Terry Pohatu" class="w-full h-full object-cover scroll-color" src={teamTerry} loading="lazy" />
               </div>
               <div>
                 <h3 class="text-3xl font-headline font-black uppercase text-white">Terry Pohatu</h3>
@@ -183,7 +235,7 @@ const galleryImages = [
           <div class="bg-surface p-12 relative border border-white/5 group hover:border-primary/30 transition-all duration-500">
             <div class="flex items-center gap-6 mb-10">
               <div class="w-24 h-24 bg-surface-variant rounded-sm overflow-hidden border border-white/10 flex items-center justify-center">
-                <img alt="Keith Timmins" class="w-full h-full object-cover scroll-color" src="/images/N7.jpg" loading="lazy" decoding="async" />
+                <Image alt="Keith Timmins" class="w-full h-full object-cover scroll-color" src={teamKeith} loading="lazy" />
               </div>
               <div>
                 <h3 class="text-3xl font-headline font-black uppercase text-white">Keith Timmins</h3>
@@ -202,7 +254,6 @@ const galleryImages = [
       </div>
     </section>
 
-    <!-- Services Section -->
     <section class="py-32 bg-zinc-950" id="services">
       <div class="container mx-auto px-6 md:px-12">
         <h2 class="text-3xl md:text-5xl font-headline font-black uppercase mb-16 reveal-on-scroll">Expertise <span class="text-primary">Verticals</span></h2>
@@ -251,7 +302,6 @@ const galleryImages = [
       </div>
     </section>
 
-    <!-- Gallery Section with All Images -->
     <section class="py-32 bg-background overflow-hidden" id="gallery">
       <div class="container mx-auto px-6 md:px-12 mb-16 flex flex-col md:flex-row md:items-end justify-between gap-6">
         <div class="reveal-on-scroll">
@@ -259,13 +309,13 @@ const galleryImages = [
           <p class="text-zinc-500 mt-4 uppercase tracking-widest text-xs font-bold">Selected Works | Canterbury Wide</p>
         </div>
         <div class="flex flex-col items-center gap-3">
-          <div class="flex gap-3">
-            <button id="gallery-prev" class="w-10 h-10 md:w-12 md:h-12 rounded-full bg-primary/20 border border-primary/40 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all cursor-pointer flex-shrink-0" aria-label="Previous image">
+          <div class="flex gap-3" role="group" aria-label="Gallery navigation">
+            <button id="gallery-prev" class="w-10 h-10 md:w-12 md:h-12 rounded-full bg-primary/20 border border-primary/40 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all cursor-pointer flex-shrink-0" aria-label="Previous gallery image">
               <svg class="w-5 h-5 md:w-6 md:h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
               </svg>
             </button>
-            <button id="gallery-next" class="w-10 h-10 md:w-12 md:h-12 rounded-full bg-primary/20 border border-primary/40 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all cursor-pointer flex-shrink-0" aria-label="Next image">
+            <button id="gallery-next" class="w-10 h-10 md:w-12 md:h-12 rounded-full bg-primary/20 border border-primary/40 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all cursor-pointer flex-shrink-0" aria-label="Next gallery image">
               <svg class="w-5 h-5 md:w-6 md:h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
               </svg>
@@ -274,16 +324,17 @@ const galleryImages = [
           <p class="text-zinc-600 text-xs uppercase tracking-widest text-center">Swipe or use arrows to navigate</p>
         </div>
       </div>
-      <div id="gallery-scroll" class="flex gap-6 px-6 md:px-12 overflow-x-auto no-scrollbar reveal-on-scroll pb-8 snap-x snap-mandatory">
+      <div id="gallery-scroll" class="flex gap-6 px-6 md:px-12 overflow-x-auto no-scrollbar reveal-on-scroll pb-8 snap-x snap-mandatory" role="region" aria-label="Project gallery" tabindex="0">
         {galleryImages.map((img, i) => (
           <div class="flex-shrink-0 w-full md:w-[70vw] lg:w-[600px] snap-start group cursor-pointer">
             <div class="relative h-[350px] md:h-[450px] overflow-hidden bg-surface border border-white/5">
-              <img 
+              <Image 
                 alt={img.title} 
                 class="w-full h-full object-cover transition-all duration-700 group-hover:scale-105 scroll-color" 
                 src={img.src} 
-                loading="lazy"
-                decoding="async"
+                loading={i < 3 ? 'eager' : 'lazy'}
+                widths={[400, 600, 800, 1000]}
+                sizes="(max-width: 768px) 100vw, 600px"
               />
               <div class="absolute bottom-0 left-0 p-6 md:p-8 bg-gradient-to-t from-black to-transparent w-full">
                 <span class="text-primary font-black text-label-xs uppercase tracking-widest">{img.category}</span>
@@ -295,7 +346,6 @@ const galleryImages = [
       </div>
     </section>
 
-    <!-- Mana Advantage Section -->
     <section class="py-32 bg-zinc-900 border-t border-white/10">
       <div class="container mx-auto px-6 md:px-12">
         <div class="grid lg:grid-cols-2 gap-24 items-center">
@@ -349,7 +399,6 @@ const galleryImages = [
       </div>
     </section>
 
-    <!-- CTA Section -->
     <section class="py-32 bg-background relative overflow-hidden">
       <div class="container mx-auto px-6 md:px-12 relative z-10 text-center">
         <h2 class="text-6xl md:text-display-xl font-headline font-black uppercase text-white tracking-tighter mb-8 reveal-on-scroll">Ready to Start?</h2>
@@ -367,7 +416,6 @@ const galleryImages = [
   </main>
 
   <script>
-    // Gallery Scroll Navigation with Touch Support
     const galleryScroll = document.getElementById('gallery-scroll');
     const prevBtn = document.getElementById('gallery-prev');
     const nextBtn = document.getElementById('gallery-next');
@@ -377,7 +425,6 @@ const galleryImages = [
       const gap = 24;
       const scrollAmount = cardWidth + gap;
       
-      // Button navigation
       prevBtn.addEventListener('click', () => {
         galleryScroll.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
       });
@@ -386,41 +433,22 @@ const galleryImages = [
         galleryScroll.scrollBy({ left: scrollAmount, behavior: 'smooth' });
       });
       
-      // Touch/swipe support
       let touchStartX = 0;
-      let touchEndX = 0;
       
       galleryScroll.addEventListener('touchstart', (e) => {
         touchStartX = e.changedTouches[0].screenX;
       }, { passive: true });
       
       galleryScroll.addEventListener('touchend', (e) => {
-        touchEndX = e.changedTouches[0].screenX;
-        handleSwipe();
+        const diff = touchStartX - e.changedTouches[0].screenX;
+        if (Math.abs(diff) > 50) {
+          galleryScroll.scrollBy({ left: diff > 0 ? scrollAmount : -scrollAmount, behavior: 'smooth' });
+        }
       }, { passive: true });
       
-      function handleSwipe() {
-        const swipeThreshold = 50;
-        const diff = touchStartX - touchEndX;
-        
-        if (Math.abs(diff) > swipeThreshold) {
-          if (diff > 0) {
-            // Swiped left - go next
-            galleryScroll.scrollBy({ left: scrollAmount, behavior: 'smooth' });
-          } else {
-            // Swiped right - go prev
-            galleryScroll.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
-          }
-        }
-      }
-      
-      // Keyboard navigation
       galleryScroll.addEventListener('keydown', (e) => {
-        if (e.key === 'ArrowLeft') {
-          galleryScroll.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
-        } else if (e.key === 'ArrowRight') {
-          galleryScroll.scrollBy({ left: scrollAmount, behavior: 'smooth' });
-        }
+        if (e.key === 'ArrowLeft') galleryScroll.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+        else if (e.key === 'ArrowRight') galleryScroll.scrollBy({ left: scrollAmount, behavior: 'smooth' });
       });
     }
   </script>

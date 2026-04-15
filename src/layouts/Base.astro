@@ -22,7 +22,7 @@ const {
 } = Astro.props;
 
 const siteName = 'Mana Scaffolding Limited';
-const siteUrl = 'https://manasastro.pages.dev';
+const siteUrl = 'https://mana-scaffolding.pages.dev';
 const fullTitle = `${title} | ${siteName}`;
 ---
 
@@ -34,17 +34,13 @@ const fullTitle = `${title} | ${siteName}`;
     <meta name="description" content={description} />
     <meta name="generator" content={Astro.generator} />
     
-    <!-- Canonical URL -->
     <link rel="canonical" href={canonicalURL} />
     
-    <!-- Favicon -->
     <link rel="icon" type="image/png" href="/Mana-Scaffolding-favicon.png" />
     <link rel="apple-touch-icon" href="/logos/Mana-Scaffolding-Logo.png" />
     
-    <!-- Title -->
     <title>{fullTitle}</title>
     
-    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content={canonicalURL} />
     <meta property="og:title" content={fullTitle} />
@@ -53,27 +49,27 @@ const fullTitle = `${title} | ${siteName}`;
     <meta property="og:site_name" content={siteName} />
     <meta property="og:locale" content="en_NZ" />
     
-    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:url" content={canonicalURL} />
     <meta name="twitter:title" content={fullTitle} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={new URL(image, siteUrl)} />
     
-    <!-- Additional SEO -->
-    <meta name="robots" content="noindex, nofollow" />
+    <meta name="robots" content="index, follow" />
     <meta name="author" content={siteName} />
     <meta name="geo.region" content="NZ-CAN" />
     <meta name="geo.placename" content="Christchurch" />
     
-    <!-- Theme Color -->
     <meta name="theme-color" content="#D4441C" />
     
-    <!-- Preconnect to external resources -->
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap" rel="stylesheet" />
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Manrope:wght@300;400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet" /></noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap" rel="stylesheet" /></noscript>
     <slot name="head" />
   </head>
   <body class="bg-background text-zinc-300 font-body overflow-x-hidden">
@@ -86,77 +82,77 @@ const fullTitle = `${title} | ${siteName}`;
     <script>
       function initRevealOnScroll() {
         const revealElements = document.querySelectorAll('.reveal-on-scroll:not(.visible)');
+        if (revealElements.length === 0) return;
         
         const observer = new IntersectionObserver((entries) => {
-          entries.forEach(entry => {
+          for (const entry of entries) {
             if (entry.isIntersecting) {
               entry.target.classList.add('visible');
               observer.unobserve(entry.target);
             }
-          });
-        }, {
-          threshold: 0,
-          rootMargin: '0px 0px 0px 0px'
-        });
+          }
+        }, { threshold: 0 });
         
-        revealElements.forEach(el => observer.observe(el));
+        for (const el of revealElements) observer.observe(el);
       }
-
-      document.addEventListener('DOMContentLoaded', initRevealOnScroll);
-      document.addEventListener('astro:after-swap', initRevealOnScroll);
-      if (document.readyState !== 'loading') initRevealOnScroll();
 
       function initScrollColor() {
         const allMedia = document.querySelectorAll('img, video, iframe[src*="google.com/maps"]');
-        allMedia.forEach(el => {
-          if (el.classList.contains('scroll-color') || el.classList.contains('colorized')) return;
-          if (el.closest('nav') || el.closest('footer') || el.closest('.skip-to-content')) return;
-          if (el.closest('#scaffold-sidebar')) return;
-          if (el.tagName === 'IMG' && el.naturalWidth > 0 && el.naturalWidth < 80) return;
+        for (const el of allMedia) {
+          if (el.classList.contains('scroll-color') || el.classList.contains('colorized')) continue;
+          if (el.closest('nav') || el.closest('footer') || el.closest('.skip-to-content')) continue;
+          if (el.closest('#scaffold-sidebar')) continue;
+          if (el.tagName === 'IMG' && el.naturalWidth > 0 && el.naturalWidth < 80) continue;
           el.classList.add('scroll-color');
-        });
+        }
 
         const colorElements = document.querySelectorAll('.scroll-color:not(.colorized)');
+        if (colorElements.length === 0) return;
 
         const staggerGroups = new Map();
-        colorElements.forEach(el => {
+        for (const el of colorElements) {
           const group = el.closest('[data-stagger-group]');
           if (group) {
             if (!staggerGroups.has(group)) staggerGroups.set(group, []);
-            staggerGroups.get(group).push(el);
+            staggerGroups.get(group)!.push(el);
           }
-        });
+        }
 
         const observer = new IntersectionObserver((entries) => {
-          entries.forEach(entry => {
-            if (!entry.isIntersecting) return;
-
+          for (const entry of entries) {
+            if (!entry.isIntersecting) continue;
             const group = entry.target.closest('[data-stagger-group]');
             if (group && staggerGroups.has(group)) {
-              const items = staggerGroups.get(group);
+              const items = staggerGroups.get(group)!;
               staggerGroups.delete(group);
-              items.forEach((el, i) => {
-                setTimeout(() => {
-                  el.classList.add('colorized');
-                }, i * 800);
-              });
-              items.forEach(el => observer.unobserve(el));
+              items.forEach((el, i) => setTimeout(() => el.classList.add('colorized'), i * 800));
+              for (const el of items) observer.unobserve(el);
             } else if (!group) {
               entry.target.classList.add('colorized');
               observer.unobserve(entry.target);
             }
-          });
-        }, {
-          threshold: 0.1,
-          rootMargin: '0px 0px -30px 0px'
-        });
+          }
+        }, { threshold: 0.1, rootMargin: '0px 0px -30px 0px' });
 
-        colorElements.forEach(el => observer.observe(el));
+        for (const el of colorElements) observer.observe(el);
       }
 
-      document.addEventListener('DOMContentLoaded', initScrollColor);
-      document.addEventListener('astro:after-swap', initScrollColor);
-      if (document.readyState !== 'loading') initScrollColor();
+      function init() {
+        initRevealOnScroll();
+        initScrollColor();
+      }
+
+      document.addEventListener('DOMContentLoaded', init);
+      document.addEventListener('astro:after-swap', init);
+      if (document.readyState !== 'loading') init();
+    </script>
+
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js').catch(() => {});
+        });
+      }
     </script>
   </body>
 </html>

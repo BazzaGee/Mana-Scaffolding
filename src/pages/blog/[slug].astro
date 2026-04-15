@@ -67,7 +67,7 @@ function getImageForPost(post: any): string {
 }
 
 const featuredImage = getImageForPost(post);
-const canonicalURL = `https://manasastro.pages.dev/blog/${post.id.replace(/\.md$/, '')}`;
+const canonicalURL = `https://mana-scaffolding.pages.dev/blog/${post.id.replace(/\.md$/, '')}`;
 const readingTime = Math.max(3, Math.ceil((post.data.description.split(/\s+/).length + 800) / 200));
 
 const tocHeadings = (headings || []).filter((h: any) => h.depth >= 2 && h.depth <= 3);
@@ -99,20 +99,20 @@ const relatedPosts = allPosts
     "@type": "Article",
     "headline": post.data.title,
     "description": post.data.description,
-    "image": `https://manasastro.pages.dev${featuredImage}`,
+    "image": `https://mana-scaffolding.pages.dev${featuredImage}`,
     "datePublished": post.data.pubDate.toISOString(),
     "dateModified": post.data.updatedDate ? post.data.updatedDate.toISOString() : post.data.pubDate.toISOString(),
     "author": {
       "@type": "Organization",
       "name": post.data.author,
-      "url": "https://manasastro.pages.dev"
+      "url": "https://mana-scaffolding.pages.dev"
     },
     "publisher": {
       "@type": "Organization",
       "name": "Mana Scaffolding Limited",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://manasastro.pages.dev/logos/Mana-Scaffolding-Logo.png",
+        "url": "https://mana-scaffolding.pages.dev/logos/Mana-Scaffolding-Logo.png",
         "width": 600,
         "height": 60
       }
@@ -122,8 +122,16 @@ const relatedPosts = allPosts
     "wordCount": readingTime * 200,
     "timeRequired": `PT${readingTime}M`
   })} />
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://mana-scaffolding.pages.dev" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://mana-scaffolding.pages.dev/blog" },
+      { "@type": "ListItem", "position": 3, "name": post.data.title, "item": canonicalURL }
+    ]
+  })} />
   
-  <!-- Reading Progress Bar -->
   <div id="reading-progress" class="fixed top-0 left-0 h-[3px] bg-primary z-[200] transition-all duration-150 ease-out" style="width: 0%"></div>
 
   <main id="main-content" class="pt-24 pb-16">

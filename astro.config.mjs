@@ -6,7 +6,6 @@ export default defineConfig({
   output: 'static',
   integrations: [
     sitemap({
-      hostname: 'https://mana-scaffolding.pages.dev',
       changefreq: 'weekly',
       priority: 0.7,
       lastmod: new Date(),

@@ -1,4 +1,7 @@
 ---
+import { Image } from 'astro:assets';
+import logo from '../assets/logos/Mana-Scaffolding-Logo.png';
+
 const navLinks = [
   { href: '/', label: 'Home' },
   { href: '/services', label: 'Services' },
@@ -11,10 +14,9 @@ const navLinks = [
 
 <nav class="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-xl border-b border-white/5 px-6 py-4 flex justify-between items-center" aria-label="Main navigation">
   <a href="/" class="flex items-center gap-3" aria-label="Mana Scaffolding Home">
-    <img alt="Mana Scaffolding Logo" class="h-10 md:h-12 w-auto object-contain" src="/logos/Mana-Scaffolding-Logo.png" width="200" height="48" />
+    <Image src={logo} alt="Mana Scaffolding Logo" width={200} height={48} class="h-10 md:h-12 w-auto object-contain" loading="eager" fetchpriority="high" />
   </a>
   
-  <!-- Desktop nav -->
   <div class="hidden lg:flex gap-8">
     {navLinks.map((link) => (
       <a class="text-label font-headline font-black hover:text-primary transition-colors" href={link.href}>
@@ -23,18 +25,17 @@ const navLinks = [
     ))}
   </div>
   
-  <!-- Phone CTA (always visible) -->
   <div class="flex items-center gap-4">
     <a class="text-xs font-headline font-black bg-primary px-5 py-2.5 rounded-sm text-white tracking-widest hover:bg-orange-600 transition-colors shadow-lg hidden sm:inline-block" href="tel:0508626272">
       0508 626 272
     </a>
     
-    <!-- Mobile hamburger button - icon only -->
     <button 
       id="mobile-menu-toggle" 
       class="lg:hidden w-12 h-12 flex items-center justify-center text-white hover:text-primary transition-colors z-50 !p-0 !border-0 !bg-transparent" 
       aria-label="Toggle navigation menu"
       aria-expanded="false"
+      aria-controls="mobile-menu"
       type="button"
     >
       <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -44,8 +45,7 @@ const navLinks = [
   </div>
 </nav>
 
-<!-- Mobile menu overlay -->
-<div id="mobile-menu" class="fixed inset-0 z-40 bg-background hidden lg:hidden" aria-hidden="true">
+<div id="mobile-menu" class="fixed inset-0 z-40 bg-background hidden lg:hidden" aria-hidden="true" role="dialog" aria-label="Navigation menu">
   <div class="flex flex-col h-full pt-20 px-6">
     <div class="flex flex-col gap-6">
       {navLinks.map((link) => (
@@ -73,11 +73,6 @@ const navLinks = [
       menu.classList.toggle('hidden');
       toggle.setAttribute('aria-expanded', String(isOpen));
       menu.setAttribute('aria-hidden', String(!isOpen));
-      
-      const icon = toggle.querySelector('.material-symbols-outlined');
-      if (icon) {
-        icon.textContent = isOpen ? 'close' : 'menu';
-      }
     });
     
     menu.querySelectorAll('a').forEach(link => {
@@ -85,8 +80,6 @@ const navLinks = [
         menu.classList.add('hidden');
         toggle.setAttribute('aria-expanded', 'false');
         menu.setAttribute('aria-hidden', 'true');
-        const icon = toggle.querySelector('.material-symbols-outlined');
-        if (icon) icon.textContent = 'menu';
       });
     });
   }
