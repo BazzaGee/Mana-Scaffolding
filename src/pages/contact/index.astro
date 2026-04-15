@@ -203,12 +203,7 @@ const servicesSchema = {
           <div class="reveal-on-scroll">
             <div class="bg-surface border border-white/5 p-10">
               <h2 class="text-2xl font-headline font-black uppercase text-white mb-8">Request a Quote</h2>
-              <form class="space-y-6" action="https://formsubmit.co/buttersnoco@gmail.com" method="POST">
-                <input type="hidden" name="_subject" value="New scaffolding quote request from mana-scaffolding.pages.dev" />
-                <input type="hidden" name="_captcha" value="false" />
-                <input type="hidden" name="_template" value="table" />
-                <input type="hidden" name="_next" value="https://mana-scaffolding.pages.dev/contact/thanks" />
-                
+              <form id="quote-form" class="space-y-6" novalidate>
                 <div class="grid md:grid-cols-2 gap-6">
                   <div>
                     <label class="text-label-xs font-headline font-black uppercase tracking-widest text-primary block mb-2">Name *</label>
@@ -264,13 +259,64 @@ const servicesSchema = {
                   ></textarea>
                 </div>
                 
+                <div id="form-error" class="hidden bg-red-900/30 border border-red-500/50 text-red-300 p-4 rounded-sm text-sm"></div>
+                
                 <button 
                   type="submit" 
-                  class="w-full bg-primary text-white font-headline font-black uppercase tracking-widest py-5 hover:bg-orange-600 transition-colors border-b-4 border-orange-800 text-lg"
+                  id="form-submit-btn"
+                  class="w-full bg-primary text-white font-headline font-black uppercase tracking-widest py-5 hover:bg-orange-600 transition-colors border-b-4 border-orange-800 text-lg disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   Send Request
                 </button>
               </form>
+              <script>
+                const form = document.getElementById('quote-form');
+                const btn = document.getElementById('form-submit-btn');
+                const errBox = document.getElementById('form-error');
+                
+                form.addEventListener('submit', async (e) => {
+                  e.preventDefault();
+                  errBox.classList.add('hidden');
+                  
+                  if (!form.checkValidity()) {
+                    form.reportValidity();
+                    return;
+                  }
+                  
+                  btn.disabled = true;
+                  btn.textContent = 'SENDING...';
+                  
+                  const data = {
+                    name: form.name.value,
+                    phone: form.phone.value,
+                    email: form.email.value,
+                    project_type: form.project_type.value,
+                    message: form.message.value,
+                    _subject: 'New scaffolding quote request from mana-scaffolding.pages.dev',
+                    _template: 'table',
+                    _captcha: 'false'
+                  };
+                  
+                  try {
+                    const res = await fetch('https://formsubmit.co/ajax/buttersnoco@gmail.com', {
+                      method: 'POST',
+                      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+                      body: JSON.stringify(data)
+                    });
+                    
+                    if (res.ok) {
+                      window.location.href = '/contact/thanks';
+                    } else {
+                      throw new Error('Submission failed');
+                    }
+                  } catch (err) {
+                    errBox.textContent = 'Something went wrong. Please try again or call us directly on 0508 626 272.';
+                    errBox.classList.remove('hidden');
+                    btn.disabled = false;
+                    btn.textContent = 'SEND REQUEST';
+                  }
+                });
+              </script>
             </div>
           </div>
         </div>
