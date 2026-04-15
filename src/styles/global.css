@@ -143,6 +143,7 @@
   @media (max-width: 768px) {
     .scroll-color {
       filter: none;
+      transition: none !important;
     }
   }
 
@@ -639,6 +640,15 @@
   width: 100%;
   border: 1px solid rgba(255, 255, 255, 0.05);
   margin: 2rem 0;
+}
+
+nav img {
+  width: auto !important;
+  max-width: 100px !important;
+  height: auto !important;
+  max-height: 40px !important;
+  margin: 0 !important;
+  border: none !important;
 }
 
 .prose figure {
