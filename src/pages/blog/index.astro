@@ -2,113 +2,10 @@
 import Base from '../../layouts/Base.astro';
 import BrandedImage from '../../components/BrandedImage.astro';
 import { getCollection } from 'astro:content';
+import { getBlogImageForPost } from '../../utils/blog-images';
 
 const blogPosts = await getCollection('blog');
 const sortedPosts = blogPosts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
-
-// Specific AI-generated images for blog posts (ALL 26)
-const specificImages: Record<string, string> = {
-  '01-scaffolding-safety-standards-nz': '/images/blog/safety-standards-nz.jpg',
-  '02-residential-vs-commercial-scaffolding': '/images/blog/residential-vs-commercial.jpg',
-  '03-industrial-scaffolding-challenges': '/images/blog/industrial-challenges.jpg',
-  '04-scaffolding-costs-guide': '/images/blog/costs-guide.jpg',
-  '05-seismic-scaffolding-christchurch': '/images/blog/seismic-christchurch.jpg',
-  'cantilever-scaffolding-solutions': '/images/blog/cantilever-solutions.jpg',
-  '5-signs-better-access-solutions': '/images/blog/access-solutions.jpg',
-  'choosing-right-scaffolding-system': '/images/blog/choosing-right-system.jpg',
-  'commercial-facade-restoration-case-study': '/images/blog/facade-restoration.jpg',
-  'construction-site-safety-scaffolding': '/images/blog/construction-safety.jpg',
-  'diy-scaffolding-safety-guide': '/images/blog/diy-safety-guide.jpg',
-  'industrial-scaffolding-challenges': '/images/blog/industrial-challenges-2.jpg',
-  'residential-vs-commercial-scaffolding': '/images/blog/residential-commercial-2.jpg',
-  'scaffold-inspection-requirements': '/images/blog/inspection-requirements.jpg',
-  'scaffolding-for-different-trades': '/images/blog/different-trades.jpg',
-  'scaffolding-hire-costs-canterbury': '/images/blog/hire-costs-canterbury.jpg',
-  'scaffolding-insurance-coverage': '/images/blog/insurance-coverage.jpg',
-  'scaffolding-modifications-during-project': '/images/blog/modifications-project.jpg',
-  'scaffolding-timeline-planning': '/images/blog/timeline-planning.jpg',
-  'scaffolding-for-roof-work': '/images/blog/roof-work.jpg',
-  'scaffolding-weather-management': '/images/blog/weather-management.jpg',
-  'site-preparation-scaffolding-installation': '/images/blog/site-preparation.jpg',
-  'true-cost-scaffolding-accidents': '/images/blog/accident-costs.jpg',
-  'winter-scaffolding-preparation': '/images/blog/winter-preparation.jpg',
-  'working-at-height-options': '/images/blog/height-options.jpg',
-  'seismic-scaffolding-christchurch': '/images/blog/seismic-engineering.jpg',
-};
-
-// Category-based fallback images (SVG icons)
-const categoryImages: Record<string, string> = {
-  'Safety': '/images/blog/safety.svg',
-  'Guide': '/images/blog/guide.svg',
-  'Costs': '/images/blog/costs.svg',
-  'Industrial': '/images/blog/industrial.svg',
-  'Residential': '/images/blog/residential.svg',
-  'Commercial': '/images/blog/commercial.svg',
-  'Planning': '/images/blog/planning.svg',
-  'Weather': '/images/blog/weather.svg',
-  'Inspection': '/images/blog/inspection.svg',
-  'Seismic': '/images/blog/seismic.svg',
-  'Access': '/images/blog/access.svg',
-  'Roof': '/images/blog/roof.svg',
-  'Technical': '/images/blog/guide.svg',
-};
-
-function getImageForPost(post: any): { src: string; isAI: boolean } {
-  const postId = post.id.replace(/\.md$/, '');
-  const category = post.data.category;
-  const title = post.data.title.toLowerCase();
-  
-  // Check for specific AI-generated image first
-  if (specificImages[postId]) {
-    return { src: specificImages[postId], isAI: true };
-  }
-  
-  // Direct category match
-  if (categoryImages[category]) {
-    return { src: categoryImages[category], isAI: false };
-  }
-  
-  // Keyword matching
-  if (title.includes('safety') || title.includes('accident') || title.includes('incident')) {
-    return { src: categoryImages['Safety'], isAI: false };
-  }
-  if (title.includes('guide') || title.includes('how to') || title.includes('tips')) {
-    return { src: categoryImages['Guide'], isAI: false };
-  }
-  if (title.includes('cost') || title.includes('price') || title.includes('hire')) {
-    return { src: categoryImages['Costs'], isAI: false };
-  }
-  if (title.includes('industrial')) {
-    return { src: categoryImages['Industrial'], isAI: false };
-  }
-  if (title.includes('residential') || title.includes('home') || title.includes('house')) {
-    return { src: categoryImages['Residential'], isAI: false };
-  }
-  if (title.includes('commercial') || title.includes('office') || title.includes('retail')) {
-    return { src: categoryImages['Commercial'], isAI: false };
-  }
-  if (title.includes('plan') || title.includes('timeline') || title.includes('schedule')) {
-    return { src: categoryImages['Planning'], isAI: false };
-  }
-  if (title.includes('weather') || title.includes('winter') || title.includes('rain')) {
-    return { src: categoryImages['Weather'], isAI: false };
-  }
-  if (title.includes('inspect') || title.includes('check') || title.includes('requirement')) {
-    return { src: categoryImages['Inspection'], isAI: false };
-  }
-  if (title.includes('seismic') || title.includes('earthquake') || title.includes('christchurch')) {
-    return { src: categoryImages['Seismic'], isAI: false };
-  }
-  if (title.includes('access') || title.includes('complex')) {
-    return { src: categoryImages['Access'], isAI: false };
-  }
-  if (title.includes('roof')) {
-    return { src: categoryImages['Roof'], isAI: false };
-  }
-  
-  // Default to safety image
-  return { src: categoryImages['Safety'], isAI: false };
-}
 ---
 
 <Base title="Blog" description="Scaffolding insights, safety guides, and industry knowledge from Mana Scaffolding">
@@ -123,18 +20,21 @@ function getImageForPost(post: any): { src: string; isAI: boolean } {
         </p>
         
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" data-stagger-group="blog-cards">
-          {sortedPosts.map((post) => {
-            const { src: blogImage, isAI } = getImageForPost(post);
+          {sortedPosts.map((post, i) => {
+            const blogImage = getBlogImageForPost(post);
             return (
               <a href={`/blog/${post.id.replace(/\.md$/, '')}`} class="block group">
                 <article class="bg-surface border border-white/5 overflow-hidden hover:border-primary/30 transition-all duration-300 h-full">
                   <div class="aspect-video bg-zinc-900 overflow-hidden">
-                    <BrandedImage 
-                      src={blogImage} 
+                    <BrandedImage
+                      src={blogImage.src}
                       alt={post.data.title}
                       logoPosition="bottom-right"
                       logoOpacity={0.75}
                       logoSize="small"
+                      eager={i < 6}
+                      widths={[300, 500, 700]}
+                      sizes="(max-width: 768px) 100vw, 33vw"
                     />
                   </div>
                   <div class="p-6">

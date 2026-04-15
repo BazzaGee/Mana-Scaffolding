@@ -1,20 +1,29 @@
 ---
+import { Image } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
+
 export interface Props {
-  src: string;
+  src: string | ImageMetadata;
   alt: string;
   class?: string;
   logoPosition?: 'bottom-right' | 'bottom-left' | 'top-right' | 'top-left';
   logoOpacity?: number;
   logoSize?: 'small' | 'medium' | 'large';
+  eager?: boolean;
+  widths?: number[];
+  sizes?: string;
 }
 
 const { 
   src, 
   alt, 
-  class = '',
+  class: className = '',
   logoPosition = 'bottom-right',
   logoOpacity = 0.8,
-  logoSize = 'medium'
+  logoSize = 'medium',
+  eager = false,
+  widths,
+  sizes,
 } = Astro.props;
 
 const sizeClasses = {
@@ -22,31 +31,60 @@ const sizeClasses = {
   medium: 'h-8 w-auto md:h-10',
   large: 'h-10 w-auto md:h-12'
 };
+
+const isOptimized = typeof src !== 'string';
+
+const loadingAttr = eager ? 'eager' : 'lazy';
+const fetchpriorityAttr = eager ? 'high' : undefined;
+
+const positionClasses = {
+  'bottom-right': 'bottom-0 right-0',
+  'bottom-left': 'bottom-0 left-0',
+  'top-right': 'top-0 right-0',
+  'top-left': 'top-0 left-0',
+};
+
+const logoSizeClasses = {
+  small: 'h-6 w-auto md:h-8',
+  medium: 'h-8 w-auto md:h-10',
+  large: 'h-10 w-auto md:h-12'
+};
 ---
 
-<div class="relative inline-block group {class} overflow-hidden">
-  <img 
-    src={src} 
-    alt={alt}
-    class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 scroll-color"
-    loading="lazy"
-  />
-  <div 
-    class="absolute p-2 md:p-3 transition-opacity duration-300"
+<div class:list={['relative inline-block group overflow-hidden', className]}>
+  {isOptimized ? (
+    <Image
+      src={src as ImageMetadata}
+      alt={alt}
+      class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 scroll-color"
+      loading={loadingAttr}
+      fetchpriority={fetchpriorityAttr}
+      widths={widths || [300, 500, 700]}
+      sizes={sizes || '(max-width: 768px) 100vw, 33vw'}
+    />
+  ) : (
+    <img
+      src={src as string}
+      alt={alt}
+      class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 scroll-color"
+      loading={loadingAttr}
+      fetchpriority={fetchpriorityAttr}
+      decoding="async"
+    />
+  )}
+  <div
     class:list={[
+      'absolute p-2 md:p-3 transition-opacity duration-300 group-hover:opacity-100',
       `opacity-${(logoOpacity * 100).toFixed(0)}`,
-      'group-hover:opacity-100',
-      logoPosition === 'bottom-right' && 'bottom-0 right-0',
-      logoPosition === 'bottom-left' && 'bottom-0 left-0',
-      logoPosition === 'top-right' && 'top-0 right-0',
-      logoPosition === 'top-left' && 'top-0 left-0',
+      positionClasses[logoPosition],
     ]}
   >
-    <img 
-      src="/logos/Mana-Scaffolding-Logo.png" 
+    <img
+      src="/logos/Mana-Scaffolding-Logo.png"
       alt="Mana Scaffolding"
-      class={sizeClasses[logoSize]}
+      class={logoSizeClasses[logoSize]}
       loading="lazy"
+      decoding="async"
     />
   </div>
 </div>

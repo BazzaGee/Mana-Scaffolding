@@ -97,6 +97,19 @@ const fullTitle = `${title} | ${siteName}`;
       }
 
       function initScrollColor() {
+        const isMobile = window.innerWidth <= 768;
+
+        if (isMobile) {
+          const allMedia = document.querySelectorAll('img, video, iframe[src*="google.com/maps"]');
+          for (const el of allMedia) {
+            if (el.closest('nav') || el.closest('footer') || el.closest('.skip-to-content')) continue;
+            if (el.closest('#scaffold-sidebar')) continue;
+            if (el.tagName === 'IMG' && el.naturalWidth > 0 && el.naturalWidth < 80) continue;
+            el.classList.add('scroll-color', 'colorized');
+          }
+          return;
+        }
+
         const allMedia = document.querySelectorAll('img, video, iframe[src*="google.com/maps"]');
         for (const el of allMedia) {
           if (el.classList.contains('scroll-color') || el.classList.contains('colorized')) continue;

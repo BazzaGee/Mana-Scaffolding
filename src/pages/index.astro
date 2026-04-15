@@ -80,6 +80,7 @@ const organizationJsonLd = {
 
 <Base title="Home" description="Mana Scaffolding - Complete scaffolding service across Canterbury with international expertise from Canada and UK">
   <Fragment slot="head">
+    <link rel="preload" as="image" href="/videos/timelapse-poster.jpg" fetchpriority="high" />
     <script type="application/ld+json" set:html={JSON.stringify(localBusinessJsonLd)} />
     <script type="application/ld+json" set:html={JSON.stringify(organizationJsonLd)} />
   </Fragment>
@@ -143,8 +144,9 @@ const organizationJsonLd = {
                 loop 
                 muted 
                 playsinline
+                preload="auto"
                 poster="/videos/timelapse-poster.jpg"
-                class="w-full h-full object-cover scroll-color"
+                class="w-full h-full object-cover"
               >
                 <source src="/videos/timelapse.mp4" type="video/mp4" />
               </video>
