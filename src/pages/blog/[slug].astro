@@ -42,7 +42,6 @@ const relatedPosts = allPosts
   description={post.data.description}
   image={typeof featuredImage === 'string' ? featuredImage : '/logos/Mana-Scaffolding-Logo.png'}
   canonicalURL={canonicalURL}
-  hideSidebar={true}
 >
   <script type="application/ld+json" set:html={JSON.stringify({
     "@context": "https://schema.org",
@@ -81,8 +80,6 @@ const relatedPosts = allPosts
       { "@type": "ListItem", "position": 3, "name": post.data.title, "item": canonicalURL }
     ]
   })} />
-
-  <div id="reading-progress" class="fixed top-0 left-0 h-[3px] bg-primary z-[200] transition-all duration-150 ease-out" style="width: 0%"></div>
 
   <main id="main-content" class="pt-24 pb-16">
     <article class="bg-background">
@@ -286,21 +283,6 @@ const relatedPosts = allPosts
 </Base>
 
 <script>
-  function initReadingProgress() {
-    const progressBar = document.getElementById('reading-progress');
-    if (!progressBar) return;
-
-    function updateProgress() {
-      const scrollTop = window.scrollY;
-      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-      const progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
-      progressBar.style.width = `${Math.min(100, progress)}%`;
-    }
-
-    window.addEventListener('scroll', updateProgress, { passive: true });
-    updateProgress();
-  }
-
   function initSmoothScroll() {
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function(e) {
@@ -316,15 +298,12 @@ const relatedPosts = allPosts
   }
 
   document.addEventListener('DOMContentLoaded', () => {
-    initReadingProgress();
     initSmoothScroll();
   });
   document.addEventListener('astro:after-swap', () => {
-    initReadingProgress();
     initSmoothScroll();
   });
   if (document.readyState !== 'loading') {
-    initReadingProgress();
     initSmoothScroll();
   }
 </script>
