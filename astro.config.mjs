@@ -2,8 +2,14 @@ import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 import tailwindcss from '@tailwindcss/postcss';
 
+import cloudflare from '@astrojs/cloudflare';
+
 export default defineConfig({
   output: 'static',
+  adapter: cloudflare({
+    imageService: 'cloudflare-binding',
+    sessionKVBindingName: 'SESSION',
+  }),
   integrations: [
     sitemap({
       changefreq: 'weekly',
@@ -23,5 +29,5 @@ export default defineConfig({
         plugins: [tailwindcss()],
       },
     },
-  }
+  },
 });

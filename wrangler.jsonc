@@ -1,0 +1,27 @@
+{
+  "name": "mana-scaffolding",
+  "compatibility_date": "2025-05-21",
+  "compatibility_flags": ["nodejs_compat"],
+  "main": "@astrojs/cloudflare/entrypoints/server",
+  "assets": {
+    "directory": "./dist",
+    "binding": "ASSETS"
+  },
+  "vars": {
+    "CONTACT_EMAIL": "buttersnoco@gmail.com",
+    "RESEND_API_KEY": "re_XaLbeAzG_3hnJDcaLwKzQ8JP8Z6oGd8ys"
+  },
+  "kv_namespaces": [
+    {
+      "binding": "CONTACT_SUBMISSIONS",
+      "id": "contact_submissions"
+    },
+    {
+      "binding": "SESSION",
+      "id": "session"
+    }
+  ],
+  "observability": {
+    "enabled": true
+  }
+}
