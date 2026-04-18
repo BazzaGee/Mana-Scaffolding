@@ -27,10 +27,10 @@ export const contact = defineAction({
     };
 
     try {
-      const isProduction = ctx.env.PUBLIC_SITE_URL?.includes('pages.dev');
       const resendApiKey = ctx.env.RESEND_API_KEY;
+      const isProduction = resendApiKey && !ctx.env.PUBLIC_SITE_URL?.includes('localhost');
 
-      if (isProduction && resendApiKey) {
+      if (isProduction) {
         const emailBody = [
           `New Quote Request from Mana Scaffolding Website`,
           `================================================`,
