@@ -18,7 +18,7 @@ export default defineConfig({
       filter: (page) => !page.includes('/404'),
     }),
   ],
-  site: 'https://mana-scaffolding.pages.dev',
+  site: 'https://mana-scaffolding.manascaffolding.workers.dev',
   compressHTML: true,
   build: {
     inlineStylesheets: 'auto'

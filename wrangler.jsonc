@@ -14,11 +14,11 @@
   "kv_namespaces": [
     {
       "binding": "CONTACT_SUBMISSIONS",
-      "id": "contact_submissions"
+      "id": "537f16bb49a2472ebbdb98a5eb82a96b"
     },
     {
       "binding": "SESSION",
-      "id": "session"
+      "id": "4473956961d2482ab5dce4fb8329db8f"
     }
   ],
   "observability": {
