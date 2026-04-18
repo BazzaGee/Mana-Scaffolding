@@ -59,7 +59,7 @@ jobs:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           projectName: mana-scaffolding
-          directory: dist
+          directory: dist/client
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
           branch: ${{ steps.deploy-type.outputs.branch }}
           wranglerVersion: "4"
