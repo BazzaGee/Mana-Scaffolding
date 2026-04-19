@@ -27,8 +27,9 @@ export const contact = defineAction({
     };
 
     try {
-      const resendApiKey = ctx.env.RESEND_API_KEY;
-      const isProduction = resendApiKey && !ctx.env.PUBLIC_SITE_URL?.includes('localhost');
+      const resendApiKey = ctx.env?.RESEND_API_KEY;
+      const contactSubmissions = ctx.env?.CONTACT_SUBMISSIONS;
+      const isProduction = resendApiKey && !ctx.env?.PUBLIC_SITE_URL?.includes('localhost');
 
       if (isProduction) {
         const emailBody = [
@@ -84,7 +85,11 @@ export const contact = defineAction({
         console.log('Email not sent (DEV MODE - no Resend API key)');
       }
 
-      await ctx.env.CONTACT_SUBMISSIONS.put(submissionId, JSON.stringify(submissionData));
+      if (contactSubmissions) {
+        await contactSubmissions.put(submissionId, JSON.stringify(submissionData));
+      } else {
+        console.log('KV storage not available, skipping backup');
+      }
 
       return {
         success: true,
@@ -94,11 +99,13 @@ export const contact = defineAction({
     } catch (error) {
       console.error('Failed to process contact form:', error);
       
-      await ctx.env.CONTACT_SUBMISSIONS.put(submissionId, JSON.stringify({
-        ...submissionData,
-        emailSent: false,
-        error: error instanceof Error ? error.message : 'Unknown error',
-      }));
+      if (contactSubmissions) {
+        await contactSubmissions.put(submissionId, JSON.stringify({
+          ...submissionData,
+          emailSent: false,
+          error: error instanceof Error ? error.message : 'Unknown error',
+        }));
+      }
 
       throw new ActionError({
         code: 'INTERNAL_SERVER_ERROR',

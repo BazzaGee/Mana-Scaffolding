@@ -9,7 +9,8 @@
   },
   "vars": {
     "CONTACT_EMAIL": "buttersnoco@gmail.com",
-    "RESEND_API_KEY": "re_XaLbeAzG_3hnJDcaLwKzQ8JP8Z6oGd8ys"
+    "RESEND_API_KEY": "re_XaLbeAzG_3hnJDcaLwKzQ8JP8Z6oGd8ys",
+    "PUBLIC_SITE_URL": "https://mana-scaffolding.manascaffolding.workers.dev"
   },
   "kv_namespaces": [
     {
