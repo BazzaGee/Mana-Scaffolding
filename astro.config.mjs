@@ -7,7 +7,7 @@ import cloudflare from '@astrojs/cloudflare';
 export default defineConfig({
   output: 'static',
   adapter: cloudflare({
-    imageService: 'cloudflare-binding',
+    imageService: 'local-resize',
     sessionKVBindingName: 'SESSION',
   }),
   integrations: [

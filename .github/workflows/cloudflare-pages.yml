@@ -38,6 +38,9 @@ jobs:
       - name: Build Astro site
         run: pnpm run build
 
+      - name: Copy Pages Functions to build output
+        run: cp -r functions dist/client/functions
+
       - name: Determine deployment type
         id: deploy-type
         run: |

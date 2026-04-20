@@ -1,14 +1,5 @@
 ---
 import Base from '../../layouts/Base.astro';
-import { actions } from 'astro:actions';
-
-export const prerender = false;
-
-const result = Astro.getActionResult(actions.contact);
-
-if (result && !result.error) {
-  return Astro.redirect('/contact/thanks');
-}
 
 const businessInfo = {
   name: 'Mana Scaffolding Limited',
@@ -212,15 +203,15 @@ const servicesSchema = {
             <div class="bg-surface border border-white/5 p-10">
               <h2 class="text-2xl font-headline font-black uppercase text-white mb-8">Request a Quote</h2>
               
-              {result?.error && (
-                <div class="bg-red-900/30 border border-red-500/50 text-red-300 p-4 rounded-sm text-sm mb-6">
-                  Something went wrong. Please try again or call us directly on 0508 626 272.
-                </div>
-              )}
+              <div id="form-error" class="bg-red-900/30 border border-red-500/50 text-red-300 p-4 rounded-sm text-sm mb-6 hidden">
+                Something went wrong. Please try again or call us directly on 0508 626 272.
+              </div>
+              <div id="form-success" class="bg-green-900/30 border border-green-500/50 text-green-300 p-4 rounded-sm text-sm mb-6 hidden">
+                Your quote request has been sent successfully! We'll get back to you within 24 hours.
+              </div>
               
               <form 
-                method="POST" 
-                action={actions.contact}
+                id="contact-form"
                 class="space-y-6" 
                 novalidate
               >
@@ -231,7 +222,6 @@ const servicesSchema = {
                       type="text" 
                       name="name"
                       required
-                      transition:persist
                       class="w-full bg-background border border-white/10 text-white p-4 focus:ring-2 focus:ring-primary focus:border-primary transition-all rounded-sm" 
                       placeholder="Your name"
                     />
@@ -242,7 +232,6 @@ const servicesSchema = {
                       type="tel" 
                       name="phone"
                       required
-                      transition:persist
                       class="w-full bg-background border border-white/10 text-white p-4 focus:ring-2 focus:ring-primary focus:border-primary transition-all rounded-sm" 
                       placeholder="021 123 4567"
                     />
@@ -255,7 +244,6 @@ const servicesSchema = {
                     type="email" 
                     name="email"
                     required
-                    transition:persist
                     class="w-full bg-background border border-white/10 text-white p-4 focus:ring-2 focus:ring-primary focus:border-primary transition-all rounded-sm" 
                     placeholder="your@email.com"
                   />
@@ -277,7 +265,6 @@ const servicesSchema = {
                   <textarea 
                     name="message"
                     required
-                    transition:persist
                     class="w-full bg-background border border-white/10 text-white p-4 h-32 focus:ring-2 focus:ring-primary focus:border-primary transition-all rounded-sm" 
                     placeholder="Please describe your project, including approximate height, duration, and location..."
                   ></textarea>
@@ -285,6 +272,7 @@ const servicesSchema = {
                 
                 <button 
                   type="submit" 
+                  id="submit-btn"
                   class="w-full bg-primary text-white font-headline font-black uppercase tracking-widest py-5 hover:bg-orange-600 transition-colors border-b-4 border-orange-800 text-lg"
                 >
                   Send Request
@@ -297,3 +285,80 @@ const servicesSchema = {
     </section>
   </main>
 </Base>
+
+<script>
+  const form = document.getElementById('contact-form');
+  const errorEl = document.getElementById('form-error');
+  const successEl = document.getElementById('form-success');
+  const submitBtn = document.getElementById('submit-btn');
+
+  if (form) {
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      errorEl?.classList.add('hidden');
+      successEl?.classList.add('hidden');
+
+      const data = new FormData(form);
+      const name = data.get('name')?.toString().trim();
+      const phone = data.get('phone')?.toString().trim();
+      const email = data.get('email')?.toString().trim();
+      const project_type = data.get('project_type')?.toString();
+      const message = data.get('message')?.toString().trim();
+
+      if (!name || name.length < 2) {
+        showError('Please enter a valid name (at least 2 characters).');
+        return;
+      }
+      if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        showError('Please enter a valid email address.');
+        return;
+      }
+      if (!phone || phone.length < 7) {
+        showError('Please enter a valid phone number.');
+        return;
+      }
+      if (!message || message.length < 10) {
+        showError('Please describe your project (at least 10 characters).');
+        return;
+      }
+
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Sending...';
+      }
+
+      try {
+        const res = await fetch('/api/contact', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ name, phone, email, project_type, message }),
+        });
+
+        if (res.ok) {
+          successEl?.classList.remove('hidden');
+          form.reset();
+          setTimeout(() => {
+            window.location.href = '/contact/thanks';
+          }, 1500);
+        } else {
+          const errData = await res.json().catch(() => null);
+          showError(errData?.error || 'Something went wrong. Please call us on 0508 626 272.');
+        }
+      } catch {
+        showError('Network error. Please check your connection and try again.');
+      } finally {
+        if (submitBtn) {
+          submitBtn.disabled = false;
+          submitBtn.textContent = 'Send Request';
+        }
+      }
+    });
+  }
+
+  function showError(msg: string) {
+    if (errorEl) {
+      errorEl.textContent = msg;
+      errorEl.classList.remove('hidden');
+    }
+  }
+</script>
