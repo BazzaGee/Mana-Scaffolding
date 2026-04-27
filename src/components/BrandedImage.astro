@@ -43,11 +43,11 @@ const logoSizeClasses = {
 };
 ---
 
-<div class:list={['relative inline-block group overflow-hidden', className]}>
+<div class:list={['relative w-full h-full group overflow-hidden', className]}>
   <img
     src={imageSrc}
     alt={alt}
-    class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 scroll-color"
+    class="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105 scroll-color"
     loading={loadingAttr}
     {fetchpriorityAttr}
     decoding="async"

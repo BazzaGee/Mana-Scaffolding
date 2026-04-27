@@ -4,7 +4,7 @@ import Base from '../../layouts/Base.astro';
 const businessInfo = {
   name: 'Mana Scaffolding Limited',
   phone: '0508 626 272',
-  email: 'buttersnoco@gmail.com',
+  email: 'terry@manascaffolding.co.nz',
 };
 ---
 
@@ -14,7 +14,9 @@ const businessInfo = {
       <div class="container mx-auto px-6 max-w-2xl text-center">
         <div class="reveal-on-scroll mb-8">
           <div class="inline-flex items-center justify-center w-20 h-20 rounded-full bg-primary/20 border-2 border-primary mb-6">
-            <span class="material-symbols-outlined text-5xl text-primary">check_circle</span>
+            <svg class="w-12 h-12 text-primary" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
+            </svg>
           </div>
         </div>
         
@@ -80,7 +82,7 @@ const businessInfo = {
             {businessInfo.phone}
           </a>
           <span class="text-zinc-600 mx-2">|</span>
-          <a href="mailto:buttersnoco@gmail.com" class="text-primary font-bold hover:text-orange-600 transition-colors">
+          <a href="mailto:terry@manascaffolding.co.nz" class="text-primary font-bold hover:text-orange-600 transition-colors">
             {businessInfo.email}
           </a>
         </div>
