@@ -2,12 +2,6 @@
 import { Image } from 'astro:assets';
 import logo from '../assets/logos/Mana-Scaffolding-Logo.png';
 
-export interface Props {
-  sidebar?: boolean;
-}
-
-const { sidebar = false } = Astro.props;
-
 const navLinks = [
   { href: '/', label: 'Home' },
   { href: '/services', label: 'Services' },
@@ -19,7 +13,7 @@ const navLinks = [
 ];
 ---
 
-<footer class={`bg-black border-t border-white/5 py-16 ${sidebar ? 'pr-0 md:pr-[70px]' : ''}`} role="contentinfo">
+<footer class="bg-black border-t border-white/5 py-16" role="contentinfo">
   <div class="container mx-auto px-6 md:px-12">
     <div class="flex flex-col lg:flex-row justify-between items-center gap-12">
       <div class="text-center lg:text-left">
